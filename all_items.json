@@ -1,0 +1,8768 @@
+[
+  {
+    "id": -1685290200,
+    "image_name": "ammo.shotgun",
+    "name": {
+      "en": "12 Gauge Buckshot",
+      "ru": "Дробь 12-го калибра"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1036635990,
+    "image_name": "ammo.shotgun.fire",
+    "name": {
+      "en": "12 Gauge Incendiary Shell",
+      "ru": "Зажигательный Снаряд 12-го калибра"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -727717969,
+    "image_name": "ammo.shotgun.slug",
+    "name": {
+      "en": "12 Gauge Slug",
+      "ru": "Пуля 12-го калибра"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 349762871,
+    "image_name": "ammo.grenadelauncher.he",
+    "name": {
+      "en": "40mm HE Grenade",
+      "ru": "40-мм фугасная граната"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 1055319033,
+    "image_name": "ammo.grenadelauncher.buckshot",
+    "name": {
+      "en": "40mm Shotgun Round",
+      "ru": "40-мм картечь"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 915408809,
+    "image_name": "ammo.grenadelauncher.smoke",
+    "name": {
+      "en": "40mm Smoke Grenade",
+      "ru": "40-мм дымовая граната"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1211166256,
+    "image_name": "ammo.rifle",
+    "name": {
+      "en": "5.56 Rifle Ammo",
+      "ru": "Патроны 5.56-мм"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 1954597876,
+    "image_name": "catapult.ammo.bee",
+    "name": {
+      "en": "Bee Catapult Bomb",
+      "ru": "Пчелиная бомба для катапульты"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 215754713,
+    "image_name": "arrow.bone",
+    "name": {
+      "en": "Bone Arrow",
+      "ru": "Костяная стрела"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -411735114,
+    "image_name": "cannonball",
+    "name": {
+      "en": "Cannonball",
+      "ru": "Пушечное ядро"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1321651331,
+    "image_name": "ammo.rifle.explosive",
+    "name": {
+      "en": "Explosive 5.56 Rifle Ammo",
+      "ru": "Патрон 5.56 мм (Разрывной)"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 14241751,
+    "image_name": "arrow.fire",
+    "name": {
+      "en": "Fire Arrow",
+      "ru": "Огненная стрела"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -484006286,
+    "image_name": "catapult.ammo.incendiary",
+    "name": {
+      "en": "Firebomb",
+      "ru": "Зажигательная бомба"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 1712070256,
+    "image_name": "ammo.rifle.hv",
+    "name": {
+      "en": "HV 5.56 Rifle Ammo",
+      "ru": "Патрон 5.56-мм (скоростной)"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1691396643,
+    "image_name": "ammo.pistol.hv",
+    "name": {
+      "en": "HV Pistol Ammo",
+      "ru": "Скоростной пистолетный патрон"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -19318653,
+    "image_name": "ballista.bolt.hammerhead",
+    "name": {
+      "en": "Hammerhead Bolt",
+      "ru": "Болт-молот"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 588596902,
+    "image_name": "ammo.handmade.shell",
+    "name": {
+      "en": "Handmade Shell",
+      "ru": "Самодельный патрон"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1023065463,
+    "image_name": "arrow.hv",
+    "name": {
+      "en": "High Velocity Arrow",
+      "ru": "Скоростная стрела"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1841918730,
+    "image_name": "ammo.rocket.hv",
+    "name": {
+      "en": "High Velocity Rocket",
+      "ru": "Скоростная ракета"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 1296788329,
+    "image_name": "ammo.rocket.seeker",
+    "name": {
+      "en": "Homing Missile",
+      "ru": "Ракета ПЗРК"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -963819285,
+    "image_name": "dart.incapacitate",
+    "name": {
+      "en": "Incapacitate Dart",
+      "ru": "Оглушающий дротик"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 605467368,
+    "image_name": "ammo.rifle.incendiary",
+    "name": {
+      "en": "Incendiary 5.56 Rifle Ammo",
+      "ru": "Патрон 5.56 мм (зажигательный)"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1987565603,
+    "image_name": "ballista.bolt.incendiary",
+    "name": {
+      "en": "Incendiary Bolt",
+      "ru": "Зажигательный болт"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 51984655,
+    "image_name": "ammo.pistol.fire",
+    "name": {
+      "en": "Incendiary Pistol Bullet",
+      "ru": "Зажигательный пистолетный патрон"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 1638322904,
+    "image_name": "ammo.rocket.fire",
+    "name": {
+      "en": "Incendiary Rocket",
+      "ru": "Зажигательная ракета"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1843426638,
+    "image_name": "ammo.rocket.mlrs",
+    "name": {
+      "en": "MLRS Rocket",
+      "ru": "Ракета РСЗО"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -2097376851,
+    "image_name": "ammo.nailgun.nails",
+    "name": {
+      "en": "Nailgun Nails",
+      "ru": "Гвозди"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 385645417,
+    "image_name": "ammo.paintball",
+    "name": {
+      "en": "Paintball",
+      "ru": "Пейнтбольный шарик"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1127003365,
+    "image_name": "ballista.bolt.piercer",
+    "name": {
+      "en": "Piercer Bolt",
+      "ru": "Бронебойный болт"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 785728077,
+    "image_name": "ammo.pistol",
+    "name": {
+      "en": "Pistol Bullet",
+      "ru": "Пистолетный патрон"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -357442017,
+    "image_name": "ballista.bolt.pitchfork",
+    "name": {
+      "en": "Pitchfork Bolt",
+      "ru": "Болт вилы"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1827561369,
+    "image_name": "catapult.ammo.explosive",
+    "name": {
+      "en": "Propane Explosive Bomb",
+      "ru": "Пропановая Бомба"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -594596146,
+    "image_name": "dart.radiation",
+    "name": {
+      "en": "Radiation Dart",
+      "ru": "Радиационный дротик"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -742865266,
+    "image_name": "ammo.rocket.basic",
+    "name": {
+      "en": "Rocket",
+      "ru": "Ракета"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -384243979,
+    "image_name": "ammo.rocket.sam",
+    "name": {
+      "en": "SAM Ammo",
+      "ru": "Зенитная управляемая ракета"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 2036395619,
+    "image_name": "dart.scatter",
+    "name": {
+      "en": "Scatter Dart",
+      "ru": "Дротик с дробью"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 1831249347,
+    "image_name": "catapult.ammo.boulder",
+    "name": {
+      "en": "Scattershot",
+      "ru": "Каменная дробь"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -17123659,
+    "image_name": "ammo.rocket.smoke",
+    "name": {
+      "en": "Smoke Rocket WIP!!!!",
+      "ru": "Ракета (Дымовая) В РАЗРАБОТКЕ!"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1800345240,
+    "image_name": "speargun.spear",
+    "name": {
+      "en": "Speargun Spear",
+      "ru": "Гарпун"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1671551935,
+    "image_name": "submarine.torpedo.straight",
+    "name": {
+      "en": "Torpedo",
+      "ru": "Торпеда"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -274709858,
+    "image_name": "dart.wood",
+    "name": {
+      "en": "Wood Dart",
+      "ru": "Деревянный дротик"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1234735557,
+    "image_name": "arrow.wooden",
+    "name": {
+      "en": "Wooden Arrow",
+      "ru": "Деревянная стрела"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": -1215166612,
+    "image_name": "barrelcostume",
+    "name": {
+      "en": "A Barrel Costume",
+      "ru": "Костюм бочки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1107575710,
+    "image_name": "hazmatsuit_scientist_arctic",
+    "name": {
+      "en": "Arctic Scientist Suit",
+      "ru": "Костюм арктического ученого"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -470439097,
+    "image_name": "hazmatsuit.arcticsuit",
+    "name": {
+      "en": "Arctic Suit",
+      "ru": "Арктический Костюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -702051347,
+    "image_name": "mask.bandana",
+    "name": {
+      "en": "Bandana Mask",
+      "ru": "Бандана"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1622110948,
+    "image_name": "attire.banditguard",
+    "name": {
+      "en": "Bandit Guard Gear",
+      "ru": "Одежда бандита-охранника"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1022661119,
+    "image_name": "hat.cap",
+    "name": {
+      "en": "Baseball Cap",
+      "ru": "Кепка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1211268013,
+    "image_name": "horse.shoes.basic",
+    "name": {
+      "en": "Basic Horse Shoes",
+      "ru": "Обычные подковы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1675639563,
+    "image_name": "hat.beenie",
+    "name": {
+      "en": "Beenie Hat",
+      "ru": "Вязаная шапочка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1601468620,
+    "image_name": "jumpsuit.suit.blue",
+    "name": {
+      "en": "Blue Jumpsuit",
+      "ru": "Синий комбинезон"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1746956556,
+    "image_name": "bone.armor.suit",
+    "name": {
+      "en": "Bone Armor",
+      "ru": "Костяная броня"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1903165497,
+    "image_name": "deer.skull.mask",
+    "name": {
+      "en": "Bone Helmet",
+      "ru": "Костяной шлем"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -23994173,
+    "image_name": "hat.boonie",
+    "name": {
+      "en": "Boonie Hat",
+      "ru": "Панама"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1549739227,
+    "image_name": "shoes.boots",
+    "name": {
+      "en": "Boots",
+      "ru": "Ботинки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 850280505,
+    "image_name": "bucket.helmet",
+    "name": {
+      "en": "Bucket Helmet",
+      "ru": "Шлем из ведра"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1004426654,
+    "image_name": "attire.bunnyears",
+    "name": {
+      "en": "Bunny Ears",
+      "ru": "Кроличьи ушки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 23391694,
+    "image_name": "hat.bunnyhat",
+    "name": {
+      "en": "Bunny Hat",
+      "ru": "Шапка кролика"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1266045928,
+    "image_name": "attire.bunny.onesie",
+    "name": {
+      "en": "Bunny Onesie",
+      "ru": "Костюм кролика"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 21402876,
+    "image_name": "burlap.gloves.new",
+    "name": {
+      "en": "Burlap Gloves",
+      "ru": "Перчатки из мешковины"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1877339384,
+    "image_name": "burlap.headwrap",
+    "name": {
+      "en": "Burlap Headwrap",
+      "ru": "Повязка из мешковины"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 602741290,
+    "image_name": "burlap.shirt",
+    "name": {
+      "en": "Burlap Shirt",
+      "ru": "Рубашка из мешковины"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -761829530,
+    "image_name": "burlap.shoes",
+    "name": {
+      "en": "Burlap Shoes",
+      "ru": "Обувь из мешковины"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1992974553,
+    "image_name": "burlap.trousers",
+    "name": {
+      "en": "Burlap Trousers",
+      "ru": "Штаны из мешковины"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1714496074,
+    "image_name": "hat.candle",
+    "name": {
+      "en": "Candle Hat",
+      "ru": "Шляпа со свечой"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 3380160,
+    "image_name": "movembermoustachecard",
+    "name": {
+      "en": "Card Movember Moustache",
+      "ru": "Картонные Movember усы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -152332823,
+    "image_name": "chicken.costume",
+    "name": {
+      "en": "Chicken Costume",
+      "ru": "Костюм курицы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 968019378,
+    "image_name": "clatter.helmet",
+    "name": {
+      "en": "Clatter Helmet",
+      "ru": "Шлем Clatter"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -803263829,
+    "image_name": "coffeecan.helmet",
+    "name": {
+      "en": "Coffee Can Helmet",
+      "ru": "Шлем из кофейной банки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1189981699,
+    "image_name": "cratecostume",
+    "name": {
+      "en": "Crate Costume",
+      "ru": "Ящик-костюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 296519935,
+    "image_name": "diving.fins",
+    "name": {
+      "en": "Diving Fins",
+      "ru": "Ласты для дайвинга"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -113413047,
+    "image_name": "diving.mask",
+    "name": {
+      "en": "Diving Mask",
+      "ru": "Подводная маска"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2022172587,
+    "image_name": "diving.tank",
+    "name": {
+      "en": "Diving Tank",
+      "ru": "Баллон с воздухом"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1559420426,
+    "image_name": "diving.tank.double",
+    "name": {
+      "en": "Double Diving Tank",
+      "ru": "Double Diving Tank"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1323101799,
+    "image_name": "horse.saddle.double",
+    "name": {
+      "en": "Double Horse Saddle",
+      "ru": "Двухместное седло для лошади"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -258574361,
+    "image_name": "draculacape",
+    "name": {
+      "en": "Dracula Cape",
+      "ru": "Плащ Дракулы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1865253052,
+    "image_name": "draculamask",
+    "name": {
+      "en": "Dracula Mask",
+      "ru": "Маска Дракулы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -22883916,
+    "image_name": "hat.dragonmask",
+    "name": {
+      "en": "Dragon Mask",
+      "ru": "Маска дракона"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -747743875,
+    "image_name": "attire.egg.suit",
+    "name": {
+      "en": "Egg Suit",
+      "ru": "Костюм яйца"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1647389398,
+    "image_name": "frankensteinmask",
+    "name": {
+      "en": "Frankenstein Mask",
+      "ru": "Маска Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1000573653,
+    "image_name": "boots.frog",
+    "name": {
+      "en": "Frog Boots",
+      "ru": "Сапоги-лягушки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1659114910,
+    "image_name": "hat.gas.mask",
+    "name": {
+      "en": "Gas Mask",
+      "ru": "Противогаз"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1043618880,
+    "image_name": "ghostsheet",
+    "name": {
+      "en": "Ghost Costume",
+      "ru": "Костюм призрака"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -558880549,
+    "image_name": "gingerbreadsuit",
+    "name": {
+      "en": "Gingerbread Suit",
+      "ru": "Пряничный костюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -690276911,
+    "image_name": "gloweyes",
+    "name": {
+      "en": "Glowing Eyes",
+      "ru": "Светящиеся глаза"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1266491000,
+    "image_name": "hazmatsuit",
+    "name": {
+      "en": "Hazmat Suit",
+      "ru": "Антирадиационный костюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1569700847,
+    "image_name": "twitch.headset",
+    "name": {
+      "en": "Headset",
+      "ru": "Наушники"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -297099594,
+    "image_name": "frankensteins.monster.03.head",
+    "name": {
+      "en": "Heavy Frankenstein Head",
+      "ru": "Тяжёлая голова Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2024549027,
+    "image_name": "frankensteins.monster.03.legs",
+    "name": {
+      "en": "Heavy Frankenstein Legs",
+      "ru": "Тяжёлые ноги Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1614528785,
+    "image_name": "frankensteins.monster.03.torso",
+    "name": {
+      "en": "Heavy Frankenstein Torso",
+      "ru": "Тяжёлые ноги Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1181207482,
+    "image_name": "heavy.plate.helmet",
+    "name": {
+      "en": "Heavy Plate Helmet",
+      "ru": "Тяжёлый пуленепробиваемый шлем"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1102429027,
+    "image_name": "heavy.plate.jacket",
+    "name": {
+      "en": "Heavy Plate Jacket",
+      "ru": "Тяжёлый латный нагрудник"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1778159885,
+    "image_name": "heavy.plate.pants",
+    "name": {
+      "en": "Heavy Plate Pants",
+      "ru": "Тяжёлые пуленепробиваемые поножи"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1772746857,
+    "image_name": "scientistsuit_heavy",
+    "name": {
+      "en": "Heavy Scientist Suit",
+      "ru": "Бронированный костюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 794356786,
+    "image_name": "attire.hide.boots",
+    "name": {
+      "en": "Hide Boots",
+      "ru": "Сапоги из шкуры"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 3222790,
+    "image_name": "attire.hide.helterneck",
+    "name": {
+      "en": "Hide Halterneck",
+      "ru": "Нагрудная повязка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1722154847,
+    "image_name": "attire.hide.pants",
+    "name": {
+      "en": "Hide Pants",
+      "ru": "Штаны из шкуры"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 980333378,
+    "image_name": "attire.hide.poncho",
+    "name": {
+      "en": "Hide Poncho",
+      "ru": "Пончо"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1773144852,
+    "image_name": "attire.hide.skirt",
+    "name": {
+      "en": "Hide Skirt",
+      "ru": "Юбка из кожи"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 196700171,
+    "image_name": "attire.hide.vest",
+    "name": {
+      "en": "Hide Vest",
+      "ru": "Жилет из шкуры"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1989785143,
+    "image_name": "horse.shoes.advanced",
+    "name": {
+      "en": "High Quality Horse Shoes",
+      "ru": "Подковы высокого качества"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1751045826,
+    "image_name": "hoodie",
+    "name": {
+      "en": "Hoodie",
+      "ru": "Толстовка с капюшоном"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1420547167,
+    "image_name": "horse.costume",
+    "name": {
+      "en": "Horse Costume",
+      "ru": "Костюм лошади"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -418359052,
+    "image_name": "hat.horsemask",
+    "name": {
+      "en": "Horse Mask",
+      "ru": "Horse Mask"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1989600732,
+    "image_name": "hab.armor",
+    "name": {
+      "en": "Hot Air Balloon Armor",
+      "ru": "Броня для воздушного шара"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2012470695,
+    "image_name": "mask.balaclava",
+    "name": {
+      "en": "Improvised Balaclava",
+      "ru": "Балаклава"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1163532624,
+    "image_name": "jacket",
+    "name": {
+      "en": "Jacket",
+      "ru": "Куртка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -97459906,
+    "image_name": "jumpsuit.suit",
+    "name": {
+      "en": "Jumpsuit",
+      "ru": "Комбинезон"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -907422733,
+    "image_name": "largebackpack",
+    "name": {
+      "en": "Large Backpack",
+      "ru": "Большой рюкзак"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1366282552,
+    "image_name": "burlap.gloves",
+    "name": {
+      "en": "Leather Gloves",
+      "ru": "Кожаные перчатки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -134959124,
+    "image_name": "frankensteins.monster.01.head",
+    "name": {
+      "en": "Light Frankenstein Head",
+      "ru": "Лёгкая голова Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 106959911,
+    "image_name": "frankensteins.monster.01.legs",
+    "name": {
+      "en": "Light Frankenstein Legs",
+      "ru": "Лёгкие ноги Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1624770297,
+    "image_name": "frankensteins.monster.01.torso",
+    "name": {
+      "en": "Light Frankenstein Torso",
+      "ru": "Лёгкое туловище Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 935692442,
+    "image_name": "tshirt.long",
+    "name": {
+      "en": "Longsleeve T-Shirt",
+      "ru": "Водолазка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -763071910,
+    "image_name": "lumberjack%20hoodie",
+    "name": {
+      "en": "Lumberjack Hoodie",
+      "ru": "Толстовка дровосека"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1732475823,
+    "image_name": "frankensteins.monster.02.head",
+    "name": {
+      "en": "Medium Frankenstein Head",
+      "ru": "Сбалансированная голова Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 835042040,
+    "image_name": "frankensteins.monster.02.legs",
+    "name": {
+      "en": "Medium Frankenstein Legs",
+      "ru": "Сбалансированные ноги Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1491753484,
+    "image_name": "frankensteins.monster.02.torso",
+    "name": {
+      "en": "Medium Frankenstein Torso",
+      "ru": "Сбалансированное туловище Франкенштейна"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1110385766,
+    "image_name": "metal.plate.torso",
+    "name": {
+      "en": "Metal Chest Plate",
+      "ru": "Металлический нагрудник"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -194953424,
+    "image_name": "metal.facemask",
+    "name": {
+      "en": "Metal Facemask",
+      "ru": "Железная маска"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 625599716,
+    "image_name": "metal.shield",
+    "name": {
+      "en": "Metal Shield",
+      "ru": "Металлический щит"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1539025626,
+    "image_name": "hat.miner",
+    "name": {
+      "en": "Miners Hat",
+      "ru": "Фуражка шахтёра"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2047081330,
+    "image_name": "movembermoustache",
+    "name": {
+      "en": "Movember Moustache",
+      "ru": "Movember-усы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 809689733,
+    "image_name": "mummymask",
+    "name": {
+      "en": "Mummy Mask",
+      "ru": "Маска мумии"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 277730763,
+    "image_name": "halloween.mummysuit",
+    "name": {
+      "en": "Mummy Suit",
+      "ru": "Костюм мумии"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 86840834,
+    "image_name": "hazmatsuit_scientist_nvgm",
+    "name": {
+      "en": "NVGM Scientist Suit",
+      "ru": "Костюм учёного NVGM"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1937799374,
+    "image_name": "hazmatsuit_scientist_naval",
+    "name": {
+      "en": "Naval Scientist Suit",
+      "ru": "Naval Scientist Suit"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1081315464,
+    "image_name": "attire.nesthat",
+    "name": {
+      "en": "Nest Hat",
+      "ru": "Шляпа-гнездо"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1518883088,
+    "image_name": "nightvisiongoggles",
+    "name": {
+      "en": "Night Vision Goggles",
+      "ru": "Очки ночного видения"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1506417026,
+    "image_name": "attire.ninja.suit",
+    "name": {
+      "en": "Ninja Suit",
+      "ru": "Костюм ниндзя"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2133781216,
+    "image_name": "oubreak_scientist",
+    "name": {
+      "en": "Outbreak Scientist Suit",
+      "ru": "Костюм биозащиты"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1315082560,
+    "image_name": "hat.oxmask",
+    "name": {
+      "en": "Ox Mask",
+      "ru": "Маска быка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1014934560,
+    "image_name": "paintballoveralls.suit",
+    "name": {
+      "en": "Paintball Overalls",
+      "ru": "Пейнтбольное снаряжение"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 237239288,
+    "image_name": "pants",
+    "name": {
+      "en": "Pants",
+      "ru": "Штаны"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 602628465,
+    "image_name": "parachute",
+    "name": {
+      "en": "Parachute",
+      "ru": "Парашют"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -575744869,
+    "image_name": "partyhat",
+    "name": {
+      "en": "Party Hat",
+      "ru": "Праздничный колпак"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -892718768,
+    "image_name": "prisonerhood",
+    "name": {
+      "en": "Prisoner Hood",
+      "ru": "Мешок пленника"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 20489901,
+    "image_name": "twitchsunglasses",
+    "name": {
+      "en": "Purple Sunglasses",
+      "ru": "Фиолетовые солнцезащитные очки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -986782031,
+    "image_name": "hat.rabbitmask",
+    "name": {
+      "en": "Rabbit Mask",
+      "ru": "Маска кролика"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 271048478,
+    "image_name": "hat.ratmask",
+    "name": {
+      "en": "Rat Mask",
+      "ru": "Маска крысы"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -324675402,
+    "image_name": "attire.reindeer.headband",
+    "name": {
+      "en": "Reindeer Antlers",
+      "ru": "Оленьи рога"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 969768382,
+    "image_name": "reinforced.wooden.shield",
+    "name": {
+      "en": "Reinforced Wooden Shield",
+      "ru": "Укреплённый деревянный щит"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 671063303,
+    "image_name": "riot.helmet",
+    "name": {
+      "en": "Riot Helmet",
+      "ru": "Шлем бунтаря"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -699558439,
+    "image_name": "roadsign.gloves",
+    "name": {
+      "en": "Road Sign Gloves",
+      "ru": "Перчатки из Дорожных Знаков"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2002277461,
+    "image_name": "roadsign.jacket",
+    "name": {
+      "en": "Road Sign Jacket",
+      "ru": "Броня из дорожных знаков"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1850456855,
+    "image_name": "roadsign.kilt",
+    "name": {
+      "en": "Road Sign Kilt",
+      "ru": "Килт из дорожных знаков"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 60528587,
+    "image_name": "horse.armor.roadsign",
+    "name": {
+      "en": "Roadsign Horse Armor",
+      "ru": "Конная броня из дорожных знаков"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1400460850,
+    "image_name": "horse.saddlebag",
+    "name": {
+      "en": "Saddle bag",
+      "ru": "Седельная сумка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 2126889441,
+    "image_name": "santabeard",
+    "name": {
+      "en": "Santa Beard",
+      "ru": "Борода Санты"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -575483084,
+    "image_name": "santahat",
+    "name": {
+      "en": "Santa Hat",
+      "ru": "Шапка Санты"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 273951840,
+    "image_name": "scarecrow.suit",
+    "name": {
+      "en": "Scarecrow Suit",
+      "ru": "Костюм чучела"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 809942731,
+    "image_name": "scarecrowhead",
+    "name": {
+      "en": "Scarecrow Wrap",
+      "ru": "Повязка чучела"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -253079493,
+    "image_name": "hazmatsuit_scientist_peacekeeper",
+    "name": {
+      "en": "Scientist Suit",
+      "ru": "Костюм учёного"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2025184684,
+    "image_name": "shirt.collared",
+    "name": {
+      "en": "Shirt",
+      "ru": "Рубашка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1695367501,
+    "image_name": "pants.shorts",
+    "name": {
+      "en": "Shorts",
+      "ru": "Шорты"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1849409072,
+    "image_name": "silly.horse.mask",
+    "name": {
+      "en": "Silly Horse Mask",
+      "ru": "Silly Horse Mask"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1559915778,
+    "image_name": "horse.saddle.single",
+    "name": {
+      "en": "Single Horse Saddle",
+      "ru": "Одноместное седло для лошади"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 2068884361,
+    "image_name": "smallbackpack",
+    "name": {
+      "en": "Small Backpack",
+      "ru": "Маленький рюкзак"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1314079879,
+    "image_name": "hat.snakemask",
+    "name": {
+      "en": "Snake mask",
+      "ru": "Маска Змеи"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -48090175,
+    "image_name": "jacket.snow",
+    "name": {
+      "en": "Snow Jacket",
+      "ru": "Зимняя куртка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -842267147,
+    "image_name": "attire.snowman.helmet",
+    "name": {
+      "en": "Snowman Helmet",
+      "ru": "Шлем снеговика"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 352321488,
+    "image_name": "sunglasses",
+    "name": {
+      "en": "Sunglasses",
+      "ru": "Солнцезащитные очки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1785231475,
+    "image_name": "halloween.surgeonsuit",
+    "name": {
+      "en": "Surgeon Scrubs",
+      "ru": "Костюм хирурга"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 223891266,
+    "image_name": "tshirt",
+    "name": {
+      "en": "T-Shirt",
+      "ru": "Футболка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1108136649,
+    "image_name": "tactical.gloves",
+    "name": {
+      "en": "Tactical Gloves",
+      "ru": "Тактические перчатки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1608640313,
+    "image_name": "shirt.tanktop",
+    "name": {
+      "en": "Tank Top",
+      "ru": "Майка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 709206314,
+    "image_name": "hat.tigermask",
+    "name": {
+      "en": "Tiger Mask",
+      "ru": "Маска тигра"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -739993590,
+    "image_name": "twitchrivalsflag",
+    "name": {
+      "en": "Twitch Rivals Flag",
+      "ru": "Флаг Twitch Rivals"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -874908751,
+    "image_name": "jumpsuit.waterwellnpc",
+    "name": {
+      "en": "Waterwell NPC Jumpsuit",
+      "ru": "Комбинезон NPC водяной скважины"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -507248640,
+    "image_name": "hat.wellipets",
+    "name": {
+      "en": "Wellipets Hat",
+      "ru": "Шляпа Wellipets"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1101924344,
+    "image_name": "diving.wetsuit",
+    "name": {
+      "en": "Wetsuit",
+      "ru": "Гидрокостюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1478212975,
+    "image_name": "hat.wolf",
+    "name": {
+      "en": "Wolf Headdress",
+      "ru": "Шапка из волка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -459159118,
+    "image_name": "woodarmor.gloves",
+    "name": {
+      "en": "Wood Armor Gloves",
+      "ru": "Деревянные перчатки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2094954543,
+    "image_name": "wood.armor.helmet",
+    "name": {
+      "en": "Wood Armor Helmet",
+      "ru": "Деревянный шлем"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 832133926,
+    "image_name": "wood.armor.pants",
+    "name": {
+      "en": "Wood Armor Pants",
+      "ru": "Деревянные щитки"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 418081930,
+    "image_name": "wood.armor.jacket",
+    "name": {
+      "en": "Wood Chestplate",
+      "ru": "Деревянный нагрудник"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1659447559,
+    "image_name": "horse.armor.wood",
+    "name": {
+      "en": "Wooden Horse Armor",
+      "ru": "Конная броня из дерева"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1604837581,
+    "image_name": "wooden.shield",
+    "name": {
+      "en": "Wooden Shield",
+      "ru": "Деревянный щит"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1896395719,
+    "image_name": "advancedblueprintfragment",
+    "name": {
+      "en": "Advanced Blueprint Fragment",
+      "ru": "Продвинутый Фрагмент Чертежа"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1874610722,
+    "image_name": "vehicle.1mod.cockpit.armored",
+    "name": {
+      "en": "Armored Cockpit Vehicle Module",
+      "ru": "Бронированный модуль"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1615281216,
+    "image_name": "vehicle.1mod.passengers.armored",
+    "name": {
+      "en": "Armored Passenger Vehicle Module",
+      "ru": "Бронированный пассажирский модуль"
+    },
+    "category": "components"
+  },
+  {
+    "id": -143481979,
+    "image_name": "basicblueprintfragment",
+    "name": {
+      "en": "Basic Blueprint Fragment",
+      "ru": "Базовый фрагмент чертежа"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1553078977,
+    "image_name": "bleach",
+    "name": {
+      "en": "Bleach",
+      "ru": "Отбеливатель"
+    },
+    "category": "components"
+  },
+  {
+    "id": 838308300,
+    "image_name": "weapon.mod.burstmodule",
+    "name": {
+      "en": "Burst Module",
+      "ru": "Модуль очерёдной стрельбы"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1040518150,
+    "image_name": "vehicle.2mod.camper",
+    "name": {
+      "en": "Camper Vehicle Module",
+      "ru": "Модуль автофургона"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1501451746,
+    "image_name": "vehicle.1mod.cockpit",
+    "name": {
+      "en": "Cockpit Vehicle Module",
+      "ru": "Модуль кабины транспорта"
+    },
+    "category": "components"
+  },
+  {
+    "id": 170758448,
+    "image_name": "vehicle.1mod.cockpit.with.engine",
+    "name": {
+      "en": "Cockpit With Engine Vehicle Module",
+      "ru": "Кабина с двигателем"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1401987718,
+    "image_name": "ducttape",
+    "name": {
+      "en": "Duct Tape",
+      "ru": "Скотч"
+    },
+    "category": "components"
+  },
+  {
+    "id": -629028935,
+    "image_name": "fuse",
+    "name": {
+      "en": "Electric Fuse",
+      "ru": "Электрический предохранитель"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1673693549,
+    "image_name": "propanetank",
+    "name": {
+      "en": "Empty Propane Tank",
+      "ru": "Пропановый баллон"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1559779253,
+    "image_name": "vehicle.1mod.engine",
+    "name": {
+      "en": "Engine Vehicle Module",
+      "ru": "Модуль двигателя транспорта"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1880231361,
+    "image_name": "vehicle.1mod.flatbed",
+    "name": {
+      "en": "Flatbed Vehicle Module",
+      "ru": "Модуль платформа автомобиля"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1186655046,
+    "image_name": "vehicle.2mod.fuel.tank",
+    "name": {
+      "en": "Fuel Tank Vehicle Module",
+      "ru": "Топливный бак"
+    },
+    "category": "components"
+  },
+  {
+    "id": 479143914,
+    "image_name": "gears",
+    "name": {
+      "en": "Gears",
+      "ru": "Шестерни"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1899491405,
+    "image_name": "glue",
+    "name": {
+      "en": "Glue",
+      "ru": "Клей"
+    },
+    "category": "components"
+  },
+  {
+    "id": 656371026,
+    "image_name": "carburetor3",
+    "name": {
+      "en": "High Quality Carburetor",
+      "ru": "Карбюратор высокого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1158340332,
+    "image_name": "crankshaft3",
+    "name": {
+      "en": "High Quality Crankshaft",
+      "ru": "Коленчатый вал высокого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1883981800,
+    "image_name": "piston3",
+    "name": {
+      "en": "High Quality Pistons",
+      "ru": "Поршни высокого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1072924620,
+    "image_name": "sparkplug3",
+    "name": {
+      "en": "High Quality Spark Plugs",
+      "ru": "Свеча зажигания высокого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1802083073,
+    "image_name": "valve3",
+    "name": {
+      "en": "High Quality Valves",
+      "ru": "Клапаны высокого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1693832478,
+    "image_name": "vehicle.2mod.flatbed",
+    "name": {
+      "en": "Large Flatbed Vehicle Module",
+      "ru": "Модуль для Большого Грузовика"
+    },
+    "category": "components"
+  },
+  {
+    "id": 656371028,
+    "image_name": "carburetor1",
+    "name": {
+      "en": "Low Quality Carburetor",
+      "ru": "Карбюратор низкого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1158340334,
+    "image_name": "crankshaft1",
+    "name": {
+      "en": "Low Quality Crankshaft",
+      "ru": "Коленчатый вал низкого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1883981798,
+    "image_name": "piston1",
+    "name": {
+      "en": "Low Quality Pistons",
+      "ru": "Поршни низкого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": -89874794,
+    "image_name": "sparkplug1",
+    "name": {
+      "en": "Low Quality Spark Plugs",
+      "ru": "Свеча зажигания низкого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1330084809,
+    "image_name": "valve1",
+    "name": {
+      "en": "Low Quality Valves",
+      "ru": "Клапаны низкого качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 343045591,
+    "image_name": "aiming.module.mlrs",
+    "name": {
+      "en": "MLRS Aiming Module",
+      "ru": "Модуль наведения РСЗО"
+    },
+    "category": "components"
+  },
+  {
+    "id": 656371027,
+    "image_name": "carburetor2",
+    "name": {
+      "en": "Medium Quality Carburetor",
+      "ru": "Карбюратор среднего качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1158340331,
+    "image_name": "crankshaft2",
+    "name": {
+      "en": "Medium Quality Crankshaft",
+      "ru": "Коленчатый вал среднего качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1883981801,
+    "image_name": "piston2",
+    "name": {
+      "en": "Medium Quality Pistons",
+      "ru": "Поршни среднего качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": -493159321,
+    "image_name": "sparkplug2",
+    "name": {
+      "en": "Medium Quality Spark Plugs",
+      "ru": "Свеча зажигания среднего качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 926800282,
+    "image_name": "valve2",
+    "name": {
+      "en": "Medium Quality Valves",
+      "ru": "Клапаны среднего качества"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1882709339,
+    "image_name": "metalblade",
+    "name": {
+      "en": "Metal Blade",
+      "ru": "Металлическое лезвие"
+    },
+    "category": "components"
+  },
+  {
+    "id": 95950017,
+    "image_name": "metalpipe",
+    "name": {
+      "en": "Metal Pipe",
+      "ru": "Металлическая труба"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1021495308,
+    "image_name": "metalspring",
+    "name": {
+      "en": "Metal Spring",
+      "ru": "Металлическая пружина"
+    },
+    "category": "components"
+  },
+  {
+    "id": 895374329,
+    "image_name": "vehicle.2mod.passengers",
+    "name": {
+      "en": "Passenger Vehicle Module",
+      "ru": "Пассажирский модуль"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1376065505,
+    "image_name": "vehicle.1mod.rear.seats",
+    "name": {
+      "en": "Rear Seats Vehicle Module",
+      "ru": "Модуль задних сидений"
+    },
+    "category": "components"
+  },
+  {
+    "id": 176787552,
+    "image_name": "riflebody",
+    "name": {
+      "en": "Rifle Body",
+      "ru": "Корпус винтовки"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1199391518,
+    "image_name": "roadsigns",
+    "name": {
+      "en": "Road Signs",
+      "ru": "Дорожные знаки"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1414245522,
+    "image_name": "rope",
+    "name": {
+      "en": "Rope",
+      "ru": "Верёвка"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1230323789,
+    "image_name": "smgbody",
+    "name": {
+      "en": "SMG Body",
+      "ru": "Корпус пистолет-пулемёта"
+    },
+    "category": "components"
+  },
+  {
+    "id": 573926264,
+    "image_name": "semibody",
+    "name": {
+      "en": "Semi Automatic Body",
+      "ru": "Корпус полуавтомата"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1234880403,
+    "image_name": "sewingkit",
+    "name": {
+      "en": "Sewing Kit",
+      "ru": "Набор для шитья"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1994909036,
+    "image_name": "sheetmetal",
+    "name": {
+      "en": "Sheet Metal",
+      "ru": "Листовой металл"
+    },
+    "category": "components"
+  },
+  {
+    "id": 642482233,
+    "image_name": "sticks",
+    "name": {
+      "en": "Sticks",
+      "ru": "Палочки"
+    },
+    "category": "components"
+  },
+  {
+    "id": 268565518,
+    "image_name": "vehicle.1mod.storage",
+    "name": {
+      "en": "Storage Vehicle Module",
+      "ru": "Багажный модуль"
+    },
+    "category": "components"
+  },
+  {
+    "id": 2019042823,
+    "image_name": "tarp",
+    "name": {
+      "en": "Tarp",
+      "ru": "Брезент"
+    },
+    "category": "components"
+  },
+  {
+    "id": -626174997,
+    "image_name": "vehicle.1mod.taxi",
+    "name": {
+      "en": "Taxi Vehicle Module",
+      "ru": "Модуль такси"
+    },
+    "category": "components"
+  },
+  {
+    "id": 73681876,
+    "image_name": "techparts",
+    "name": {
+      "en": "Tech Trash",
+      "ru": "Старые микросхемы"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1353298668,
+    "image_name": "door.hinged.toptier",
+    "name": {
+      "en": "Armored Door",
+      "ru": "Бронированная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1221063409,
+    "image_name": "door.double.hinged.toptier",
+    "name": {
+      "en": "Armored Double Door",
+      "ru": "Двойная бронированная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1382263453,
+    "image_name": "barricade.woodwire",
+    "name": {
+      "en": "Barbed Wooden Barricade",
+      "ru": "Деревянная баррикада с колючей проволокой"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 184516676,
+    "image_name": "beehive",
+    "name": {
+      "en": "Beehive",
+      "ru": "Улей"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -321247698,
+    "image_name": "boat.planner",
+    "name": {
+      "en": "Boat Building Plan",
+      "ru": "План постройки лодки"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1525520776,
+    "image_name": "building.planner",
+    "name": {
+      "en": "Building Plan",
+      "ru": "План постройки"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1117626326,
+    "image_name": "wall.frame.fence",
+    "name": {
+      "en": "Chainlink Fence",
+      "ru": "Сетчатый забор"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1451568081,
+    "image_name": "wall.frame.fence.gate",
+    "name": {
+      "en": "Chainlink Fence Gate",
+      "ru": "Сетчатая дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1159991980,
+    "image_name": "lock.code",
+    "name": {
+      "en": "Code Lock",
+      "ru": "Кодовый замок"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1950721390,
+    "image_name": "barricade.concrete",
+    "name": {
+      "en": "Concrete Barricade",
+      "ru": "Бетонная баррикада"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1409529282,
+    "image_name": "door.closer",
+    "name": {
+      "en": "Door Closer",
+      "ru": "Дверной доводчик"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 936496778,
+    "image_name": "floor.grill",
+    "name": {
+      "en": "Floor grill",
+      "ru": "Решётчатый настил"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1983621560,
+    "image_name": "floor.triangle.grill",
+    "name": {
+      "en": "Floor triangle grill",
+      "ru": "Треугольный решётчатый настил"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -148794216,
+    "image_name": "wall.frame.garagedoor",
+    "name": {
+      "en": "Garage Door",
+      "ru": "Гаражная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -691113464,
+    "image_name": "gates.external.high.stone",
+    "name": {
+      "en": "High External Stone Gate",
+      "ru": "Высокие внешние каменные ворота"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -967648160,
+    "image_name": "wall.external.high.stone",
+    "name": {
+      "en": "High External Stone Wall",
+      "ru": "Высокая внешняя каменная стена"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -335089230,
+    "image_name": "gates.external.high.wood",
+    "name": {
+      "en": "High External Wooden Gate",
+      "ru": "Высокие внешние деревянные ворота"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 99588025,
+    "image_name": "wall.external.high",
+    "name": {
+      "en": "High External Wooden Wall",
+      "ru": "Высокая внешняя деревянная стена"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -985781766,
+    "image_name": "wall.external.high.ice",
+    "name": {
+      "en": "High Ice Wall",
+      "ru": "Высокая ледяная стена"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -850982208,
+    "image_name": "lock.key",
+    "name": {
+      "en": "Key Lock",
+      "ru": "Дверной замок"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1948067030,
+    "image_name": "floor.ladder.hatch",
+    "name": {
+      "en": "Ladder Hatch",
+      "ru": "Лестничный люк"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1100168350,
+    "image_name": "water.catcher.large",
+    "name": {
+      "en": "Large Water Catcher",
+      "ru": "Большой водосборник"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 607400343,
+    "image_name": "legacy.shelter.wood",
+    "name": {
+      "en": "Legacy Wood Shelter",
+      "ru": "Старый деревянный сарай"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -424687710,
+    "image_name": "barricade.medieval",
+    "name": {
+      "en": "Medieval Barricade",
+      "ru": "Средневековая баррикада"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1655650836,
+    "image_name": "barricade.metal",
+    "name": {
+      "en": "Metal Barricade",
+      "ru": "Металлическая баррикада"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -148229307,
+    "image_name": "wall.frame.shopfront.metal",
+    "name": {
+      "en": "Metal Shop Front",
+      "ru": "Металлическая витрина магазина"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1199897172,
+    "image_name": "shutter.metal.embrasure.b",
+    "name": {
+      "en": "Metal Vertical embrasure",
+      "ru": "Металлическая вертикальная бойница"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -819720157,
+    "image_name": "wall.window.bars.metal",
+    "name": {
+      "en": "Metal Window Bars",
+      "ru": "Металлические оконные решётки"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1199897169,
+    "image_name": "shutter.metal.embrasure.a",
+    "name": {
+      "en": "Metal horizontal embrasure",
+      "ru": "Металлическая горизонтальная бойница"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1052926200,
+    "image_name": "mining.quarry",
+    "name": {
+      "en": "Mining Quarry",
+      "ru": "Горнорудный карьер"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1516985844,
+    "image_name": "wall.frame.netting",
+    "name": {
+      "en": "Netting",
+      "ru": "Сетка"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -956706906,
+    "image_name": "wall.frame.cell.gate",
+    "name": {
+      "en": "Prison Cell Gate",
+      "ru": "Тюремная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1429456799,
+    "image_name": "wall.frame.cell",
+    "name": {
+      "en": "Prison Cell Wall",
+      "ru": "Тюремная решётка"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1130709577,
+    "image_name": "mining.pumpjack",
+    "name": {
+      "en": "Pump Jack",
+      "ru": "Нефтяная вышка"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 671706427,
+    "image_name": "wall.window.bars.toptier",
+    "name": {
+      "en": "Reinforced Glass Window",
+      "ru": "Укреплённое стеклянное окно"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -559599960,
+    "image_name": "barricade.sandbags",
+    "name": {
+      "en": "Sandbag Barricade",
+      "ru": "Баррикада из мешков с песком"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -2067472972,
+    "image_name": "door.hinged.metal",
+    "name": {
+      "en": "Sheet Metal Door",
+      "ru": "Дверь из листового металла"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1390353317,
+    "image_name": "door.double.hinged.metal",
+    "name": {
+      "en": "Sheet Metal Double Door",
+      "ru": "Двойная металлическая дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -796583652,
+    "image_name": "wall.frame.shopfront",
+    "name": {
+      "en": "Shop Front",
+      "ru": "Витрина магазина"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1327005675,
+    "image_name": "wall.ice.wall",
+    "name": {
+      "en": "Short Ice Wall",
+      "ru": "Низкая ледяная стена"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -132247350,
+    "image_name": "water.catcher.small",
+    "name": {
+      "en": "Small Water Catcher",
+      "ru": "Маленький водосборник"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 15388698,
+    "image_name": "barricade.stone",
+    "name": {
+      "en": "Stone Barricade",
+      "ru": "Каменная баррикада"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1614955425,
+    "image_name": "wall.window.glass.reinforced",
+    "name": {
+      "en": "Strengthened Glass Window",
+      "ru": "Усиленное стеклянное окно"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -97956382,
+    "image_name": "cupboard.tool",
+    "name": {
+      "en": "Tool Cupboard",
+      "ru": "Шкаф с инструментами"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 2041899972,
+    "image_name": "floor.triangle.ladder.hatch",
+    "name": {
+      "en": "Triangle Ladder Hatch",
+      "ru": "Треугольный люк"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1115193056,
+    "image_name": "wall.frame.lunar2025_a",
+    "name": {
+      "en": "Wall Divider Pack",
+      "ru": "Комплект перегородок для стен"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -463122489,
+    "image_name": "watchtower.wood",
+    "name": {
+      "en": "Watch Tower",
+      "ru": "Смотровая вышка"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1336109173,
+    "image_name": "door.double.hinged.wood",
+    "name": {
+      "en": "Wood Double Door",
+      "ru": "Двойная деревянная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1023374709,
+    "image_name": "shutter.wood.a",
+    "name": {
+      "en": "Wood Shutters",
+      "ru": "Деревянные ставни"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 866889860,
+    "image_name": "barricade.wood",
+    "name": {
+      "en": "Wooden Barricade",
+      "ru": "Деревянная баррикада"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1373240771,
+    "image_name": "barricade.wood.cover",
+    "name": {
+      "en": "Wooden Barricade Cover",
+      "ru": "Деревянное укрытие"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1729120840,
+    "image_name": "door.hinged.wood",
+    "name": {
+      "en": "Wooden Door",
+      "ru": "Деревянная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1151332840,
+    "image_name": "door.double.hinged.bardoors",
+    "name": {
+      "en": "Wooden Frontier Bar Doors",
+      "ru": "Деревянные барные двери запада"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -316250604,
+    "image_name": "ladder.wooden.wall",
+    "name": {
+      "en": "Wooden Ladder",
+      "ru": "Деревянная лестница"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1183726687,
+    "image_name": "wall.window.bars.wood",
+    "name": {
+      "en": "Wooden Window Bars",
+      "ru": "Деревянные решетки"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1171735914,
+    "image_name": "electric.andswitch",
+    "name": {
+      "en": "AND Switch",
+      "ru": "Переключатель \"И\""
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 2100007442,
+    "image_name": "electric.audioalarm",
+    "name": {
+      "en": "Audio Alarm",
+      "ru": "Звуковая сигнализация"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -2139580305,
+    "image_name": "autoturret",
+    "name": {
+      "en": "Auto Turret",
+      "ru": "Автоматическая турель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -690968985,
+    "image_name": "electric.blocker",
+    "name": {
+      "en": "Blocker",
+      "ru": "Блокатор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 104856514,
+    "image_name": "electric.bulbstringlights",
+    "name": {
+      "en": "Bulb String Lights",
+      "ru": "Гирлянды из ламп накаливания"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1778897469,
+    "image_name": "electric.button",
+    "name": {
+      "en": "Button",
+      "ru": "Кнопка"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1835946060,
+    "image_name": "electric.cabletunnel",
+    "name": {
+      "en": "Cable Tunnel",
+      "ru": "Гофра для кабеля"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1142993169,
+    "image_name": "ceilinglight",
+    "name": {
+      "en": "Ceiling Light",
+      "ru": "Потолочный светильник"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1510616686,
+    "image_name": "electric.chandelier",
+    "name": {
+      "en": "Chandelier",
+      "ru": "Люстра"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1247485104,
+    "image_name": "command.block",
+    "name": {
+      "en": "Command Block",
+      "ru": "Командный блок"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1588628467,
+    "image_name": "computerstation",
+    "name": {
+      "en": "Computer Station",
+      "ru": "Компьютерная станция"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -216999575,
+    "image_name": "electric.counter",
+    "name": {
+      "en": "Counter",
+      "ru": "Счётчик"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -151387974,
+    "image_name": "xmas.lightstring.advanced",
+    "name": {
+      "en": "Deluxe Christmas Lights",
+      "ru": "Роскошная Рождественская гирлянда"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1619039771,
+    "image_name": "electric.digitalclock",
+    "name": {
+      "en": "Digital Clock",
+      "ru": "Цифровые часы"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -502177121,
+    "image_name": "electric.doorcontroller",
+    "name": {
+      "en": "Door Controller",
+      "ru": "Контроллер двери"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1196547867,
+    "image_name": "electric.furnace",
+    "name": {
+      "en": "Electric Furnace",
+      "ru": "Электрическая печь"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -784870360,
+    "image_name": "electric.heater",
+    "name": {
+      "en": "Electric Heater",
+      "ru": "Электрический обогреватель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1717250161,
+    "image_name": "electric.tablelight",
+    "name": {
+      "en": "Electric Table Lamp",
+      "ru": "Электрическая настольная лампа"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1448252298,
+    "image_name": "electrical.branch",
+    "name": {
+      "en": "Electrical Branch",
+      "ru": "Электрический разветвитель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1177596584,
+    "image_name": "elevator",
+    "name": {
+      "en": "Elevator",
+      "ru": "Лифт"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 54436981,
+    "image_name": "electric.fairylights",
+    "name": {
+      "en": "Fairy Lights",
+      "ru": "Волшебные огоньки"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -939424778,
+    "image_name": "electric.flasherlight",
+    "name": {
+      "en": "Flasher Light",
+      "ru": "Мигалка"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -265292885,
+    "image_name": "fluid.combiner",
+    "name": {
+      "en": "Fluid Combiner",
+      "ru": "Объединитель жидкости"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1166712463,
+    "image_name": "fluid.splitter",
+    "name": {
+      "en": "Fluid Splitter",
+      "ru": "Жидкостный разделитель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 443432036,
+    "image_name": "fluid.switch",
+    "name": {
+      "en": "Fluid Switch & Pump",
+      "ru": "Жидкостный Переключаемый Насос"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1892536031,
+    "image_name": "electric.fluorescentlight",
+    "name": {
+      "en": "Fluorescent Light",
+      "ru": "Флуоресцентный светильник"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1413014235,
+    "image_name": "fridge",
+    "name": {
+      "en": "Fridge",
+      "ru": "Холодильник"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1507239837,
+    "image_name": "electric.hbhfsensor",
+    "name": {
+      "en": "HBHF Sensor",
+      "ru": "HBHF-датчик"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1428574144,
+    "image_name": "hopper",
+    "name": {
+      "en": "Hopper",
+      "ru": "Воронка"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 363163265,
+    "image_name": "hosetool",
+    "name": {
+      "en": "Hose Tool",
+      "ru": "Шланг"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -44876289,
+    "image_name": "electric.igniter",
+    "name": {
+      "en": "Igniter",
+      "ru": "Воспламенитель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1538126328,
+    "image_name": "industrial.combiner",
+    "name": {
+      "en": "Industrial Combiner",
+      "ru": "Промышленный комбинатор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 610102428,
+    "image_name": "industrial.conveyor",
+    "name": {
+      "en": "Industrial Conveyor",
+      "ru": "Промышленный конвейер"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1430085198,
+    "image_name": "industrial.crafter",
+    "name": {
+      "en": "Industrial Crafter",
+      "ru": "Промышленный сборщик"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 742745918,
+    "image_name": "industrial.splitter",
+    "name": {
+      "en": "Industrial Splitter",
+      "ru": "Промышленный разделитель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1623701499,
+    "image_name": "industrial.wall.light",
+    "name": {
+      "en": "Industrial Wall Light",
+      "ru": "Промышленная лампа"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1643667218,
+    "image_name": "sign.neon.xl.animated",
+    "name": {
+      "en": "Large Animated Neon Sign",
+      "ru": "Большая анимированная неоновая табличка"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 866332017,
+    "image_name": "sign.neon.xl",
+    "name": {
+      "en": "Large Neon Sign",
+      "ru": "Неоновая табличка (большая)"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 553270375,
+    "image_name": "electric.battery.rechargable.large",
+    "name": {
+      "en": "Large Rechargeable Battery",
+      "ru": "Большой аккумулятор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 2090395347,
+    "image_name": "electric.solarpanel.large",
+    "name": {
+      "en": "Large Solar Panel",
+      "ru": "Большая солнечная панель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -798293154,
+    "image_name": "electric.laserdetector",
+    "name": {
+      "en": "Laser Detector",
+      "ru": "Лазерный датчик"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 42535890,
+    "image_name": "sign.neon.125x215.animated",
+    "name": {
+      "en": "Medium Animated Neon Sign",
+      "ru": "Средняя анимированная табличка"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1423304443,
+    "image_name": "sign.neon.125x215",
+    "name": {
+      "en": "Medium Neon Sign",
+      "ru": "Неоновая табличка (средняя)"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 2023888403,
+    "image_name": "electric.battery.rechargable.medium",
+    "name": {
+      "en": "Medium Rechargeable Battery",
+      "ru": "Средний аккумулятор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -746647361,
+    "image_name": "electrical.memorycell",
+    "name": {
+      "en": "Memory Cell",
+      "ru": "Ячейка памяти"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1174484438,
+    "image_name": "mini%20fridge",
+    "name": {
+      "en": "Mini Fridge",
+      "ru": "Мини-холодильник"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1696050067,
+    "image_name": "modularcarlift",
+    "name": {
+      "en": "Modular Car Lift",
+      "ru": "Подъёмник для транспорта"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1286302544,
+    "image_name": "electric.orswitch",
+    "name": {
+      "en": "OR Switch",
+      "ru": "Переключатель \"ИЛИ\""
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 140006625,
+    "image_name": "ptz.cctv.camera",
+    "name": {
+      "en": "PTZ CCTV Camera",
+      "ru": "Управляемая камера видеонаблюдения"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -144513264,
+    "image_name": "pipetool",
+    "name": {
+      "en": "Pipe Tool",
+      "ru": "Инструмент трубопровода"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -365097295,
+    "image_name": "powered.water.purifier",
+    "name": {
+      "en": "Powered Water Purifier",
+      "ru": "Электрический опреснитель воды"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -2049214035,
+    "image_name": "electric.pressurepad",
+    "name": {
+      "en": "Pressure Pad",
+      "ru": "Нажимная плита"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 492357192,
+    "image_name": "electric.random.switch",
+    "name": {
+      "en": "RAND Switch",
+      "ru": "RAND-переключатель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1044468317,
+    "image_name": "electric.rf.broadcaster",
+    "name": {
+      "en": "RF Broadcaster",
+      "ru": "Радиопередатчик"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -566907190,
+    "image_name": "rf_pager",
+    "name": {
+      "en": "RF Pager",
+      "ru": "Пейджер"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 888415708,
+    "image_name": "electric.rf.receiver",
+    "name": {
+      "en": "RF Receiver",
+      "ru": "Радиоприёмник"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1736356576,
+    "image_name": "target.reactive",
+    "name": {
+      "en": "Reactive Target",
+      "ru": "Тренировочная мишень"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -458565393,
+    "image_name": "electrical.combiner",
+    "name": {
+      "en": "Root Combiner",
+      "ru": "Комбинатор питания"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 2087678962,
+    "image_name": "searchlight",
+    "name": {
+      "en": "Search Light",
+      "ru": "Поисковый фонарь"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -948291630,
+    "image_name": "electric.seismicsensor",
+    "name": {
+      "en": "Seismic Sensor",
+      "ru": "Сейсмический датчик"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -282113991,
+    "image_name": "electric.simplelight",
+    "name": {
+      "en": "Simple Light",
+      "ru": "Простая лампа"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 762289806,
+    "image_name": "electric.sirenlight",
+    "name": {
+      "en": "Siren Light",
+      "ru": "Сирена"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1849887541,
+    "image_name": "electric.fuelgenerator.small",
+    "name": {
+      "en": "Small Generator",
+      "ru": "Малый генератор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1305578813,
+    "image_name": "sign.neon.125x125",
+    "name": {
+      "en": "Small Neon Sign",
+      "ru": "Неоновая табличка (маленькая)"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -692338819,
+    "image_name": "electric.battery.rechargable.small",
+    "name": {
+      "en": "Small Rechargeable Battery",
+      "ru": "Маленький аккумулятор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -695978112,
+    "image_name": "smart.alarm",
+    "name": {
+      "en": "Smart Alarm",
+      "ru": "Умная Сигнализация"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 988652725,
+    "image_name": "smart.switch",
+    "name": {
+      "en": "Smart Switch",
+      "ru": "Умный выключатель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -563624462,
+    "image_name": "electric.splitter",
+    "name": {
+      "en": "Splitter",
+      "ru": "Разветвитель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1258821205,
+    "image_name": "electric.spotlight",
+    "name": {
+      "en": "Spot Light",
+      "ru": "Прожектор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -781014061,
+    "image_name": "electric.sprinkler",
+    "name": {
+      "en": "Sprinkler",
+      "ru": "Разбрызгиватель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1049172752,
+    "image_name": "storageadaptor",
+    "name": {
+      "en": "Storage Adaptor",
+      "ru": "Адаптер хранилища"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1149964039,
+    "image_name": "storage.monitor",
+    "name": {
+      "en": "Storage Monitor",
+      "ru": "Счётчик ресурсов"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1951603367,
+    "image_name": "electric.switch",
+    "name": {
+      "en": "Switch",
+      "ru": "Выключатель"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1371909803,
+    "image_name": "electric.teslacoil",
+    "name": {
+      "en": "Tesla Coil",
+      "ru": "Катушка Тесла"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -295829489,
+    "image_name": "electric.generator.small",
+    "name": {
+      "en": "Test Generator",
+      "ru": "Тестовый генератор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 665332906,
+    "image_name": "electric.timer",
+    "name": {
+      "en": "Timer",
+      "ru": "Таймер"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -2134097299,
+    "image_name": "electric.spotlight.tripod",
+    "name": {
+      "en": "Tripod Spot Light",
+      "ru": "Направляемый светильник на штативе"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 381595627,
+    "image_name": "neonsigntr",
+    "name": {
+      "en": "Twitch Rivals Neon Sign",
+      "ru": "Неоновая вывеска Twitch Rivals"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1284169891,
+    "image_name": "waterpump",
+    "name": {
+      "en": "Water Pump",
+      "ru": "Водяной насос"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1819763926,
+    "image_name": "generator.wind.scrap",
+    "name": {
+      "en": "Wind Turbine",
+      "ru": "Ветрогенератор"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -144417939,
+    "image_name": "wiretool",
+    "name": {
+      "en": "Wire Tool",
+      "ru": "Провод"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": 1293102274,
+    "image_name": "electric.xorswitch",
+    "name": {
+      "en": "XOR Switch",
+      "ru": "Переключатель \"Исключающее ИЛИ\""
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1729415579,
+    "image_name": "radiationresisttea.advanced",
+    "name": {
+      "en": "Advanced Anti-Rad Tea",
+      "ru": "Продвинутый антирадиационный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1498613415,
+    "image_name": "advancedcoolingtea",
+    "name": {
+      "en": "Advanced Cooling Tea",
+      "ru": "Продвинутый охлаждающий чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -652889722,
+    "image_name": "advancedcraftingtea_quality",
+    "name": {
+      "en": "Advanced Crafting Quality Tea",
+      "ru": "Продвинутый чай на качество крафта"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1385721419,
+    "image_name": "advanceharvestingtea",
+    "name": {
+      "en": "Advanced Harvesting Tea",
+      "ru": "Продвинутый чай для разделки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -2123125470,
+    "image_name": "healingtea.advanced",
+    "name": {
+      "en": "Advanced Healing Tea",
+      "ru": "Продвинутый целебный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 603811464,
+    "image_name": "maxhealthtea.advanced",
+    "name": {
+      "en": "Advanced Max Health Tea",
+      "ru": "Продвинутый чай на макс. здоровье"
+    },
+    "category": "food"
+  },
+  {
+    "id": 2063916636,
+    "image_name": "oretea.advanced",
+    "name": {
+      "en": "Advanced Ore Tea",
+      "ru": "Продвинутый рудный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 2021351233,
+    "image_name": "radiationremovetea.advanced",
+    "name": {
+      "en": "Advanced Rad. Removal Tea",
+      "ru": "Продвинутый чай от радиации"
+    },
+    "category": "food"
+  },
+  {
+    "id": 524678627,
+    "image_name": "scraptea.advanced",
+    "name": {
+      "en": "Advanced Scrap Tea",
+      "ru": "Продвинутый чай на металлолом"
+    },
+    "category": "food"
+  },
+  {
+    "id": -334418777,
+    "image_name": "advancedwarmingtea",
+    "name": {
+      "en": "Advanced Warming Tea",
+      "ru": "Продвинутый согревающий чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -541206665,
+    "image_name": "woodtea.advanced",
+    "name": {
+      "en": "Advanced Wood Tea",
+      "ru": "Продвинутый древесный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 342438846,
+    "image_name": "fish.anchovy",
+    "name": {
+      "en": "Anchovy",
+      "ru": "Анчоус"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1548091822,
+    "image_name": "apple",
+    "name": {
+      "en": "Apple",
+      "ru": "Яблоко"
+    },
+    "category": "food"
+  },
+  {
+    "id": 4384538,
+    "image_name": "pie.apple",
+    "name": {
+      "en": "Apple Pie",
+      "ru": "Яблочный пирог"
+    },
+    "category": "food"
+  },
+  {
+    "id": -487356515,
+    "image_name": "radiationresisttea",
+    "name": {
+      "en": "Basic Anti-Rad Tea",
+      "ru": "Простой антирадиационный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1260229965,
+    "image_name": "coolingtea",
+    "name": {
+      "en": "Basic Cooling Tea",
+      "ru": "Простой охлаждающий чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 368008432,
+    "image_name": "craftingtea_quality",
+    "name": {
+      "en": "Basic Crafting Quality Tea",
+      "ru": "Простой чай на качество крафта"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1516531815,
+    "image_name": "harvestingtea",
+    "name": {
+      "en": "Basic Harvesting Tea",
+      "ru": "Простой чай для разделки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -929092070,
+    "image_name": "healingtea",
+    "name": {
+      "en": "Basic Healing Tea",
+      "ru": "Простой целебный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1184406448,
+    "image_name": "maxhealthtea",
+    "name": {
+      "en": "Basic Max Health Tea",
+      "ru": "Простой чай на макс. здоровье"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1480022580,
+    "image_name": "oretea",
+    "name": {
+      "en": "Basic Ore Tea",
+      "ru": "Простой рудный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 263834859,
+    "image_name": "scraptea",
+    "name": {
+      "en": "Basic Scrap Tea",
+      "ru": "Простой чай на металлолом"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1142222427,
+    "image_name": "warmingtea",
+    "name": {
+      "en": "Basic Warming Tea",
+      "ru": "Простой согревающий чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -649128577,
+    "image_name": "woodtea",
+    "name": {
+      "en": "Basic Wood Tea",
+      "ru": "Простой чай на дерево"
+    },
+    "category": "food"
+  },
+  {
+    "id": 2039177180,
+    "image_name": "pie.bear",
+    "name": {
+      "en": "Bear Pie",
+      "ru": "Пирог с медвежатиной"
+    },
+    "category": "food"
+  },
+  {
+    "id": 309017792,
+    "image_name": "pie.bigcat",
+    "name": {
+      "en": "Big Cat Pie",
+      "ru": "Пирог из большой кошки"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1771755747,
+    "image_name": "black.berry",
+    "name": {
+      "en": "Black Berry",
+      "ru": "Чёрная ягода"
+    },
+    "category": "food"
+  },
+  {
+    "id": 122783240,
+    "image_name": "clone.black.berry",
+    "name": {
+      "en": "Black Berry Clone",
+      "ru": "Клон чёрной ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1911552868,
+    "image_name": "seed.black.berry",
+    "name": {
+      "en": "Black Berry Seed",
+      "ru": "Семена чёрной ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1931713481,
+    "image_name": "black.raspberries",
+    "name": {
+      "en": "Black Raspberries",
+      "ru": "Ежевика"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1112162468,
+    "image_name": "blue.berry",
+    "name": {
+      "en": "Blue Berry",
+      "ru": "Синяя ягода"
+    },
+    "category": "food"
+  },
+  {
+    "id": 838831151,
+    "image_name": "clone.blue.berry",
+    "name": {
+      "en": "Blue Berry Clone",
+      "ru": "Клон синей ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 803954639,
+    "image_name": "seed.blue.berry",
+    "name": {
+      "en": "Blue Berry Seed",
+      "ru": "Семена голубой ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": -586342290,
+    "image_name": "blueberries",
+    "name": {
+      "en": "Blueberries",
+      "ru": "Черника"
+    },
+    "category": "food"
+  },
+  {
+    "id": 281099360,
+    "image_name": "bread.loaf",
+    "name": {
+      "en": "Bread Loaf",
+      "ru": "Хлеб"
+    },
+    "category": "food"
+  },
+  {
+    "id": -989755543,
+    "image_name": "bearmeat.burned",
+    "name": {
+      "en": "Burnt Bear Meat",
+      "ru": "Сгоревшая медвежатина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1973684065,
+    "image_name": "chicken.burned",
+    "name": {
+      "en": "Burnt Chicken",
+      "ru": "Сгоревшее куриное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -78533081,
+    "image_name": "deermeat.burned",
+    "name": {
+      "en": "Burnt Deer Meat",
+      "ru": "Сгоревшая оленина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1917703890,
+    "image_name": "horsemeat.burned",
+    "name": {
+      "en": "Burnt Horse Meat",
+      "ru": "Сгоревшая конина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -682687162,
+    "image_name": "humanmeat.burned",
+    "name": {
+      "en": "Burnt Human Meat",
+      "ru": "Сгоревшее человеческое мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1391703481,
+    "image_name": "meat.pork.burned",
+    "name": {
+      "en": "Burnt Pork",
+      "ru": "Сгоревшая свинина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1827479659,
+    "image_name": "wolfmeat.burned",
+    "name": {
+      "en": "Burnt Wolf Meat",
+      "ru": "Сгоревшее волчье мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1783512007,
+    "image_name": "cactusflesh",
+    "name": {
+      "en": "Cactus Flesh",
+      "ru": "Плоть кактуса"
+    },
+    "category": "food"
+  },
+  {
+    "id": -700591459,
+    "image_name": "can.beans",
+    "name": {
+      "en": "Can of Beans",
+      "ru": "Банка фасоли"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1941646328,
+    "image_name": "can.tuna",
+    "name": {
+      "en": "Can of Tuna",
+      "ru": "Банка тунца"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1121925526,
+    "image_name": "candycane",
+    "name": {
+      "en": "Candy Cane",
+      "ru": "Карамельная палочка"
+    },
+    "category": "food"
+  },
+  {
+    "id": -587989372,
+    "image_name": "fish.catfish",
+    "name": {
+      "en": "Catfish",
+      "ru": "Сом"
+    },
+    "category": "food"
+  },
+  {
+    "id": 120820987,
+    "image_name": "pie.chicken",
+    "name": {
+      "en": "Chicken Pie",
+      "ru": "Пирог с курицей"
+    },
+    "category": "food"
+  },
+  {
+    "id": -965336208,
+    "image_name": "chocolate",
+    "name": {
+      "en": "Chocolate Bar",
+      "ru": "Плитка шоколада"
+    },
+    "category": "food"
+  },
+  {
+    "id": -24571537,
+    "image_name": "coconut",
+    "name": {
+      "en": "Coconut",
+      "ru": "Кокос"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1873897110,
+    "image_name": "bearmeat.cooked",
+    "name": {
+      "en": "Cooked Bear Meat",
+      "ru": "Приготовленная медвежатина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1318837358,
+    "image_name": "bigcatmeat.cooked",
+    "name": {
+      "en": "Cooked Big Cat Meat",
+      "ru": "Приготовленное мясо большой кошки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1848736516,
+    "image_name": "chicken.cooked",
+    "name": {
+      "en": "Cooked Chicken",
+      "ru": "Жареное куриное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 392828520,
+    "image_name": "crocodilemeat.cooked",
+    "name": {
+      "en": "Cooked Crocodile Meat",
+      "ru": "Приготовленное мясо крокодила"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1509851560,
+    "image_name": "deermeat.cooked",
+    "name": {
+      "en": "Cooked Deer Meat",
+      "ru": "Приготовленная оленина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1668129151,
+    "image_name": "fish.cooked",
+    "name": {
+      "en": "Cooked Fish",
+      "ru": "Приготовленная рыба"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1162759543,
+    "image_name": "horsemeat.cooked",
+    "name": {
+      "en": "Cooked Horse Meat",
+      "ru": "Приготовленная конина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1536610005,
+    "image_name": "humanmeat.cooked",
+    "name": {
+      "en": "Cooked Human Meat",
+      "ru": "Приготовленное человеческое мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -242084766,
+    "image_name": "meat.pork.cooked",
+    "name": {
+      "en": "Cooked Pork",
+      "ru": "Жареная свинина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -170436364,
+    "image_name": "snakemeat.cooked",
+    "name": {
+      "en": "Cooked Snake Meat",
+      "ru": "Приготовленное змеиное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 813023040,
+    "image_name": "wolfmeat.cooked",
+    "name": {
+      "en": "Cooked Wolf Meat",
+      "ru": "Приготовленное волчье мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1367190888,
+    "image_name": "corn",
+    "name": {
+      "en": "Corn",
+      "ru": "Кукуруза"
+    },
+    "category": "food"
+  },
+  {
+    "id": -778875547,
+    "image_name": "clone.corn",
+    "name": {
+      "en": "Corn Clone",
+      "ru": "Клон кукурузы"
+    },
+    "category": "food"
+  },
+  {
+    "id": 998894949,
+    "image_name": "seed.corn",
+    "name": {
+      "en": "Corn Seed",
+      "ru": "Семена кукурузы"
+    },
+    "category": "food"
+  },
+  {
+    "id": 54265286,
+    "image_name": "pie.crocodile",
+    "name": {
+      "en": "Crocodile Pie",
+      "ru": "Пирог из крокодила"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1858828593,
+    "image_name": "egg",
+    "name": {
+      "en": "Egg",
+      "ru": "Яйцо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1785248332,
+    "image_name": "pie.fish",
+    "name": {
+      "en": "Fish Pie",
+      "ru": "Рыбный пирог"
+    },
+    "category": "food"
+  },
+  {
+    "id": -746030907,
+    "image_name": "granolabar",
+    "name": {
+      "en": "Granola Bar",
+      "ru": "Батончик мюсли"
+    },
+    "category": "food"
+  },
+  {
+    "id": 858486327,
+    "image_name": "green.berry",
+    "name": {
+      "en": "Green Berry",
+      "ru": "Зелёные ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1305326964,
+    "image_name": "clone.green.berry",
+    "name": {
+      "en": "Green Berry Clone",
+      "ru": "Клон зелёной ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1776128552,
+    "image_name": "seed.green.berry",
+    "name": {
+      "en": "Green Berry Seed",
+      "ru": "Семена зелёной ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": -568419968,
+    "image_name": "grub",
+    "name": {
+      "en": "Grub",
+      "ru": "Личинка"
+    },
+    "category": "food"
+  },
+  {
+    "id": -886280491,
+    "image_name": "clone.hemp",
+    "name": {
+      "en": "Hemp Clone",
+      "ru": "Клон конопли"
+    },
+    "category": "food"
+  },
+  {
+    "id": -237809779,
+    "image_name": "seed.hemp",
+    "name": {
+      "en": "Hemp Seed",
+      "ru": "Семена конопли"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1698937385,
+    "image_name": "fish.herring",
+    "name": {
+      "en": "Herring",
+      "ru": "Сельдь"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1513203236,
+    "image_name": "honeycomb",
+    "name": {
+      "en": "Honeycomb",
+      "ru": "Медовые соты"
+    },
+    "category": "food"
+  },
+  {
+    "id": 320438357,
+    "image_name": "pie.hunters",
+    "name": {
+      "en": "Hunters Pie",
+      "ru": "Охотничий пирог"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1601800933,
+    "image_name": "honey",
+    "name": {
+      "en": "Jar of Honey",
+      "ru": "Банка мёда"
+    },
+    "category": "food"
+  },
+  {
+    "id": -542577259,
+    "image_name": "fish.minnows",
+    "name": {
+      "en": "Minnows",
+      "ru": "Пескари"
+    },
+    "category": "food"
+  },
+  {
+    "id": -648077743,
+    "image_name": "mrspice.can",
+    "name": {
+      "en": "Mr Spice Can",
+      "ru": "Мистер Спайс бутылка"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1962971928,
+    "image_name": "mushroom",
+    "name": {
+      "en": "Mushroom",
+      "ru": "Гриб"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1904821376,
+    "image_name": "fish.orangeroughy",
+    "name": {
+      "en": "Orange Roughy",
+      "ru": "Атлантический большеголов"
+    },
+    "category": "food"
+  },
+  {
+    "id": 734320711,
+    "image_name": "orchid",
+    "name": {
+      "en": "Orchid",
+      "ru": "Орхидея"
+    },
+    "category": "food"
+  },
+  {
+    "id": -798662404,
+    "image_name": "clone.orchid",
+    "name": {
+      "en": "Orchid Clone",
+      "ru": "Клон орхидеи"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1004843240,
+    "image_name": "seed.orchid",
+    "name": {
+      "en": "Orchid Seed",
+      "ru": "Семена орхидей"
+    },
+    "category": "food"
+  },
+  {
+    "id": 286193827,
+    "image_name": "jar.pickle",
+    "name": {
+      "en": "Pickles",
+      "ru": "Соленья"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1467878256,
+    "image_name": "pie.pork",
+    "name": {
+      "en": "Pork Pie",
+      "ru": "Пирог со свининой"
+    },
+    "category": "food"
+  },
+  {
+    "id": -2086926071,
+    "image_name": "potato",
+    "name": {
+      "en": "Potato",
+      "ru": "Картофель"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1512054436,
+    "image_name": "clone.potato",
+    "name": {
+      "en": "Potato Clone",
+      "ru": "Клон картофеля"
+    },
+    "category": "food"
+  },
+  {
+    "id": -2084071424,
+    "image_name": "seed.potato",
+    "name": {
+      "en": "Potato Seed",
+      "ru": "Семена картофеля"
+    },
+    "category": "food"
+  },
+  {
+    "id": -567909622,
+    "image_name": "pumpkin",
+    "name": {
+      "en": "Pumpkin",
+      "ru": "Тыква"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1488408786,
+    "image_name": "pie.pumpkin",
+    "name": {
+      "en": "Pumpkin Pie",
+      "ru": "Тыквенный пирог"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1898094925,
+    "image_name": "clone.pumpkin",
+    "name": {
+      "en": "Pumpkin Plant Clone",
+      "ru": "Клон тыквы"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1511285251,
+    "image_name": "seed.pumpkin",
+    "name": {
+      "en": "Pumpkin Seed",
+      "ru": "Семена тыквы"
+    },
+    "category": "food"
+  },
+  {
+    "id": -33009419,
+    "image_name": "radiationresisttea.pure",
+    "name": {
+      "en": "Pure Anti-Rad Tea",
+      "ru": "Чистый антирадиационный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1121416193,
+    "image_name": "purecoolingtea",
+    "name": {
+      "en": "Pure Cooling Tea",
+      "ru": "Чистый охлаждающий чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 97903330,
+    "image_name": "purecraftingtea_quality",
+    "name": {
+      "en": "Pure Crafting Quality Tea",
+      "ru": "Чистый чай на качество крафта"
+    },
+    "category": "food"
+  },
+  {
+    "id": 377750553,
+    "image_name": "pureharvestingtea",
+    "name": {
+      "en": "Pure Harvesting Tea",
+      "ru": "Чистый чай для разделки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1677315902,
+    "image_name": "healingtea.pure",
+    "name": {
+      "en": "Pure Healing Tea",
+      "ru": "Чистый целебный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1712261904,
+    "image_name": "maxhealthtea.pure",
+    "name": {
+      "en": "Pure Max Health Tea",
+      "ru": "Чистый чай на макс. здоровье"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1729374708,
+    "image_name": "oretea.pure",
+    "name": {
+      "en": "Pure Ore Tea",
+      "ru": "Чистый рудный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1905387657,
+    "image_name": "radiationremovetea.pure",
+    "name": {
+      "en": "Pure Rad. Removal Tea",
+      "ru": "Чистый чай от радиации"
+    },
+    "category": "food"
+  },
+  {
+    "id": 2024467711,
+    "image_name": "scraptea.pure",
+    "name": {
+      "en": "Pure Scrap Tea",
+      "ru": "Чистый чай на скрап"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1476814093,
+    "image_name": "purewarmingtea",
+    "name": {
+      "en": "Pure Warming Tea",
+      "ru": "Чистый согревающий чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -557539629,
+    "image_name": "woodtea.pure",
+    "name": {
+      "en": "Pure Wood Tea",
+      "ru": "Чистый древесный чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -496584751,
+    "image_name": "radiationremovetea",
+    "name": {
+      "en": "Rad. Removal Tea",
+      "ru": "Убирающий Радиацию Чай"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1520560807,
+    "image_name": "bearmeat",
+    "name": {
+      "en": "Raw Bear Meat",
+      "ru": "Сырая медвежатина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -2095813057,
+    "image_name": "bigcatmeat",
+    "name": {
+      "en": "Raw Big Cat Meat",
+      "ru": "Сырое мясо большой кошки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1440987069,
+    "image_name": "chicken.raw",
+    "name": {
+      "en": "Raw Chicken Breast",
+      "ru": "Сырое куриное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1081599445,
+    "image_name": "crocodilemeat",
+    "name": {
+      "en": "Raw Crocodile Meat",
+      "ru": "Сырое мясо крокодила"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1422530437,
+    "image_name": "deermeat.raw",
+    "name": {
+      "en": "Raw Deer Meat",
+      "ru": "Сырая оленина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 989925924,
+    "image_name": "fish.raw",
+    "name": {
+      "en": "Raw Fish",
+      "ru": "Сырая рыба"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1130350864,
+    "image_name": "horsemeat.raw",
+    "name": {
+      "en": "Raw Horse Meat",
+      "ru": "Сырая конина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1709878924,
+    "image_name": "humanmeat.raw",
+    "name": {
+      "en": "Raw Human Meat",
+      "ru": "Сырое человеческое мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 621915341,
+    "image_name": "meat.boar",
+    "name": {
+      "en": "Raw Pork",
+      "ru": "Сырая свинина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -2100458529,
+    "image_name": "snakemeat",
+    "name": {
+      "en": "Raw Snake Meat",
+      "ru": "Сырое змеиное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -395377963,
+    "image_name": "wolfmeat.raw",
+    "name": {
+      "en": "Raw Wolf Meat",
+      "ru": "Сырое волчье мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1272194103,
+    "image_name": "red.berry",
+    "name": {
+      "en": "Red Berry",
+      "ru": "Красная ягода"
+    },
+    "category": "food"
+  },
+  {
+    "id": 2133269020,
+    "image_name": "clone.red.berry",
+    "name": {
+      "en": "Red Berry Clone",
+      "ru": "Клон красной ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 830839496,
+    "image_name": "seed.red.berry",
+    "name": {
+      "en": "Red Berry Seed",
+      "ru": "Семена красной ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1414245519,
+    "image_name": "rose",
+    "name": {
+      "en": "Rose",
+      "ru": "Роза"
+    },
+    "category": "food"
+  },
+  {
+    "id": -19360132,
+    "image_name": "clone.rose",
+    "name": {
+      "en": "Rose Clone",
+      "ru": "Клон розы"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1037472336,
+    "image_name": "seed.rose",
+    "name": {
+      "en": "Rose Seed",
+      "ru": "Семена роз"
+    },
+    "category": "food"
+  },
+  {
+    "id": 352130972,
+    "image_name": "apple.spoiled",
+    "name": {
+      "en": "Rotten Apple",
+      "ru": "Гнилое яблоко"
+    },
+    "category": "food"
+  },
+  {
+    "id": -851988960,
+    "image_name": "fish.salmon",
+    "name": {
+      "en": "Salmon",
+      "ru": "Лосось"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1654233406,
+    "image_name": "fish.sardine",
+    "name": {
+      "en": "Sardine",
+      "ru": "Сардина"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1768880890,
+    "image_name": "fish.smallshark",
+    "name": {
+      "en": "Small Shark",
+      "ru": "Маленькая акула"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1878764039,
+    "image_name": "fish.troutsmall",
+    "name": {
+      "en": "Small Trout",
+      "ru": "Малая форель"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1039528932,
+    "image_name": "smallwaterbottle",
+    "name": {
+      "en": "Small Water Bottle",
+      "ru": "Маленькая бутылка с водой"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1348294923,
+    "image_name": "bearmeat.spoiled",
+    "name": {
+      "en": "Spoiled Bear Meat",
+      "ru": "Испорченная медвежатина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 248643189,
+    "image_name": "bigcatmeat.spoiled",
+    "name": {
+      "en": "Spoiled Big Cat Meat",
+      "ru": "Испорченное мясо большой кошки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -751151717,
+    "image_name": "chicken.spoiled",
+    "name": {
+      "en": "Spoiled Chicken",
+      "ru": "Испорченное куриное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1796837031,
+    "image_name": "crocodilemeat.spoiled",
+    "name": {
+      "en": "Spoiled Crocodile Meat",
+      "ru": "Испорченное мясо крокодила"
+    },
+    "category": "food"
+  },
+  {
+    "id": -2035449523,
+    "image_name": "deermeat.spoiled",
+    "name": {
+      "en": "Spoiled Deer Meat",
+      "ru": "Испорченная оленина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1130729138,
+    "image_name": "fish.spoiled",
+    "name": {
+      "en": "Spoiled Fish Meat",
+      "ru": "Испорченная рыба"
+    },
+    "category": "food"
+  },
+  {
+    "id": -724146494,
+    "image_name": "horsemeat.spoiled",
+    "name": {
+      "en": "Spoiled Horse Meat",
+      "ru": "Испорченная конина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1272768630,
+    "image_name": "humanmeat.spoiled",
+    "name": {
+      "en": "Spoiled Human Meat",
+      "ru": "Испорченное человеческое мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1925646349,
+    "image_name": "porkmeat.spoiled",
+    "name": {
+      "en": "Spoiled Pork Meat",
+      "ru": "Испорченная свинина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1184215560,
+    "image_name": "spoiled.produce",
+    "name": {
+      "en": "Spoiled Produce",
+      "ru": "Испорченный продукт"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1616704051,
+    "image_name": "snakemeat.spoiled",
+    "name": {
+      "en": "Spoiled Snake Meat",
+      "ru": "Испорченное змеиное мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1167031859,
+    "image_name": "wolfmeat.spoiled",
+    "name": {
+      "en": "Spoiled Wolf Meat",
+      "ru": "Испорченное волчье мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -611118083,
+    "image_name": "sunflower",
+    "name": {
+      "en": "Sunflower",
+      "ru": "Подсолнечник"
+    },
+    "category": "food"
+  },
+  {
+    "id": 912235912,
+    "image_name": "clone.sunflower",
+    "name": {
+      "en": "Sunflower Clone",
+      "ru": "Клон подсолнечника"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1412103380,
+    "image_name": "seed.sunflower",
+    "name": {
+      "en": "Sunflower Seed",
+      "ru": "Семена подсолнечника"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1003665711,
+    "image_name": "supertea",
+    "name": {
+      "en": "Super Serum",
+      "ru": "Супер сыворотка"
+    },
+    "category": "food"
+  },
+  {
+    "id": -963820355,
+    "image_name": "pie.survivors",
+    "name": {
+      "en": "Survivor's Pie",
+      "ru": "Пирог выжившего"
+    },
+    "category": "food"
+  },
+  {
+    "id": 755224797,
+    "image_name": "bottle.vodka",
+    "name": {
+      "en": "Vodka Bottle",
+      "ru": "Бутылка водки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -119235651,
+    "image_name": "waterjug",
+    "name": {
+      "en": "Water Jug",
+      "ru": "Канистра для воды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1178325727,
+    "image_name": "wheat",
+    "name": {
+      "en": "Wheat",
+      "ru": "Пшеница"
+    },
+    "category": "food"
+  },
+  {
+    "id": 924598634,
+    "image_name": "clone.wheat",
+    "name": {
+      "en": "Wheat Clone",
+      "ru": "Клон пшеницы"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1790885730,
+    "image_name": "seed.wheat",
+    "name": {
+      "en": "Wheat Seed",
+      "ru": "Семена пшеницы"
+    },
+    "category": "food"
+  },
+  {
+    "id": 854447607,
+    "image_name": "white.berry",
+    "name": {
+      "en": "White Berry",
+      "ru": "Белая ягода"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1533551194,
+    "image_name": "clone.white.berry",
+    "name": {
+      "en": "White Berry Clone",
+      "ru": "Клон белой ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": -992286106,
+    "image_name": "seed.white.berry",
+    "name": {
+      "en": "White Berry Seed",
+      "ru": "Семена белой ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1770475779,
+    "image_name": "worm",
+    "name": {
+      "en": "Worm",
+      "ru": "Червь"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1660145984,
+    "image_name": "yellow.berry",
+    "name": {
+      "en": "Yellow Berry",
+      "ru": "Жёлтые ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 390728933,
+    "image_name": "clone.yellow.berry",
+    "name": {
+      "en": "Yellow Berry Clone",
+      "ru": "Клон жёлтой ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": -520133715,
+    "image_name": "seed.yellow.berry",
+    "name": {
+      "en": "Yellow Berry Seed",
+      "ru": "Семена жёлтой ягоды"
+    },
+    "category": "food"
+  },
+  {
+    "id": 680234026,
+    "image_name": "fish.yellowperch",
+    "name": {
+      "en": "Yellow Perch",
+      "ru": "Жёлтый окунь"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1840570710,
+    "image_name": "abovegroundpool",
+    "name": {
+      "en": "Above Ground Pool",
+      "ru": "Каркасный бассейн"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -2124352573,
+    "image_name": "fun.guitar",
+    "name": {
+      "en": "Acoustic Guitar",
+      "ru": "Акустическая гитара"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -321431890,
+    "image_name": "beachchair",
+    "name": {
+      "en": "Beach Chair",
+      "ru": "Лежак"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1621539785,
+    "image_name": "beachparasol",
+    "name": {
+      "en": "Beach Parasol",
+      "ru": "Пляжный зонтик"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 657352755,
+    "image_name": "beachtable",
+    "name": {
+      "en": "Beach Table",
+      "ru": "Пляжный столик"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -8312704,
+    "image_name": "beachtowel",
+    "name": {
+      "en": "Beach Towel",
+      "ru": "Пляжное полотенце"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1744298439,
+    "image_name": "firework.boomer.blue",
+    "name": {
+      "en": "Blue Boomer",
+      "ru": "Синий фейерверк"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -515830359,
+    "image_name": "firework.romancandle.blue",
+    "name": {
+      "en": "Blue Roman Candle",
+      "ru": "Римская свеча (синяя)"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1478094705,
+    "image_name": "boogieboard",
+    "name": {
+      "en": "Boogie Board",
+      "ru": "Доска"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1113501606,
+    "image_name": "boombox",
+    "name": {
+      "en": "Boom Box",
+      "ru": "Музыкальный центр"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1379036069,
+    "image_name": "fun.tambourine",
+    "name": {
+      "en": "Canbourine",
+      "ru": "Бубен"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 721798950,
+    "image_name": "vehicle.car_radio",
+    "name": {
+      "en": "Car Radio",
+      "ru": "Магнитола"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 476066818,
+    "image_name": "cassette",
+    "name": {
+      "en": "Cassette - Long",
+      "ru": "Кассета - Длинная"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -912398867,
+    "image_name": "cassette.medium",
+    "name": {
+      "en": "Cassette - Medium",
+      "ru": "Кассета - Средняя"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1523403414,
+    "image_name": "cassette.short",
+    "name": {
+      "en": "Cassette - Short",
+      "ru": "Кассета - Короткая"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1530414568,
+    "image_name": "fun.casetterecorder",
+    "name": {
+      "en": "Cassette Recorder",
+      "ru": "Кассетный диктофон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1324203999,
+    "image_name": "firework.boomer.champagne",
+    "name": {
+      "en": "Champagne Boomer",
+      "ru": "Фейерверк Брызги шампанского"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1603174987,
+    "image_name": "confetticannon",
+    "name": {
+      "en": "Confetti Cannon",
+      "ru": "Хлопушка с конфетти"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 968421290,
+    "image_name": "connected.speaker",
+    "name": {
+      "en": "Connected Speaker",
+      "ru": "Уличный громкоговоритель"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1049881973,
+    "image_name": "fun.cowbell",
+    "name": {
+      "en": "Cowbell",
+      "ru": "Колокольчик"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1895235349,
+    "image_name": "discoball",
+    "name": {
+      "en": "Disco Ball",
+      "ru": "Диско-шар"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 286648290,
+    "image_name": "discofloor",
+    "name": {
+      "en": "Disco Floor",
+      "ru": "Диско-танцпол"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1961560162,
+    "image_name": "lunar.firecrackers",
+    "name": {
+      "en": "Firecracker String",
+      "ru": "Лента фейерверков"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -656349006,
+    "image_name": "firework.boomer.green",
+    "name": {
+      "en": "Green Boomer",
+      "ru": "Зелёный фейерверк"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1306288356,
+    "image_name": "firework.romancandle.green",
+    "name": {
+      "en": "Green Roman Candle",
+      "ru": "Римская свеча (зелёная)"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -697981032,
+    "image_name": "innertube",
+    "name": {
+      "en": "Inner Tube",
+      "ru": "Спасательный круг"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -979951147,
+    "image_name": "fun.jerrycanguitar",
+    "name": {
+      "en": "Jerry Can Guitar",
+      "ru": "Гитара из канистры"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1330640246,
+    "image_name": "drumkit",
+    "name": {
+      "en": "Junkyard Drum Kit",
+      "ru": "Барабанная установка из хлама"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 853471967,
+    "image_name": "laserlight",
+    "name": {
+      "en": "Laser Light",
+      "ru": "Лазерный проектор"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -583379016,
+    "image_name": "megaphone",
+    "name": {
+      "en": "Megaphone",
+      "ru": "Мегафон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 39600618,
+    "image_name": "microphonestand",
+    "name": {
+      "en": "Microphone Stand",
+      "ru": "Микрофонная стойка"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -20045316,
+    "image_name": "mobilephone",
+    "name": {
+      "en": "Mobile Phone",
+      "ru": "Мобильный телефон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -961457160,
+    "image_name": "newyeargong",
+    "name": {
+      "en": "New Year Gong",
+      "ru": "Новогодний гонг"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -7270019,
+    "image_name": "firework.boomer.orange",
+    "name": {
+      "en": "Orange Boomer",
+      "ru": "Оранжевый фейерверк"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -733625651,
+    "image_name": "paddlingpool",
+    "name": {
+      "en": "Paddling Pool",
+      "ru": "Надувной бассейн"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -2040817543,
+    "image_name": "fun.flute",
+    "name": {
+      "en": "Pan Flute",
+      "ru": "Пан-флейта"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -379734527,
+    "image_name": "firework.boomer.pattern",
+    "name": {
+      "en": "Pattern Boomer",
+      "ru": "Фейерверк (настраиваемый)"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1442496789,
+    "image_name": "pinata",
+    "name": {
+      "en": "Pinata",
+      "ru": "Пиньята"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 273172220,
+    "image_name": "fun.trumpet",
+    "name": {
+      "en": "Plumber's Trumpet",
+      "ru": "Труба сантехника"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 576509618,
+    "image_name": "fun.boomboxportable",
+    "name": {
+      "en": "Portable Boom Box",
+      "ru": "Кассетный магнитофон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1553999294,
+    "image_name": "firework.boomer.red",
+    "name": {
+      "en": "Red Boomer",
+      "ru": "Красный фейерверк"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1486461488,
+    "image_name": "firework.romancandle.red",
+    "name": {
+      "en": "Red Roman Candle",
+      "ru": "Римская свеча (красная)"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -454370658,
+    "image_name": "firework.volcano.red",
+    "name": {
+      "en": "Red Volcano Firework",
+      "ru": "Фейерверк «Красный вулкан»"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -2107018088,
+    "image_name": "fun.bass",
+    "name": {
+      "en": "Shovel Bass",
+      "ru": "Бас-лопата"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1073015016,
+    "image_name": "skullspikes",
+    "name": {
+      "en": "Skull Spikes",
+      "ru": "Черепа на копьях"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -769647921,
+    "image_name": "skull.trophy",
+    "name": {
+      "en": "Skull Trophy",
+      "ru": "Трофей с черепом"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1819863051,
+    "image_name": "skylantern",
+    "name": {
+      "en": "Sky Lantern",
+      "ru": "Небесный фонарик"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -333406828,
+    "image_name": "sled",
+    "name": {
+      "en": "Sled",
+      "ru": "Санки"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -343857907,
+    "image_name": "soundlight",
+    "name": {
+      "en": "Sound Light",
+      "ru": "Музыкальная лампа"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1784406797,
+    "image_name": "fun.tuba",
+    "name": {
+      "en": "Sousaphone",
+      "ru": "Сузафон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1234878710,
+    "image_name": "telephone",
+    "name": {
+      "en": "Telephone",
+      "ru": "Телефон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -280223496,
+    "image_name": "firework.boomer.violet",
+    "name": {
+      "en": "Violet Boomer",
+      "ru": "Фиолетовый фейерверк"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -99886070,
+    "image_name": "firework.romancandle.violet",
+    "name": {
+      "en": "Violet Roman Candle",
+      "ru": "Римская свеча (фиолетовая)"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1538109120,
+    "image_name": "firework.volcano.violet",
+    "name": {
+      "en": "Violet Volcano Firework",
+      "ru": "Фейерверк «Фиолетовый вулкан»"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1272430949,
+    "image_name": "piano",
+    "name": {
+      "en": "Wheelbarrow Piano",
+      "ru": "Рояль на тачке"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 261913429,
+    "image_name": "firework.volcano",
+    "name": {
+      "en": "White Volcano Firework",
+      "ru": "Фейерверк «Белый вулкан»"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 204970153,
+    "image_name": "wrappedgift",
+    "name": {
+      "en": "Wrapped Gift",
+      "ru": "Завернутый подарок"
+    },
+    "category": "fun"
+  },
+  {
+    "id": 1094293920,
+    "image_name": "wrappingpaper",
+    "name": {
+      "en": "Wrapping Paper",
+      "ru": "Обёрточная бумага"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -211235948,
+    "image_name": "xylophone",
+    "name": {
+      "en": "Xylobone",
+      "ru": "Ксилофон"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -880494890,
+    "image_name": "abyss.barrel.horizontal",
+    "name": {
+      "en": "Abyss Horizontal Storage Tank",
+      "ru": "Горизонтальная бочка \"Бездны\""
+    },
+    "category": "items"
+  },
+  {
+    "id": -919882824,
+    "image_name": "abyss.barrel.vertical",
+    "name": {
+      "en": "Abyss Vertical Storage Tank",
+      "ru": "Вертикальная бочка \"Бездны\""
+    },
+    "category": "items"
+  },
+  {
+    "id": -2027793839,
+    "image_name": "xmas.advent",
+    "name": {
+      "en": "Advent Calendar",
+      "ru": "Рождественский Календарь"
+    },
+    "category": "items"
+  },
+  {
+    "id": 829641693,
+    "image_name": "anchor",
+    "name": {
+      "en": "Anchor",
+      "ru": "Якорь"
+    },
+    "category": "items"
+  },
+  {
+    "id": -946599113,
+    "image_name": "sign.artistcanvas.m",
+    "name": {
+      "en": "Artist Canvas Large",
+      "ru": "Большой художественный холст"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1609921845,
+    "image_name": "sign.artistcanvas.xs",
+    "name": {
+      "en": "Artist Canvas Small",
+      "ru": "Малый художественный холст"
+    },
+    "category": "items"
+  },
+  {
+    "id": -946599114,
+    "image_name": "sign.artistcanvas.l",
+    "name": {
+      "en": "Artist Canvas Standing",
+      "ru": "Напольный художественный холст"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1562867678,
+    "image_name": "sign.artistcanvas.xl",
+    "name": {
+      "en": "Artist Canvas XL",
+      "ru": "Художественный холст (XL)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -816769770,
+    "image_name": "sign.artistcanvas.xxl",
+    "name": {
+      "en": "Artist Canvas XXL",
+      "ru": "Художественный холст (XXL)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -903796529,
+    "image_name": "clothing.mod.armorinsert_asbestos",
+    "name": {
+      "en": "Asbestos Armor Insert",
+      "ru": "Асбестовая вставка для брони"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1652561344,
+    "image_name": "bamboo.barrel",
+    "name": {
+      "en": "Bamboo Barrel",
+      "ru": "Бамбуковая бочка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1099314009,
+    "image_name": "bbq",
+    "name": {
+      "en": "Barbeque",
+      "ru": "Гриль"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1274093662,
+    "image_name": "bathtub.planter",
+    "name": {
+      "en": "Bath Tub Planter",
+      "ru": "Грядка из ванны"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1104881824,
+    "image_name": "rug.bear",
+    "name": {
+      "en": "Bear Skin Rug",
+      "ru": "Медвежья шкура"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1273339005,
+    "image_name": "bed",
+    "name": {
+      "en": "Bed",
+      "ru": "Кровать"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1993693904,
+    "image_name": "boatbuildingstation",
+    "name": {
+      "en": "Boat Building Station",
+      "ru": "Лодочный план постройки"
+    },
+    "category": "items"
+  },
+  {
+    "id": 613961768,
+    "image_name": "botabag",
+    "name": {
+      "en": "Bota Bag",
+      "ru": "Бурдюк"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1946219319,
+    "image_name": "campfire",
+    "name": {
+      "en": "Camp Fire",
+      "ru": "Костёр"
+    },
+    "category": "items"
+  },
+  {
+    "id": 2130820932,
+    "image_name": "charity.plushy.01",
+    "name": {
+      "en": "Cancer Research UK Plushie",
+      "ru": "Плюшевый мишка для исследования рака в Великобритании"
+    },
+    "category": "items"
+  },
+  {
+    "id": -34498533,
+    "image_name": "cannon",
+    "name": {
+      "en": "Cannon",
+      "ru": "Пушка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1524980732,
+    "image_name": "carvable.pumpkin",
+    "name": {
+      "en": "Carvable Pumpkin",
+      "ru": "Резная тыква"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1534542921,
+    "image_name": "chair",
+    "name": {
+      "en": "Chair",
+      "ru": "Стул"
+    },
+    "category": "items"
+  },
+  {
+    "id": -2018158920,
+    "image_name": "chickencoop",
+    "name": {
+      "en": "Chicken Coop",
+      "ru": "Кисаторник"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1916473915,
+    "image_name": "chineselantern",
+    "name": {
+      "en": "Chinese Lantern",
+      "ru": "Китайский фонарь"
+    },
+    "category": "items"
+  },
+  {
+    "id": -770304148,
+    "image_name": "chineselanternwhite",
+    "name": {
+      "en": "Chinese Lantern White",
+      "ru": "Белый Китайский фонарь"
+    },
+    "category": "items"
+  },
+  {
+    "id": 359723196,
+    "image_name": "arcade.machine.chippy",
+    "name": {
+      "en": "Chippy Arcade Game",
+      "ru": "Игровой автомат \"Chippy\""
+    },
+    "category": "items"
+  },
+  {
+    "id": 2009734114,
+    "image_name": "xmasdoorwreath",
+    "name": {
+      "en": "Christmas Door Wreath",
+      "ru": "Рождественский венок"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1058261682,
+    "image_name": "xmas.lightstring",
+    "name": {
+      "en": "Christmas Lights",
+      "ru": "Рождественская гирлянда"
+    },
+    "category": "items"
+  },
+  {
+    "id": 794443127,
+    "image_name": "xmas.tree",
+    "name": {
+      "en": "Christmas Tree",
+      "ru": "Рождественская ёлка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -105343718,
+    "image_name": "circleballoon2025",
+    "name": {
+      "en": "Circle Balloon",
+      "ru": "Круглый шар"
+    },
+    "category": "items"
+  },
+  {
+    "id": 486661382,
+    "image_name": "clantable",
+    "name": {
+      "en": "Clan Table",
+      "ru": "Клановый стол"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1035206446,
+    "image_name": "mannequin",
+    "name": {
+      "en": "Clothing Mannequin",
+      "ru": "Манекен"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1440443161,
+    "image_name": "latexclumpballoon2025",
+    "name": {
+      "en": "Clump of Latex Balloons",
+      "ru": "Связка латексных шаров"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1488398114,
+    "image_name": "composter",
+    "name": {
+      "en": "Composter",
+      "ru": "Компостер"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1456143403,
+    "image_name": "cookingworkbench",
+    "name": {
+      "en": "Cooking Workbench",
+      "ru": "Кулинарный верстак"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1494014226,
+    "image_name": "discord.trophy",
+    "name": {
+      "en": "Discord Trophy",
+      "ru": "Трофей Discord"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1056824343,
+    "image_name": "skidoo",
+    "name": {
+      "en": "Diver propulsion vehicle",
+      "ru": "Подводный буксировщик"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1521286012,
+    "image_name": "sign.post.double",
+    "name": {
+      "en": "Double Sign Post",
+      "ru": "Указатель направления (Двойной)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -854270928,
+    "image_name": "dragondoorknocker",
+    "name": {
+      "en": "Dragon Door Knocker",
+      "ru": "Дверной молоток \"Дракон\""
+    },
+    "category": "items"
+  },
+  {
+    "id": 1588492232,
+    "image_name": "drone",
+    "name": {
+      "en": "Drone",
+      "ru": "Дрон"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1519126340,
+    "image_name": "dropbox",
+    "name": {
+      "en": "Drop Box",
+      "ru": "Ящик для хранения"
+    },
+    "category": "items"
+  },
+  {
+    "id": -979302481,
+    "image_name": "easterdoorwreath",
+    "name": {
+      "en": "Easter Door Wreath",
+      "ru": "Пасхальный венок"
+    },
+    "category": "items"
+  },
+  {
+    "id": 210787554,
+    "image_name": "iotable",
+    "name": {
+      "en": "Engineering Workbench",
+      "ru": "Инженерный верстак"
+    },
+    "category": "items"
+  },
+  {
+    "id": 674734128,
+    "image_name": "xmas.door.garland",
+    "name": {
+      "en": "Festive Doorway Garland",
+      "ru": "Праздничная дверная гирлянда"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1230433643,
+    "image_name": "xmas.double.door.garland",
+    "name": {
+      "en": "Festive Double Doorway Garland",
+      "ru": "Двойная дверная гирлянда"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1379835144,
+    "image_name": "xmas.window.garland",
+    "name": {
+      "en": "Festive Window Garland",
+      "ru": "Праздничная оконная гирлянда"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1913996738,
+    "image_name": "fishtrophy",
+    "name": {
+      "en": "Fish Trophy",
+      "ru": "Трофейное панно для рыбы"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1575635062,
+    "image_name": "frankensteintable",
+    "name": {
+      "en": "Frankenstein Table",
+      "ru": "Стол Франкенштейна"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1973949960,
+    "image_name": "gunrack.single.1.horizontal",
+    "name": {
+      "en": "Frontier Bolts Single Item Rack",
+      "ru": "Горизонтальный держатель для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": -52398594,
+    "image_name": "gunrack.single.3.horizontal",
+    "name": {
+      "en": "Frontier Horns Single Item Rack",
+      "ru": "Горизонтальный держатель для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": -849373693,
+    "image_name": "gunrack.single.2.horizontal",
+    "name": {
+      "en": "Frontier Horseshoe Single Item Rack",
+      "ru": "Горизонтальный держатель для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1999722522,
+    "image_name": "furnace",
+    "name": {
+      "en": "Furnace",
+      "ru": "Печь"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1923843855,
+    "image_name": "half.bamboo.shelves",
+    "name": {
+      "en": "Half Height Bamboo Shelves",
+      "ru": "Низкий бамбуковый стеллаж"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1578317134,
+    "image_name": "hazmat.plushy",
+    "name": {
+      "en": "Hazmat Plushy",
+      "ru": "Плюшевый антирадиационный костюм"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1696379844,
+    "image_name": "hazmatyoutooz",
+    "name": {
+      "en": "Hazmat Youtooz",
+      "ru": "Hazmat Youtooz"
+    },
+    "category": "items"
+  },
+  {
+    "id": 362863314,
+    "image_name": "heartballoon2025",
+    "name": {
+      "en": "Heart Balloon",
+      "ru": "Шар \"Сердце\""
+    },
+    "category": "items"
+  },
+  {
+    "id": 146221721,
+    "image_name": "heavy.scientist.plushie",
+    "name": {
+      "en": "Heavy Scientist Plushie",
+      "ru": "Плюшевый тяжелый ученый"
+    },
+    "category": "items"
+  },
+  {
+    "id": -722629980,
+    "image_name": "heavyscientistyoutooz",
+    "name": {
+      "en": "Heavy Scientist Youtooz",
+      "ru": "Heavy Scientist Youtooz"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1160881421,
+    "image_name": "hitchtroughcombo",
+    "name": {
+      "en": "Hitch & Trough",
+      "ru": "Коновязь и кормушка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1442559428,
+    "image_name": "hobobarrel",
+    "name": {
+      "en": "Hobo Barrel",
+      "ru": "Бочка-костёр"
+    },
+    "category": "items"
+  },
+  {
+    "id": -246672609,
+    "image_name": "gunrack.horizontal",
+    "name": {
+      "en": "Horizontal Weapon Rack",
+      "ru": "Стойка для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": -143132326,
+    "image_name": "sign.wooden.huge",
+    "name": {
+      "en": "Huge Wooden Sign",
+      "ru": "Огромная деревянная табличка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1242482355,
+    "image_name": "jackolantern.angry",
+    "name": {
+      "en": "Jack O Lantern Angry",
+      "ru": "Фонарь из тыквы (Злой)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1824943010,
+    "image_name": "jackolantern.happy",
+    "name": {
+      "en": "Jack O Lantern Happy",
+      "ru": "Фонарь из тыквы (Улыбающийся)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 190184021,
+    "image_name": "kayak",
+    "name": {
+      "en": "Kayak",
+      "ru": "Каяк"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1305765685,
+    "image_name": "krieg.storage.vertical",
+    "name": {
+      "en": "Krieg Storage Barrel",
+      "ru": "Бочка для хранения Грэка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 652793345,
+    "image_name": "krieg.storage.horizontal",
+    "name": {
+      "en": "Krieg Storage Crates",
+      "ru": "Ящики для хранения Krieg"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1697996440,
+    "image_name": "photoframe.landscape",
+    "name": {
+      "en": "Landscape Photo Frame",
+      "ru": "Горизонтальная фоторамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -845557339,
+    "image_name": "sign.pictureframe.landscape",
+    "name": {
+      "en": "Landscape Picture Frame",
+      "ru": "Картина в рамке (Маленькая)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1658229558,
+    "image_name": "lantern",
+    "name": {
+      "en": "Lantern",
+      "ru": "Светильник"
+    },
+    "category": "items"
+  },
+  {
+    "id": 23352662,
+    "image_name": "sign.hanging.banner.large",
+    "name": {
+      "en": "Large Banner Hanging",
+      "ru": "Большой флаг (Настенный)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 2070189026,
+    "image_name": "sign.pole.banner.large",
+    "name": {
+      "en": "Large Banner on pole",
+      "ru": "Большой флаг (На флагштоке)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1992717673,
+    "image_name": "furnace.large",
+    "name": {
+      "en": "Large Furnace",
+      "ru": "Большая печь"
+    },
+    "category": "items"
+  },
+  {
+    "id": 960673498,
+    "image_name": "huntingtrophylarge",
+    "name": {
+      "en": "Large Hunting Trophy",
+      "ru": "Большое трофейное панно"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1205084994,
+    "image_name": "photoframe.large",
+    "name": {
+      "en": "Large Photo Frame",
+      "ru": "Огромная фоторамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1581210395,
+    "image_name": "planter.large",
+    "name": {
+      "en": "Large Planter Box",
+      "ru": "Большая плантация"
+    },
+    "category": "items"
+  },
+  {
+    "id": 833533164,
+    "image_name": "box.wooden.large",
+    "name": {
+      "en": "Large Wood Box",
+      "ru": "Большой деревянный ящик"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1153652756,
+    "image_name": "sign.wooden.large",
+    "name": {
+      "en": "Large Wooden Sign",
+      "ru": "Большая деревянная табличка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1295301598,
+    "image_name": "latexballoon2025",
+    "name": {
+      "en": "Latex Balloon",
+      "ru": "Латексный шар"
+    },
+    "category": "items"
+  },
+  {
+    "id": 2047789913,
+    "image_name": "clothing.mod.armorinsert_lead",
+    "name": {
+      "en": "Lead Armor Insert",
+      "ru": "Свинцовая вставка для брони"
+    },
+    "category": "items"
+  },
+  {
+    "id": 242421166,
+    "image_name": "lightup.large",
+    "name": {
+      "en": "Light-Up Frame Large",
+      "ru": "Светящаяся рамка большая"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1691223771,
+    "image_name": "lightupframe.small",
+    "name": {
+      "en": "Light-Up Frame Small",
+      "ru": "Светящаяся рамка маленькая"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1950013766,
+    "image_name": "lightupframe.standing",
+    "name": {
+      "en": "Light-Up Frame Standing",
+      "ru": "Светящаяся рамка большая"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1801656689,
+    "image_name": "lightup.xl",
+    "name": {
+      "en": "Light-Up Frame XL",
+      "ru": "Большая рамка с подсветкой"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1447138977,
+    "image_name": "lightup.xxl",
+    "name": {
+      "en": "Light-Up Frame XXL",
+      "ru": "Light-Up Frame XXL"
+    },
+    "category": "items"
+  },
+  {
+    "id": -110921842,
+    "image_name": "locker",
+    "name": {
+      "en": "Locker",
+      "ru": "Шкаф для переодевания"
+    },
+    "category": "items"
+  },
+  {
+    "id": -586784898,
+    "image_name": "mailbox",
+    "name": {
+      "en": "Mail Box",
+      "ru": "Почтовый ящик"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1819233322,
+    "image_name": "sign.wooden.medium",
+    "name": {
+      "en": "Medium Wooden Sign",
+      "ru": "Средняя деревянная табличка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1099611828,
+    "image_name": "clothing.mod.armorinsert_metal",
+    "name": {
+      "en": "Metal Armor Insert",
+      "ru": "Металлическая вставка для брони"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1361520181,
+    "image_name": "minecart.planter",
+    "name": {
+      "en": "Minecart Planter",
+      "ru": "Плантация из вагонетки"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1259919256,
+    "image_name": "mixingtable",
+    "name": {
+      "en": "Mixing Table",
+      "ru": "Стол для смешивания"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1832422579,
+    "image_name": "sign.post.town",
+    "name": {
+      "en": "One Sided Town Sign Post",
+      "ru": "Доска объявлений (Односторонняя)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1836526520,
+    "image_name": "goldframe.small",
+    "name": {
+      "en": "Ornate Frame Small",
+      "ru": "Малая украшенная рамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1528767189,
+    "image_name": "goldframe.standing",
+    "name": {
+      "en": "Ornate Frame Standing",
+      "ru": "Напольная украшенная рамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1430299277,
+    "image_name": "goldframe.xl",
+    "name": {
+      "en": "Ornate Frame XL",
+      "ru": "Большая украшенная рамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1322332389,
+    "image_name": "goldframe.xxl",
+    "name": {
+      "en": "Ornate Frame XXL",
+      "ru": "Сверхбольшая украшенная рамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -996235148,
+    "image_name": "goldframe.large",
+    "name": {
+      "en": "Ornate Frame large",
+      "ru": "Большая золотая рамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 696029452,
+    "image_name": "map",
+    "name": {
+      "en": "Paper Map",
+      "ru": "Бумажная карта"
+    },
+    "category": "items"
+  },
+  {
+    "id": -952411326,
+    "image_name": "plank",
+    "name": {
+      "en": "Plank",
+      "ru": "Планка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1651220691,
+    "image_name": "pookie.bear",
+    "name": {
+      "en": "Pookie Bear",
+      "ru": "Медведь Пуки"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1779203452,
+    "image_name": "easel",
+    "name": {
+      "en": "Portable Easel",
+      "ru": "Переносной мольберт"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1729712564,
+    "image_name": "photoframe.portrait",
+    "name": {
+      "en": "Portrait Photo Frame",
+      "ru": "Портретная фоторамка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1370759135,
+    "image_name": "sign.pictureframe.portrait",
+    "name": {
+      "en": "Portrait Picture Frame",
+      "ru": "Рамка (Средняя)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 803222026,
+    "image_name": "box.repair.bench",
+    "name": {
+      "en": "Repair Bench",
+      "ru": "Ремонтный верстак"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1861522751,
+    "image_name": "research.table",
+    "name": {
+      "en": "Research Table",
+      "ru": "Исследовательский Стол"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1863063690,
+    "image_name": "rockingchair",
+    "name": {
+      "en": "Rocking Chair",
+      "ru": "Кресло качалка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 2130820933,
+    "image_name": "charity.plushy.02",
+    "name": {
+      "en": "Ronald McDonald House UK Plushie",
+      "ru": "Плюшевая игрушка \"Ronald McDonald House UK\""
+    },
+    "category": "items"
+  },
+  {
+    "id": -1985799200,
+    "image_name": "rug",
+    "name": {
+      "en": "Rug",
+      "ru": "Ковёр"
+    },
+    "category": "items"
+  },
+  {
+    "id": -465682601,
+    "image_name": "stocking.large",
+    "name": {
+      "en": "SUPER Stocking",
+      "ru": "Большой носок"
+    },
+    "category": "items"
+  },
+  {
+    "id": 405905095,
+    "image_name": "sail",
+    "name": {
+      "en": "Sail",
+      "ru": "Отплыть"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1950721418,
+    "image_name": "shelves",
+    "name": {
+      "en": "Salvaged Shelves",
+      "ru": "Самодельные полки"
+    },
+    "category": "items"
+  },
+  {
+    "id": 177226991,
+    "image_name": "scarecrow",
+    "name": {
+      "en": "Scarecrow",
+      "ru": "Пугало"
+    },
+    "category": "items"
+  },
+  {
+    "id": 445662288,
+    "image_name": "scientist.plushie",
+    "name": {
+      "en": "Scientist Plushie",
+      "ru": "Плюшевый ученый"
+    },
+    "category": "items"
+  },
+  {
+    "id": 567871954,
+    "image_name": "secretlabchair",
+    "name": {
+      "en": "Secretlab Chair",
+      "ru": "Игровое кресло SecretLab"
+    },
+    "category": "items"
+  },
+  {
+    "id": -498301781,
+    "image_name": "scrapframe.small",
+    "name": {
+      "en": "Shutter Frame Small",
+      "ru": "Золотая рамка, маленькая"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1774190142,
+    "image_name": "scrapframe.standing",
+    "name": {
+      "en": "Shutter Frame Standing",
+      "ru": "Золотая рамка, маленькая"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1244287686,
+    "image_name": "scrapframe.xl",
+    "name": {
+      "en": "Shutter Frame XL",
+      "ru": "Крупная рамка из металлолома"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1211801774,
+    "image_name": "scrapframe.xxl",
+    "name": {
+      "en": "Shutter Frame XXL",
+      "ru": "Сверхбольшая рамка из металлолома"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1094453063,
+    "image_name": "scrapframe.large",
+    "name": {
+      "en": "Shutter Frame large",
+      "ru": "Золотая рамка большая"
+    },
+    "category": "items"
+  },
+  {
+    "id": -430416124,
+    "image_name": "plantpot.single",
+    "name": {
+      "en": "Single Plant Pot",
+      "ru": "Горшок для одного растения"
+    },
+    "category": "items"
+  },
+  {
+    "id": -193519904,
+    "image_name": "single.shallow.wall.shelves",
+    "name": {
+      "en": "Single Shallow Wall Shelves",
+      "ru": "Узкая настенная полка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1542290441,
+    "image_name": "sign.post.single",
+    "name": {
+      "en": "Single Sign Post",
+      "ru": "Указатель направления"
+    },
+    "category": "items"
+  },
+  {
+    "id": -216116642,
+    "image_name": "skulldoorknocker",
+    "name": {
+      "en": "Skull Door Knocker",
+      "ru": "Дверной молоток «Череп»"
+    },
+    "category": "items"
+  },
+  {
+    "id": 553887414,
+    "image_name": "skull_fire_pit",
+    "name": {
+      "en": "Skull Fire Pit",
+      "ru": "Костёр из черепов"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1754948969,
+    "image_name": "sleepingbag",
+    "name": {
+      "en": "Sleeping Bag",
+      "ru": "Спальный мешок"
+    },
+    "category": "items"
+  },
+  {
+    "id": -2115299615,
+    "image_name": "smallengine",
+    "name": {
+      "en": "Small Boat Engine",
+      "ru": "Небольшой лодочный двигатель"
+    },
+    "category": "items"
+  },
+  {
+    "id": -869598982,
+    "image_name": "huntingtrophysmall",
+    "name": {
+      "en": "Small Hunting Trophy",
+      "ru": "Маленькое трофейное панно"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1293296287,
+    "image_name": "small.oil.refinery",
+    "name": {
+      "en": "Small Oil Refinery",
+      "ru": "Малый НПЗ"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1903654061,
+    "image_name": "planter.small",
+    "name": {
+      "en": "Small Planter Box",
+      "ru": "Маленькая плантация"
+    },
+    "category": "items"
+  },
+  {
+    "id": -158718378,
+    "image_name": "small_ramp",
+    "name": {
+      "en": "Small Ramp",
+      "ru": "Маленькая рампа"
+    },
+    "category": "items"
+  },
+  {
+    "id": -369760990,
+    "image_name": "stash.small",
+    "name": {
+      "en": "Small Stash",
+      "ru": "Маленький тайник"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1668858301,
+    "image_name": "stocking.small",
+    "name": {
+      "en": "Small Stocking",
+      "ru": "Маленький носок"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1138208076,
+    "image_name": "sign.wooden.small",
+    "name": {
+      "en": "Small Wooden Sign",
+      "ru": "Маленькая деревянная табличка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -870140677,
+    "image_name": "venom.snake",
+    "name": {
+      "en": "Snake Venom",
+      "ru": "Яд змеи"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1629293099,
+    "image_name": "snowman",
+    "name": {
+      "en": "Snowman",
+      "ru": "Снеговик"
+    },
+    "category": "items"
+  },
+  {
+    "id": -555122905,
+    "image_name": "sofa",
+    "name": {
+      "en": "Sofa",
+      "ru": "Диван"
+    },
+    "category": "items"
+  },
+  {
+    "id": 782422285,
+    "image_name": "sofa.pattern",
+    "name": {
+      "en": "Sofa - Pattern",
+      "ru": "Диван (с узором)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 963400638,
+    "image_name": "speechbubbleballoon2025",
+    "name": {
+      "en": "Speech Bubble Balloon",
+      "ru": "Речевой пузырь - воздушный шар"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1100422738,
+    "image_name": "spinner.wheel",
+    "name": {
+      "en": "Spinning Wheel",
+      "ru": "Вращающиеся Колесо"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1782127806,
+    "image_name": "starballoon2025",
+    "name": {
+      "en": "Star Balloon",
+      "ru": "Звездный воздушный шар"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1866909924,
+    "image_name": "steeringwheel.boat",
+    "name": {
+      "en": "Steering Wheel",
+      "ru": "Руль"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1535621066,
+    "image_name": "fireplace.stone",
+    "name": {
+      "en": "Stone Fireplace",
+      "ru": "Камин"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1421257350,
+    "image_name": "storage_barrel_c",
+    "name": {
+      "en": "Storage Barrel Horizontal",
+      "ru": "Горизонтальная бочка для хранения"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1307626005,
+    "image_name": "storage_barrel_b",
+    "name": {
+      "en": "Storage Barrel Vertical",
+      "ru": "Вертикальная бочка для хранения"
+    },
+    "category": "items"
+  },
+  {
+    "id": 559147458,
+    "image_name": "fishtrap.small",
+    "name": {
+      "en": "Survival Fish Trap",
+      "ru": "Рыболовная ловушка"
+    },
+    "category": "items"
+  },
+  {
+    "id": 593465182,
+    "image_name": "table",
+    "name": {
+      "en": "Table",
+      "ru": "Стол"
+    },
+    "category": "items"
+  },
+  {
+    "id": 121049755,
+    "image_name": "sign.pictureframe.tall",
+    "name": {
+      "en": "Tall Picture Frame",
+      "ru": "Рамка (Высокая)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 240752557,
+    "image_name": "gunrack_tall.horizontal",
+    "name": {
+      "en": "Tall Weapon Rack",
+      "ru": "Высокая стойка для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": 446206234,
+    "image_name": "torchholder",
+    "name": {
+      "en": "Torch Holder",
+      "ru": "Держатель для факела"
+    },
+    "category": "items"
+  },
+  {
+    "id": -280812482,
+    "image_name": "planter.triangle",
+    "name": {
+      "en": "Triangle Planter Box",
+      "ru": "Треугольная плантация"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1478445584,
+    "image_name": "tunalight",
+    "name": {
+      "en": "Tuna Can Lamp",
+      "ru": "Настенный светильник из консервной банки"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1604092540,
+    "image_name": "twitchrivals2025sofa",
+    "name": {
+      "en": "Twitch Rivals 2025 Sofa",
+      "ru": "Диван Twitch Rivals 2025"
+    },
+    "category": "items"
+  },
+  {
+    "id": 975983052,
+    "image_name": "trophy",
+    "name": {
+      "en": "Twitch Rivals Trophy",
+      "ru": "Трофей Twitch Rivals"
+    },
+    "category": "items"
+  },
+  {
+    "id": -901370585,
+    "image_name": "trophy2023",
+    "name": {
+      "en": "Twitch Rivals Trophy 2023",
+      "ru": "Трофей Twitch Rivals 2023"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1205607945,
+    "image_name": "sign.hanging",
+    "name": {
+      "en": "Two Sided Hanging Sign",
+      "ru": "Двухсторонняя вывеска"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1647846966,
+    "image_name": "sign.hanging.ornate",
+    "name": {
+      "en": "Two Sided Ornate Hanging Sign",
+      "ru": "Двухсторонняя вывеска с орнаментом"
+    },
+    "category": "items"
+  },
+  {
+    "id": 826309791,
+    "image_name": "sign.post.town.roof",
+    "name": {
+      "en": "Two Sided Town Sign Post",
+      "ru": "Доска объявлений (Двухсторонняя)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 198438816,
+    "image_name": "vending.machine",
+    "name": {
+      "en": "Vending Machine",
+      "ru": "Торговый автомат"
+    },
+    "category": "items"
+  },
+  {
+    "id": 656829501,
+    "image_name": "electric.wallcabinet",
+    "name": {
+      "en": "Wall Cabinet",
+      "ru": "Настенный шкаф"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1344017968,
+    "image_name": "wantedposter",
+    "name": {
+      "en": "Wanted Poster",
+      "ru": "Плакат \"В розыске\""
+    },
+    "category": "items"
+  },
+  {
+    "id": -1863559151,
+    "image_name": "water.barrel",
+    "name": {
+      "en": "Water Barrel",
+      "ru": "Бочка с водой"
+    },
+    "category": "items"
+  },
+  {
+    "id": 2114754781,
+    "image_name": "water.purifier",
+    "name": {
+      "en": "Water Purifier",
+      "ru": "Опреснитель воды"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1132603396,
+    "image_name": "gunrack_stand",
+    "name": {
+      "en": "Weapon Rack Stand",
+      "ru": "Вертикальная стойка для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": -526026171,
+    "image_name": "wicker.barrel",
+    "name": {
+      "en": "Wicker Barrel",
+      "ru": "Плетёная бочка"
+    },
+    "category": "items"
+  },
+  {
+    "id": -96256997,
+    "image_name": "gunrack_wide.horizontal",
+    "name": {
+      "en": "Wide Weapon Rack",
+      "ru": "Широкая стойка для оружия"
+    },
+    "category": "items"
+  },
+  {
+    "id": -180129657,
+    "image_name": "box.wooden",
+    "name": {
+      "en": "Wood Storage Box",
+      "ru": "Деревянный ящик"
+    },
+    "category": "items"
+  },
+  {
+    "id": -593892112,
+    "image_name": "clothing.mod.armorinsert_wood",
+    "name": {
+      "en": "Wooden Armor Insert",
+      "ru": "Деревянная вставка для брони"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1524187186,
+    "image_name": "workbench1",
+    "name": {
+      "en": "Workbench Level 1",
+      "ru": "Верстак первого уровня"
+    },
+    "category": "items"
+  },
+  {
+    "id": -41896755,
+    "image_name": "workbench2",
+    "name": {
+      "en": "Workbench Level 2",
+      "ru": "Верстак второго уровня"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1607980696,
+    "image_name": "workbench3",
+    "name": {
+      "en": "Workbench Level 3",
+      "ru": "Верстак третьего уровня"
+    },
+    "category": "items"
+  },
+  {
+    "id": -996185386,
+    "image_name": "sign.pictureframe.xl",
+    "name": {
+      "en": "XL Picture Frame",
+      "ru": "Картина в рамке (Большая)"
+    },
+    "category": "items"
+  },
+  {
+    "id": 98508942,
+    "image_name": "sign.pictureframe.xxl",
+    "name": {
+      "en": "XXL Picture Frame",
+      "ru": "Картина в рамке (Огромная)"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1432674913,
+    "image_name": "antiradpills",
+    "name": {
+      "en": "Anti-Radiation Pills",
+      "ru": "Противорадиационные таблетки"
+    },
+    "category": "medical"
+  },
+  {
+    "id": -2072273936,
+    "image_name": "bandage",
+    "name": {
+      "en": "Bandage",
+      "ru": "Бинт"
+    },
+    "category": "medical"
+  },
+  {
+    "id": 1776460938,
+    "image_name": "blood",
+    "name": {
+      "en": "Blood",
+      "ru": "Кровь"
+    },
+    "category": "medical"
+  },
+  {
+    "id": 254522515,
+    "image_name": "largemedkit",
+    "name": {
+      "en": "Large Medkit",
+      "ru": "Большая аптечка"
+    },
+    "category": "medical"
+  },
+  {
+    "id": 1079279582,
+    "image_name": "syringe.medical",
+    "name": {
+      "en": "Medical Syringe",
+      "ru": "Медицинский шприц"
+    },
+    "category": "medical"
+  },
+  {
+    "id": -484206264,
+    "image_name": "keycard_blue",
+    "name": {
+      "en": "Blue Keycard",
+      "ru": "Синяя карта доступа"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 844440409,
+    "image_name": "easter.bronzeegg",
+    "name": {
+      "en": "Bronze Egg",
+      "ru": "Бронзовое яйцо"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1230691307,
+    "image_name": "captainslog",
+    "name": {
+      "en": "Captain's Log",
+      "ru": "Журнал капитана"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 573676040,
+    "image_name": "coffin.storage",
+    "name": {
+      "en": "Coffin",
+      "ru": "Гроб"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1242522330,
+    "image_name": "cursedcauldron",
+    "name": {
+      "en": "Cursed Cauldron",
+      "ru": "Проклятый котелок"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1667224349,
+    "image_name": "xmas.decoration.baubels",
+    "name": {
+      "en": "Decorative Baubels",
+      "ru": "Декоративные ёлочные игрушки"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1686524871,
+    "image_name": "xmas.decoration.gingerbreadmen",
+    "name": {
+      "en": "Decorative Gingerbread Men",
+      "ru": "Декоративный пряничный человечек"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -129230242,
+    "image_name": "xmas.decoration.pinecone",
+    "name": {
+      "en": "Decorative Pinecones",
+      "ru": "Декоративные шишки"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -209869746,
+    "image_name": "xmas.decoration.candycanes",
+    "name": {
+      "en": "Decorative Plastic Candy Canes",
+      "ru": "Декоративная карамельная трость"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 2106561762,
+    "image_name": "xmas.decoration.tinsel",
+    "name": {
+      "en": "Decorative Tinsel",
+      "ru": "Декоративная мишура"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1112793865,
+    "image_name": "door.key",
+    "name": {
+      "en": "Door Key",
+      "ru": "Дверной ключ"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1856217390,
+    "image_name": "easterbasket",
+    "name": {
+      "en": "Egg Basket",
+      "ru": "Корзина для яиц"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1973785141,
+    "image_name": "fogmachine",
+    "name": {
+      "en": "Fogger-3000",
+      "ru": "Фоггер-3000"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -695124222,
+    "image_name": "giantcandycanedecor",
+    "name": {
+      "en": "Giant Candy Decor",
+      "ru": "Огромный декоративный леденец"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 282103175,
+    "image_name": "giantlollipops",
+    "name": {
+      "en": "Giant Lollipop Decor",
+      "ru": "Гигантские декоративные леденцы на палочке"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1002156085,
+    "image_name": "easter.goldegg",
+    "name": {
+      "en": "Gold Egg",
+      "ru": "Золотое яйцо"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 809199956,
+    "image_name": "gravestone",
+    "name": {
+      "en": "Gravestone",
+      "ru": "Надгробие"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1679267738,
+    "image_name": "wall.graveyard.fence",
+    "name": {
+      "en": "Graveyard Fence",
+      "ru": "Кладбищенский забор"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 37122747,
+    "image_name": "keycard_green",
+    "name": {
+      "en": "Green Keycard",
+      "ru": "Зелёная карта доступа"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -888153050,
+    "image_name": "halloween.candy",
+    "name": {
+      "en": "Halloween Candy",
+      "ru": "Хэллоуинские сладости"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 209218760,
+    "image_name": "head.bag",
+    "name": {
+      "en": "Head Bag",
+      "ru": "Мешок с трофеем"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -489848205,
+    "image_name": "largecandles",
+    "name": {
+      "en": "Large Candle Set",
+      "ru": "Большой набор свечей"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 479292118,
+    "image_name": "halloween.lootbag.large",
+    "name": {
+      "en": "Large Loot Bag",
+      "ru": "Большой мешок с добычей"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1622660759,
+    "image_name": "xmas.present.large",
+    "name": {
+      "en": "Large Present",
+      "ru": "Большой подарок"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1899610628,
+    "image_name": "halloween.lootbag.medium",
+    "name": {
+      "en": "Medium Loot Bag",
+      "ru": "Средний мешок с добычей"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 756517185,
+    "image_name": "xmas.present.medium",
+    "name": {
+      "en": "Medium Present",
+      "ru": "Средний подарок"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1414245162,
+    "image_name": "note",
+    "name": {
+      "en": "Note",
+      "ru": "Заметка"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -126305173,
+    "image_name": "easter.paintedeggs",
+    "name": {
+      "en": "Painted Egg",
+      "ru": "Окрашенное яйцо"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 62577426,
+    "image_name": "photo",
+    "name": {
+      "en": "Photograph",
+      "ru": "Фотография"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1346158228,
+    "image_name": "pumpkinbasket",
+    "name": {
+      "en": "Pumpkin Basket",
+      "ru": "Тыквенная корзина"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1880870149,
+    "image_name": "keycard_red",
+    "name": {
+      "en": "Red Keycard",
+      "ru": "Красная карта доступа"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268132,
+    "image_name": "rustige_egg_b",
+    "name": {
+      "en": "Rustigé Egg - Blue",
+      "ru": "Синее яйцо Фаберже"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268127,
+    "image_name": "rustige_egg_g",
+    "name": {
+      "en": "Rustigé Egg - Cerulean",
+      "ru": "Лазурное яйцо Фаберже"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268125,
+    "image_name": "rustige_egg_e",
+    "name": {
+      "en": "Rustigé Egg - Green",
+      "ru": "Зелёное яйцо Фаберже"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268126,
+    "image_name": "rustige_egg_d",
+    "name": {
+      "en": "Rustigé Egg - Ivory",
+      "ru": "Яйцо Фаберже - Слоновая Кость"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268131,
+    "image_name": "rustige_egg_c",
+    "name": {
+      "en": "Rustigé Egg - Purple",
+      "ru": "Фиолетовое яйцо Фаберже"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268129,
+    "image_name": "rustige_egg_a",
+    "name": {
+      "en": "Rustigé Egg - Red",
+      "ru": "Красное яйцо Фаберже"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -173268128,
+    "image_name": "rustige_egg_f",
+    "name": {
+      "en": "Rustigé Egg - White",
+      "ru": "Белое яйцо Фаберже"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1368584029,
+    "image_name": "sickle",
+    "name": {
+      "en": "Sickle",
+      "ru": "Серп"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1757265204,
+    "image_name": "easter.silveregg",
+    "name": {
+      "en": "Silver Egg",
+      "ru": "Серебряное яйцо"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -2058362263,
+    "image_name": "smallcandles",
+    "name": {
+      "en": "Small Candle Set",
+      "ru": "Малый набор свечей"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1319617282,
+    "image_name": "halloween.lootbag.small",
+    "name": {
+      "en": "Small Loot Bag",
+      "ru": "Маленький мешок с добычей"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -722241321,
+    "image_name": "xmas.present.small",
+    "name": {
+      "en": "Small Present",
+      "ru": "Маленький подарок"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1358643074,
+    "image_name": "snowmachine",
+    "name": {
+      "en": "Snow Machine",
+      "ru": "Генератор снега"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 882559853,
+    "image_name": "spiderweb",
+    "name": {
+      "en": "Spider Webs",
+      "ru": "Паутина"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1885488976,
+    "image_name": "spookyspeaker",
+    "name": {
+      "en": "Spooky Speaker",
+      "ru": "Жуткий громкоговоритель"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1331212963,
+    "image_name": "xmas.decoration.star",
+    "name": {
+      "en": "Star Tree Topper",
+      "ru": "Ёлочная звезда"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 2104517339,
+    "image_name": "strobelight",
+    "name": {
+      "en": "Strobe Light",
+      "ru": "Стробоскопическая лампа"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 1723747470,
+    "image_name": "xmas.decoration.lights",
+    "name": {
+      "en": "Tree Lights",
+      "ru": "Ёлочная гирлянда"
+    },
+    "category": "misc"
+  },
+  {
+    "id": 699075597,
+    "image_name": "woodcross",
+    "name": {
+      "en": "Wooden Cross",
+      "ru": "Деревянный крест"
+    },
+    "category": "misc"
+  },
+  {
+    "id": -1018587433,
+    "image_name": "fat.animal",
+    "name": {
+      "en": "Animal Fat",
+      "ru": "Животный жир"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 609049394,
+    "image_name": "battery.small",
+    "name": {
+      "en": "Battery - Small",
+      "ru": "Аккумулятор - маленький"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1811234677,
+    "image_name": "nucleus",
+    "name": {
+      "en": "Beehive Nucleus",
+      "ru": "Ядро улья"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 1719978075,
+    "image_name": "bone.fragments",
+    "name": {
+      "en": "Bone Fragments",
+      "ru": "Обломки костей"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 634478325,
+    "image_name": "cctv.camera",
+    "name": {
+      "en": "CCTV Camera",
+      "ru": "Камера видеонаблюдения"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1938052175,
+    "image_name": "charcoal",
+    "name": {
+      "en": "Charcoal",
+      "ru": "Уголь"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -858312878,
+    "image_name": "cloth",
+    "name": {
+      "en": "Cloth",
+      "ru": "Ткань"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 204391461,
+    "image_name": "coal",
+    "name": {
+      "en": "Coal :(",
+      "ru": "Уголь :("
+    },
+    "category": "resources"
+  },
+  {
+    "id": -321733511,
+    "image_name": "crude.oil",
+    "name": {
+      "en": "Crude Oil",
+      "ru": "Сырая нефть"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 1568388703,
+    "image_name": "diesel_barrel",
+    "name": {
+      "en": "Diesel Fuel",
+      "ru": "Дизельное топливо"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 1655979682,
+    "image_name": "can.beans.empty",
+    "name": {
+      "en": "Empty Can Of Beans",
+      "ru": "Пустая банка из-под фасоли"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1557377697,
+    "image_name": "can.tuna.empty",
+    "name": {
+      "en": "Empty Tuna Can",
+      "ru": "Пустая банка из-под тунца"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -592016202,
+    "image_name": "explosives",
+    "name": {
+      "en": "Explosives",
+      "ru": "Взрывчатое вещество"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -930193596,
+    "image_name": "fertilizer",
+    "name": {
+      "en": "Fertilizer",
+      "ru": "Удобрение"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -265876753,
+    "image_name": "gunpowder",
+    "name": {
+      "en": "Gun Powder",
+      "ru": "Порох"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 317398316,
+    "image_name": "metal.refined",
+    "name": {
+      "en": "High Quality Metal",
+      "ru": "Металл высокого качества"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1982036270,
+    "image_name": "hq.metal.ore",
+    "name": {
+      "en": "High Quality Metal Ore",
+      "ru": "Высококачественная железная руда"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1579932985,
+    "image_name": "horsedung",
+    "name": {
+      "en": "Horse Dung",
+      "ru": "Конский навоз"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 996293980,
+    "image_name": "skull.human",
+    "name": {
+      "en": "Human Skull",
+      "ru": "Череп человека"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 1381010055,
+    "image_name": "leather",
+    "name": {
+      "en": "Leather",
+      "ru": "Кожа"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -946369541,
+    "image_name": "lowgradefuel",
+    "name": {
+      "en": "Low Grade Fuel",
+      "ru": "Топливо низкого качества"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 69511070,
+    "image_name": "metal.fragments",
+    "name": {
+      "en": "Metal Fragments",
+      "ru": "Фрагменты металла"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -4031221,
+    "image_name": "metal.ore",
+    "name": {
+      "en": "Metal Ore",
+      "ru": "Железная руда"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1779183908,
+    "image_name": "paper",
+    "name": {
+      "en": "Paper",
+      "ru": "Бумага"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -804769727,
+    "image_name": "plantfiber",
+    "name": {
+      "en": "Plant Fiber",
+      "ru": "Растительные Волокна"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 1811780502,
+    "image_name": "water.radioactive",
+    "name": {
+      "en": "Radioactive Water",
+      "ru": "Радиоактивная вода"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -277057363,
+    "image_name": "water.salt",
+    "name": {
+      "en": "Salt Water",
+      "ru": "Солёная вода"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -932201673,
+    "image_name": "scrap",
+    "name": {
+      "en": "Scrap",
+      "ru": "Металлолом"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -2099697608,
+    "image_name": "stones",
+    "name": {
+      "en": "Stones",
+      "ru": "Камни"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1581843485,
+    "image_name": "sulfur",
+    "name": {
+      "en": "Sulfur",
+      "ru": "Сера"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1157596551,
+    "image_name": "sulfur.ore",
+    "name": {
+      "en": "Sulfur Ore",
+      "ru": "Серная руда"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 1523195708,
+    "image_name": "targeting.computer",
+    "name": {
+      "en": "Targeting Computer",
+      "ru": "Компьютер наведения"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1779180711,
+    "image_name": "water",
+    "name": {
+      "en": "Water",
+      "ru": "Вода"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 2048317869,
+    "image_name": "skull.wolf",
+    "name": {
+      "en": "Wolf Skull",
+      "ru": "Череп волка"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -151838493,
+    "image_name": "wood",
+    "name": {
+      "en": "Wood",
+      "ru": "Дерево"
+    },
+    "category": "resources"
+  },
+  {
+    "id": -1262185308,
+    "image_name": "tool.binoculars",
+    "name": {
+      "en": "Binoculars",
+      "ru": "Бинокль"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1973165031,
+    "image_name": "cakefiveyear",
+    "name": {
+      "en": "Birthday Cake",
+      "ru": "Праздничный торт"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1316706473,
+    "image_name": "tool.camera",
+    "name": {
+      "en": "Camera",
+      "ru": "Фотоаппарат"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1104520648,
+    "image_name": "chainsaw",
+    "name": {
+      "en": "Chainsaw",
+      "ru": "Бензопила"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 594041190,
+    "image_name": "compass",
+    "name": {
+      "en": "Compass",
+      "ru": "Компас"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -451310088,
+    "image_name": "documents",
+    "name": {
+      "en": "Documents",
+      "ru": "Документы"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1707425764,
+    "image_name": "fishing.tackle",
+    "name": {
+      "en": "Fishing Tackle",
+      "ru": "Рыболовная снасть"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 304481038,
+    "image_name": "flare",
+    "name": {
+      "en": "Flare",
+      "ru": "Сигнальная шашка"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -196667575,
+    "image_name": "flashlight.held",
+    "name": {
+      "en": "Flashlight",
+      "ru": "Фонарик"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1803831286,
+    "image_name": "toolgun",
+    "name": {
+      "en": "Garry's Mod Tool Gun",
+      "ru": "Инструмент из Garry's Mod"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 999690781,
+    "image_name": "geiger.counter",
+    "name": {
+      "en": "Geiger Counter",
+      "ru": "Счётчик Гейгера"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 200773292,
+    "image_name": "hammer",
+    "name": {
+      "en": "Hammer",
+      "ru": "Киянка"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -839576748,
+    "image_name": "handcuffs",
+    "name": {
+      "en": "Handcuffs",
+      "ru": "Наручники"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1569882109,
+    "image_name": "fishingrod.handmade",
+    "name": {
+      "en": "Handmade Fishing Rod",
+      "ru": "Самодельная удочка"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1252059217,
+    "image_name": "hatchet",
+    "name": {
+      "en": "Hatchet",
+      "ru": "Топор"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -2001260025,
+    "image_name": "tool.instant_camera",
+    "name": {
+      "en": "Instant Camera",
+      "ru": "Полароид"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1488979457,
+    "image_name": "jackhammer",
+    "name": {
+      "en": "Jackhammer",
+      "ru": "Отбойный молоток"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1168856825,
+    "image_name": "metal.detector",
+    "name": {
+      "en": "Metal Detector",
+      "ru": "Металлоискатель"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1302129395,
+    "image_name": "pickaxe",
+    "name": {
+      "en": "Pickaxe",
+      "ru": "Кирка"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 596469572,
+    "image_name": "rf.detonator",
+    "name": {
+      "en": "RF Transmitter",
+      "ru": "Дистанционный пульт"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 963906841,
+    "image_name": "rock",
+    "name": {
+      "en": "Rock",
+      "ru": "Камень"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -262590403,
+    "image_name": "axe.salvaged",
+    "name": {
+      "en": "Salvaged Axe",
+      "ru": "Самодельный топор"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1506397857,
+    "image_name": "hammer.salvaged",
+    "name": {
+      "en": "Salvaged Hammer",
+      "ru": "Самодельный молот"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1780802565,
+    "image_name": "icepick.salvaged",
+    "name": {
+      "en": "Salvaged Icepick",
+      "ru": "Самодельный ледоруб"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1878475007,
+    "image_name": "explosive.satchel",
+    "name": {
+      "en": "Satchel Charge",
+      "ru": "Связка бобовых гранат"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1536855921,
+    "image_name": "shovel",
+    "name": {
+      "en": "Shovel",
+      "ru": "Лопата"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1263920163,
+    "image_name": "grenade.smoke",
+    "name": {
+      "en": "Smoke Grenade",
+      "ru": "Дымовая граната"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -596876839,
+    "image_name": "spraycan",
+    "name": {
+      "en": "Spray Can",
+      "ru": "Баллончик"
+    },
+    "category": "tools"
+  },
+  {
+    "id": -1583967946,
+    "image_name": "stonehatchet",
+    "name": {
+      "en": "Stone Hatchet",
+      "ru": "Каменный топор"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 171931394,
+    "image_name": "stone.pickaxe",
+    "name": {
+      "en": "Stone Pickaxe",
+      "ru": "Каменная кирка"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1397052267,
+    "image_name": "supply.signal",
+    "name": {
+      "en": "Supply Signal",
+      "ru": "Сигнальная граната"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1975934948,
+    "image_name": "surveycharge",
+    "name": {
+      "en": "Survey Charge",
+      "ru": "Геологический заряд"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1248356124,
+    "image_name": "explosive.timed",
+    "name": {
+      "en": "Timed Explosive Charge",
+      "ru": "Взрывчатка с таймером"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 795236088,
+    "image_name": "torch",
+    "name": {
+      "en": "Torch",
+      "ru": "Факел"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1629564540,
+    "image_name": "wallpaper.tool",
+    "name": {
+      "en": "Wallpaper Tool",
+      "ru": "Инструмент для обоев"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 1424075905,
+    "image_name": "bucket.water",
+    "name": {
+      "en": "Water Bucket",
+      "ru": "Ведро воды"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 528668503,
+    "image_name": "flameturret",
+    "name": {
+      "en": "Flame Turret",
+      "ru": "Огнемётная турель"
+    },
+    "category": "traps"
+  },
+  {
+    "id": -1663759755,
+    "image_name": "trap.landmine",
+    "name": {
+      "en": "Homemade Landmine",
+      "ru": "Самодельная мина"
+    },
+    "category": "traps"
+  },
+  {
+    "id": -1009359066,
+    "image_name": "samsite",
+    "name": {
+      "en": "SAM Site",
+      "ru": "Зенитная турель"
+    },
+    "category": "traps"
+  },
+  {
+    "id": 352499047,
+    "image_name": "guntrap",
+    "name": {
+      "en": "Shotgun Trap",
+      "ru": "Ловушка с дробовиком"
+    },
+    "category": "traps"
+  },
+  {
+    "id": -1850297170,
+    "image_name": "spikes.trap",
+    "name": {
+      "en": "Small Spike Trap",
+      "ru": "Маленькая ловушка для шипов"
+    },
+    "category": "traps"
+  },
+  {
+    "id": -582782051,
+    "image_name": "trap.bear",
+    "name": {
+      "en": "Snap Trap",
+      "ru": "Капкан"
+    },
+    "category": "traps"
+  },
+  {
+    "id": 962186730,
+    "image_name": "tincan.alarm",
+    "name": {
+      "en": "Tin Can Alarm",
+      "ru": "Сигнализация из пустых банок"
+    },
+    "category": "traps"
+  },
+  {
+    "id": -92759291,
+    "image_name": "spikes.floor",
+    "name": {
+      "en": "Wooden Floor Spikes",
+      "ru": "Деревянные колья"
+    },
+    "category": "traps"
+  },
+  {
+    "id": 567235583,
+    "image_name": "weapon.mod.small.scope",
+    "name": {
+      "en": "8x Zoom Scope",
+      "ru": "Восьмикратный прицел"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1545779598,
+    "image_name": "rifle.ak",
+    "name": {
+      "en": "Assault Rifle",
+      "ru": "Штурмовая винтовка"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1714509152,
+    "image_name": "ballista.static",
+    "name": {
+      "en": "Ballista",
+      "ru": "Баллиста"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -187304968,
+    "image_name": "batteringram",
+    "name": {
+      "en": "Battering Ram",
+      "ru": "Таран"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1840822026,
+    "image_name": "grenade.beancan",
+    "name": {
+      "en": "Beancan Grenade",
+      "ru": "Бобовая граната"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1168916338,
+    "image_name": "grenade.bee",
+    "name": {
+      "en": "Bee Grenade",
+      "ru": "Пчелиная граната"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -851288382,
+    "image_name": "blowpipe",
+    "name": {
+      "en": "Blow Pipe",
+      "ru": "Духовое ружье"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1588298435,
+    "image_name": "rifle.bolt",
+    "name": {
+      "en": "Bolt Action Rifle",
+      "ru": "Винтовка"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1711033574,
+    "image_name": "bone.club",
+    "name": {
+      "en": "Bone Club",
+      "ru": "Костяная дубина"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1814288539,
+    "image_name": "knife.bone",
+    "name": {
+      "en": "Bone Knife",
+      "ru": "Костяной нож"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1680793490,
+    "image_name": "boomerang",
+    "name": {
+      "en": "Boomerang",
+      "ru": "Бумеранг"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -194509282,
+    "image_name": "knife.butcher",
+    "name": {
+      "en": "Butcher Knife",
+      "ru": "Нож мясника"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1789825282,
+    "image_name": "candycaneclub",
+    "name": {
+      "en": "Candy Cane Club",
+      "ru": "Леденец-дубинка"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1145722690,
+    "image_name": "catapult",
+    "name": {
+      "en": "Catapult",
+      "ru": "Катапульта"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 2040726127,
+    "image_name": "knife.combat",
+    "name": {
+      "en": "Combat Knife",
+      "ru": "Боевой нож"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 884424049,
+    "image_name": "bow.compound",
+    "name": {
+      "en": "Compound Bow",
+      "ru": "Композитный лук"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1965232394,
+    "image_name": "crossbow",
+    "name": {
+      "en": "Crossbow",
+      "ru": "Арбалет"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1796682209,
+    "image_name": "smg.2",
+    "name": {
+      "en": "Custom SMG",
+      "ru": "Самодельный пистолет-пулемет"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -765183617,
+    "image_name": "shotgun.double",
+    "name": {
+      "en": "Double Barrel Shotgun",
+      "ru": "Двуствольный дробовик"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -75944661,
+    "image_name": "pistol.eoka",
+    "name": {
+      "en": "Eoka Pistol",
+      "ru": "Самодельный пистолет"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 2005491391,
+    "image_name": "weapon.mod.extendedmags",
+    "name": {
+      "en": "Extended Magazine",
+      "ru": "Расширенный магазин"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 143803535,
+    "image_name": "grenade.f1",
+    "name": {
+      "en": "F1 Grenade",
+      "ru": "Граната F1"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1215753368,
+    "image_name": "flamethrower",
+    "name": {
+      "en": "Flame Thrower",
+      "ru": "Огнемёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -936921910,
+    "image_name": "grenade.flashbang",
+    "name": {
+      "en": "Flashbang",
+      "ru": "Светошумовая граната"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1767794021,
+    "image_name": "weapon.mod.gascompressionovedrive",
+    "name": {
+      "en": "Gas Compression Overdrive",
+      "ru": "Газовый компрессор перегрузки"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1214542497,
+    "image_name": "hmlmg",
+    "name": {
+      "en": "HMLMG",
+      "ru": "Самодельный Ручной Пулемёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 2083256995,
+    "image_name": "t1_smg",
+    "name": {
+      "en": "Handmade SMG",
+      "ru": "Кустарный пистолет-пулемёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -92315244,
+    "image_name": "revolver.hc",
+    "name": {
+      "en": "High Caliber Revolver",
+      "ru": "Крупнокалиберный револьвер"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 442289265,
+    "image_name": "weapon.mod.holosight",
+    "name": {
+      "en": "Holosight",
+      "ru": "Голографический прицел"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -218009552,
+    "image_name": "homingmissile.launcher",
+    "name": {
+      "en": "Homing Missile Launcher",
+      "ru": "ПЗРК"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1443579727,
+    "image_name": "bow.hunting",
+    "name": {
+      "en": "Hunting Bow",
+      "ru": "Охотничий лук"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -778367295,
+    "image_name": "rifle.l96",
+    "name": {
+      "en": "L96 Rifle",
+      "ru": "Винтовка L96"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1812555177,
+    "image_name": "rifle.lr300",
+    "name": {
+      "en": "LR-300 Assault Rifle",
+      "ru": "Штурмовая винтовка LR-300"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1469578201,
+    "image_name": "longsword",
+    "name": {
+      "en": "Longsword",
+      "ru": "Длинный меч"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -2069578888,
+    "image_name": "lmg.m249",
+    "name": {
+      "en": "M249",
+      "ru": "Пулемёт М249"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 28201841,
+    "image_name": "rifle.m39",
+    "name": {
+      "en": "M39 Rifle",
+      "ru": "Винтовка M39"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 678698219,
+    "image_name": "shotgun.m4",
+    "name": {
+      "en": "M4 Shotgun",
+      "ru": "Дробовик M4"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -852563019,
+    "image_name": "pistol.m92",
+    "name": {
+      "en": "M92 Pistol",
+      "ru": "М92 Беретта"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1318558775,
+    "image_name": "smg.mp5",
+    "name": {
+      "en": "MP5A4",
+      "ru": "MP5A4"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1966748496,
+    "image_name": "mace",
+    "name": {
+      "en": "Mace",
+      "ru": "Булава"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1137865085,
+    "image_name": "machete",
+    "name": {
+      "en": "Machete",
+      "ru": "Мачете"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 703057617,
+    "image_name": "military%20flamethrower",
+    "name": {
+      "en": "Military Flame Thrower",
+      "ru": "Военный огнемёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1850571427,
+    "image_name": "weapon.mod.silencer",
+    "name": {
+      "en": "Military Silencer",
+      "ru": "Военный глушитель"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -482348853,
+    "image_name": "minicrossbow",
+    "name": {
+      "en": "Mini Crossbow",
+      "ru": "Мини-арбалет"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 935606207,
+    "image_name": "minigun",
+    "name": {
+      "en": "Minigun",
+      "ru": "Миниган"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1556365900,
+    "image_name": "grenade.molotov",
+    "name": {
+      "en": "Molotov Cocktail",
+      "ru": "Коктейль Молотова"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -759279626,
+    "image_name": "ballista.mounted",
+    "name": {
+      "en": "Mounted Ballista",
+      "ru": "Передвижная баллиста"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1123473824,
+    "image_name": "multiplegrenadelauncher",
+    "name": {
+      "en": "Multiple Grenade Launcher",
+      "ru": "Многозарядный гранатомёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1405508498,
+    "image_name": "weapon.mod.muzzleboost",
+    "name": {
+      "en": "Muzzle Boost",
+      "ru": "Дульный ускоритель"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1478091698,
+    "image_name": "weapon.mod.muzzlebrake",
+    "name": {
+      "en": "Muzzle Brake",
+      "ru": "Дульный тормоз"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1953903201,
+    "image_name": "pistol.nailgun",
+    "name": {
+      "en": "Nailgun",
+      "ru": "Гвоздомёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -781866273,
+    "image_name": "weapon.mod.oilfiltersilencer",
+    "name": {
+      "en": "Oil Filter Silencer",
+      "ru": "Глушитель из масляного фильтра"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1491189398,
+    "image_name": "paddle",
+    "name": {
+      "en": "Paddle",
+      "ru": "Весло"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -707792719,
+    "image_name": "paintballgun",
+    "name": {
+      "en": "Paintball Gun",
+      "ru": "Пейнтбольное ружье"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1090916276,
+    "image_name": "pitchfork",
+    "name": {
+      "en": "Pitchfork",
+      "ru": "Вилы"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1914691295,
+    "image_name": "pistol.prototype17",
+    "name": {
+      "en": "Prototype 17",
+      "ru": "Прототип-17"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 795371088,
+    "image_name": "shotgun.pump",
+    "name": {
+      "en": "Pump Shotgun",
+      "ru": "Помповый дробовик"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1373971859,
+    "image_name": "pistol.python",
+    "name": {
+      "en": "Python Revolver",
+      "ru": "Револьвер Питон"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 649912614,
+    "image_name": "pistol.revolver",
+    "name": {
+      "en": "Revolver",
+      "ru": "Револьвер"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 442886268,
+    "image_name": "rocket.launcher",
+    "name": {
+      "en": "Rocket Launcher",
+      "ru": "Ракетница"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -348232115,
+    "image_name": "rifle.sks",
+    "name": {
+      "en": "SKS",
+      "ru": "СКС"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1978999529,
+    "image_name": "salvaged.cleaver",
+    "name": {
+      "en": "Salvaged Cleaver",
+      "ru": "Самодельный тесак"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1326180354,
+    "image_name": "salvaged.sword",
+    "name": {
+      "en": "Salvaged Sword",
+      "ru": "Самодельный меч"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 818877484,
+    "image_name": "pistol.semiauto",
+    "name": {
+      "en": "Semi-Automatic Pistol",
+      "ru": "Полуавтоматический пистолет"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -904863145,
+    "image_name": "rifle.semiauto",
+    "name": {
+      "en": "Semi-Automatic Rifle",
+      "ru": "Полуавтоматическая Винтовка"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1290278434,
+    "image_name": "siegetower",
+    "name": {
+      "en": "Siege Tower",
+      "ru": "Осадная башня"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -855748505,
+    "image_name": "weapon.mod.simplesight",
+    "name": {
+      "en": "Simple Handmade Sight",
+      "ru": "Простой самодельный прицел"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -2073432256,
+    "image_name": "knife.skinning",
+    "name": {
+      "en": "Skinning Knife",
+      "ru": "Охотничий нож"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -363689972,
+    "image_name": "snowball",
+    "name": {
+      "en": "Snowball",
+      "ru": "Снежок"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1103488722,
+    "image_name": "snowballgun",
+    "name": {
+      "en": "Snowball Gun",
+      "ru": "Снежкомёт"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1659598760,
+    "image_name": "weapon.mod.sodacansilencer",
+    "name": {
+      "en": "Soda Can Silencer",
+      "ru": "Глушитель из жестяной банки"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -41440462,
+    "image_name": "shotgun.spas12",
+    "name": {
+      "en": "Spas-12 Shotgun",
+      "ru": "Дробовик Spas-12"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1517740219,
+    "image_name": "speargun",
+    "name": {
+      "en": "Speargun",
+      "ru": "Подводное ружьё"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1602646136,
+    "image_name": "spear.stone",
+    "name": {
+      "en": "Stone Spear",
+      "ru": "Каменное копье"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1719587208,
+    "image_name": "weapon.mod.targetingattachment",
+    "name": {
+      "en": "Targeting Attachment",
+      "ru": "Тактический маркер"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1758372725,
+    "image_name": "smg.thompson",
+    "name": {
+      "en": "Thompson",
+      "ru": "Пистолет-пулемет Томпсона"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -885833256,
+    "image_name": "vampire.stake",
+    "name": {
+      "en": "Vampire Stake",
+      "ru": "Вампирский кол"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 174866732,
+    "image_name": "weapon.mod.8x.scope",
+    "name": {
+      "en": "Variable Zoom Scope",
+      "ru": "Прицел с переменной кратностью"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 722955039,
+    "image_name": "gun.water",
+    "name": {
+      "en": "Water Gun",
+      "ru": "Водяное ружьё"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1815301988,
+    "image_name": "pistol.water",
+    "name": {
+      "en": "Water Pistol",
+      "ru": "Водяной пистолет"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -1367281941,
+    "image_name": "shotgun.waterpipe",
+    "name": {
+      "en": "Waterpipe Shotgun",
+      "ru": "Самодельный дробовик"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": -132516482,
+    "image_name": "weapon.mod.lasersight",
+    "name": {
+      "en": "Weapon Lasersight",
+      "ru": "Лазерный прицел"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 952603248,
+    "image_name": "weapon.mod.flashlight",
+    "name": {
+      "en": "Weapon flashlight",
+      "ru": "Оружейный фонарик"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 1540934679,
+    "image_name": "spear.wooden",
+    "name": {
+      "en": "Wooden Spear",
+      "ru": "Деревянное копье"
+    },
+    "category": "weapons"
+  }
+]
