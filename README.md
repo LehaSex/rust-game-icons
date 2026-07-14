@@ -30,6 +30,7 @@ Some of the top-level directories include:
 - `weapons/` – melee and ranged weapons including guns, bows, machetes.
 
 > **Special category:** `npc/` contains portraits and avatars of in-game NPCs. Unlike the other categories, these images are **not included** in `all_items.json`, as they are not regular Rust item icons.
+> **Special category:** `gui/` contains UI icons.
 > The list above is not exhaustive – explore the repository to discover every category.
 
 ---
