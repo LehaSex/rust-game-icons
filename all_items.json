@@ -117,6 +117,15 @@
     "category": "ammo"
   },
   {
+    "id": -486432631,
+    "image_name": "ammo.mortar.fragment",
+    "name": {
+      "en": "Fragmentation Mortar Shell",
+      "ru": "Осколочный минометный снаряд"
+    },
+    "category": "ammo"
+  },
+  {
     "id": 1712070256,
     "image_name": "ammo.rifle.hv",
     "name": {
@@ -230,6 +239,15 @@
     "name": {
       "en": "MLRS Rocket",
       "ru": "Ракета РСЗО"
+    },
+    "category": "ammo"
+  },
+  {
+    "id": 963150711,
+    "image_name": "ammo.mortar.basic",
+    "name": {
+      "en": "Mortar Shell",
+      "ru": "Миномётный снаряд"
     },
     "category": "ammo"
   },
@@ -401,6 +419,51 @@
     "name": {
       "en": "Arctic Suit",
       "ru": "Арктический Костюм"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1468749025,
+    "image_name": "bdu.pants",
+    "name": {
+      "en": "BDU Pants",
+      "ru": "Армейские штаны"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -2127311451,
+    "image_name": "bdu.shirt",
+    "name": {
+      "en": "BDU Shirt",
+      "ru": "Армейская рубашка"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1983541158,
+    "image_name": "ballistic.legarmor",
+    "name": {
+      "en": "Ballistic Leg Armour",
+      "ru": "Баллистическая броня для ног"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1780402255,
+    "image_name": "ballistic.vest",
+    "name": {
+      "en": "Ballistic Vest",
+      "ru": "Баллистический жилет"
+    },
+    "category": "attire"
+  },
+  {
+    "id": 1127732084,
+    "image_name": "ballistic.helmet",
+    "name": {
+      "en": "Ballistic helmet",
+      "ru": "Баллистический шлем"
     },
     "category": "attire"
   },
@@ -661,7 +724,7 @@
     "image_name": "diving.tank.double",
     "name": {
       "en": "Double Diving Tank",
-      "ru": "Double Diving Tank"
+      "ru": "Двойной кислородный баллон"
     },
     "category": "attire"
   },
@@ -1602,6 +1665,15 @@
     "category": "attire"
   },
   {
+    "id": 798382300,
+    "image_name": "workbench.upgrade.accelerated",
+    "name": {
+      "en": "Accelerated Workbench Upgrade",
+      "ru": "Улучшение верстака на скорость"
+    },
+    "category": "components"
+  },
+  {
     "id": -1896395719,
     "image_name": "advancedblueprintfragment",
     "name": {
@@ -1683,11 +1755,38 @@
     "category": "components"
   },
   {
+    "id": -770390391,
+    "image_name": "workbench.upgrade.comfort",
+    "name": {
+      "en": "Comfort Workbench Upgrade",
+      "ru": "Улучшение верстака на комфорт"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1953279770,
+    "image_name": "workbench.upgrade.defensive",
+    "name": {
+      "en": "Defensive Workbench Upgrade",
+      "ru": "Улучшение верстака на защиту"
+    },
+    "category": "components"
+  },
+  {
     "id": 1401987718,
     "image_name": "ducttape",
     "name": {
       "en": "Duct Tape",
       "ru": "Скотч"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1215602244,
+    "image_name": "workbench.upgrade.efficiency",
+    "name": {
+      "en": "Efficiency Workbench Upgrade",
+      "ru": "Улучшение верстака на эффективность"
     },
     "category": "components"
   },
@@ -1944,11 +2043,47 @@
     "category": "components"
   },
   {
+    "id": -180862419,
+    "image_name": "workbench.upgrade.prototype",
+    "name": {
+      "en": "Prototype Workbench Upgrade",
+      "ru": "Улучшение верстака на прототип"
+    },
+    "category": "components"
+  },
+  {
+    "id": 1470387662,
+    "image_name": "workbench.upgrade.range",
+    "name": {
+      "en": "Range Workbench Upgrade",
+      "ru": "Улучшение верстака на радиус"
+    },
+    "category": "components"
+  },
+  {
     "id": 1376065505,
     "image_name": "vehicle.1mod.rear.seats",
     "name": {
       "en": "Rear Seats Vehicle Module",
       "ru": "Модуль задних сидений"
+    },
+    "category": "components"
+  },
+  {
+    "id": -286541059,
+    "image_name": "workbench.upgrade.recyclebin",
+    "name": {
+      "en": "Recycle Bin Workbench Upgrade",
+      "ru": "Улучшение верстака на утилизацию"
+    },
+    "category": "components"
+  },
+  {
+    "id": 112268546,
+    "image_name": "workbench.upgrade.reinforced",
+    "name": {
+      "en": "Reinforced Workbench Upgrade",
+      "ru": "Улучшение верстака на укрепление"
     },
     "category": "components"
   },
@@ -1985,6 +2120,15 @@
     "name": {
       "en": "SMG Body",
       "ru": "Корпус пистолет-пулемёта"
+    },
+    "category": "components"
+  },
+  {
+    "id": -160105346,
+    "image_name": "workbench.upgrade.salvage",
+    "name": {
+      "en": "Salvage Workbench Upgrade",
+      "ru": "Улучшение верстака на выгоду"
     },
     "category": "components"
   },
@@ -2034,6 +2178,15 @@
     "category": "components"
   },
   {
+    "id": -1536343135,
+    "image_name": "workbench.upgrade.surplus",
+    "name": {
+      "en": "Surplus Workbench Upgrade",
+      "ru": "Улучшение верстака на излишки"
+    },
+    "category": "components"
+  },
+  {
     "id": 2019042823,
     "image_name": "tarp",
     "name": {
@@ -2075,6 +2228,24 @@
     "name": {
       "en": "Armored Double Door",
       "ru": "Двойная бронированная дверь"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 607785075,
+    "image_name": "floor.ladder.hatch.toptier",
+    "name": {
+      "en": "Armored Ladder Hatch",
+      "ru": "Люк бронированной лестницы"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -478923685,
+    "image_name": "floor.triangle.ladder.hatch.toptier",
+    "name": {
+      "en": "Armored Triangle Ladder Hatch",
+      "ru": "Треугольный бронированный люк с лестницей"
     },
     "category": "construction"
   },
@@ -2327,6 +2498,15 @@
     "name": {
       "en": "Mining Quarry",
       "ru": "Горнорудный карьер"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1459828804,
+    "image_name": "mortar.deployable",
+    "name": {
+      "en": "Mortar",
+      "ru": "Миномёт"
     },
     "category": "construction"
   },
@@ -4928,6 +5108,15 @@
     "name": {
       "en": "Firecracker String",
       "ru": "Лента фейерверков"
+    },
+    "category": "fun"
+  },
+  {
+    "id": -1622386500,
+    "image_name": "kickgems",
+    "name": {
+      "en": "Gems",
+      "ru": "Самоцветы"
     },
     "category": "fun"
   },
@@ -7614,6 +7803,15 @@
     "category": "resources"
   },
   {
+    "id": 1664052604,
+    "image_name": "apartment.master_key",
+    "name": {
+      "en": "Apartment Key",
+      "ru": "Ключ от апартаментов"
+    },
+    "category": "tools"
+  },
+  {
     "id": -1262185308,
     "image_name": "tool.binoculars",
     "name": {
@@ -8312,6 +8510,15 @@
     "name": {
       "en": "Longsword",
       "ru": "Длинный меч"
+    },
+    "category": "weapons"
+  },
+  {
+    "id": 599591861,
+    "image_name": "m16a2",
+    "name": {
+      "en": "M16A2",
+      "ru": "M16A2"
     },
     "category": "weapons"
   },
