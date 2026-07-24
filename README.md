@@ -1,5 +1,5 @@
 # Rust Game Icons
-
+![Logo](https://repository-images.githubusercontent.com/1166679041/be2b8587-1a78-4e75-8f3d-881b7ce6ef76)
 **A curated collection of high-quality PNG icons extracted from the Rust game.**
 
 This repository contains hundreds of icons organised by category. These graphics are useful for developers, modders, map makers, and anyone creating tools or documentation related to the RUST. Feel free to browse, download, and use them in your projects.
