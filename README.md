@@ -10,7 +10,7 @@ This repository contains hundreds of icons organised by category. These graphics
 
 ## 📁 Repository Structure
 
-The icons are grouped into folders by type or theme. Each file is a standalone `.png` image with a transparent background. Item metadata (ids, shortnames, categories and localized names) lives in `items.json` and `items.compact.json`.
+The icons are grouped into folders by type or theme. Each file is a standalone `.png` image with a transparent background. Item metadata (ids, shortnames, categories, localized names and descriptions) lives in `items.json`, `items.compact.json` and `items.desc.json`.
 
 Some of the top-level directories include:
 
@@ -39,6 +39,7 @@ Some of the top-level directories include:
 
 - **`items.json`** – full item database: `id`, `image_name` (item shortname), `category`, and a `name` object with the item's display name in every language the game ships (English, Russian, Simplified Chinese and more — 31 languages total). Languages are synced from the game's own localization files, so they stay consistent with the installed game version; if the game has no translation for an item, other languages fall back to English.
 - **`items.compact.json`** – the same items, but `name` is limited to the three languages that matter most for community tools: `en`, `zh-cn`, `ru` (in that order, always present – missing translations fall back to English).
+- **`items.desc.json`** – separate lookup table: item shortname → localized item description in all languages (English fallback when the game has no translation). Items the game gives no description for are not listed.
 
 Some items (mostly legacy or admin-only ones) are not localized by the game itself — for those all languages simply repeat the English name.
 
