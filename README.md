@@ -10,7 +10,7 @@ This repository contains hundreds of icons organised by category. These graphics
 
 ## 📁 Repository Structure
 
-The icons are grouped into folders by type or theme. Each file is a standalone `.png` image with a transparent background. Item metadata (ids, shortnames, categories, localized names and descriptions) lives in `items.json`, `items.compact.json` and `items.desc.json`.
+The icons are grouped into folders by type or theme. Each file is a standalone `.png` image with a transparent background. Item metadata (ids, shortnames, categories, localized names and descriptions, crafting data) lives in `items.json`, `items.compact.json`, `items.desc.json` and `items.craft.json`.
 
 Some of the top-level directories include:
 
@@ -40,6 +40,7 @@ Some of the top-level directories include:
 - **`items.json`** – full item database: `id`, `image_name` (item shortname), `category`, and a `name` object with the item's display name in every language the game ships (English, Russian, Simplified Chinese and more — 31 languages total). Languages are synced from the game's own localization files, so they stay consistent with the installed game version; if the game has no translation for an item, other languages fall back to English.
 - **`items.compact.json`** – the same items, but `name` is limited to the three languages that matter most for community tools: `en`, `zh-cn`, `ru` (in that order, always present – missing translations fall back to English).
 - **`items.desc.json`** – separate lookup table: item shortname → localized item description in all languages (English fallback when the game has no translation). Items the game gives no description for are not listed.
+- **`items.craft.json`** – separate lookup table: item shortname → crafting data extracted from the game's recipe assets (`ItemBlueprint`). Includes **every** item; each record has the **same set of fields** (uniform contract), non-applicable values are `null`, "off/none" is `false`/`0`/`[]`: `craftable`, `workbench` (required workbench level, `0` = none), `amount` (items produced per craft), `time` (craft time in seconds, accounting for the game's own time cap), `ingredients` (`[{item, amount}]`), `rarity`, `researchable`, `research_scrap` (scrap cost of researching the blueprint; computed by the game from item rarity – Common 15 / Uncommon 30 / Rare 60 / VeryRare 120, default-blueprint items cost 10; `null` when the item cannot be researched), `techtree` (tech tree tier 1-3 matching the workbench level whose tab the item is unlocked in), `techtree_scrap` (total scrap cost of unlocking the item in the tech tree from scratch, including all prerequisite nodes on the required path – vanilla values without server taxes/workbench upgrade multipliers), `default_blueprint`, `scrap_from_recycle`, `needs_steam_item`, `require_unlocked_item`, `additional_unlocks`, `surplus` (workbench surplus-upgrade bonus items), `force_time`, `skin_of` (shortname of the base item for skin/DLC-variant items that act as another item). Times and costs reflect vanilla game rules – servers can alter them with convars and mods.
 
 Some items (mostly legacy or admin-only ones) are not localized by the game itself — for those all languages simply repeat the English name.
 
