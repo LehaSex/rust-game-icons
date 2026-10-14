@@ -1873,7 +1873,7 @@
     "id": -606898372,
     "image_name": "clothing.mannequin",
     "name": {
-      "en": "Clothing Mannequin",
+      "en": "#clothingmannequin",
       "zh-cn": "Clothing Mannequin",
       "ru": "Манекен"
     },
@@ -2186,6 +2186,16 @@
       "en": "Sunglasses",
       "zh-cn": "Sunglasses",
       "ru": "Sunglasses"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -1587608109,
+    "image_name": "hazmat.plague",
+    "name": {
+      "en": "Plague Doctor Hazmat Suit",
+      "zh-cn": "Plague Doctor Hazmat Suit",
+      "ru": "Plague Doctor Hazmat Suit"
     },
     "category": "attire"
   },
@@ -3495,7 +3505,7 @@
     "name": {
       "en": "High External Legacy Gate",
       "zh-cn": "传统木头高门",
-      "ru": "High External Legacy Gate"
+      "ru": "Высокие внешние деревянные ворота «Legacy»"
     },
     "category": "construction"
   },
@@ -3596,6 +3606,56 @@
       "en": "Paintable Window",
       "zh-cn": "可绘制窗户",
       "ru": "Окрашиваемое окно"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -219005627,
+    "image_name": "barricade.sandbags.half",
+    "name": {
+      "en": "#barricade.sandbags.half",
+      "zh-cn": "#barricade.sandbags.half",
+      "ru": "#barricade.sandbags.half"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1088645302,
+    "image_name": "barricade.sandbags.pillbox",
+    "name": {
+      "en": "#barricade.sandbags.pillbox",
+      "zh-cn": "#barricade.sandbags.pillbox",
+      "ru": "#barricade.sandbags.pillbox"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 2141654944,
+    "image_name": "barricade.sandbags.three.quarter",
+    "name": {
+      "en": "#barricade.sandbags.three.quarter",
+      "zh-cn": "#barricade.sandbags.three.quarter",
+      "ru": "#barricade.sandbags.three.quarter"
+    },
+    "category": "construction"
+  },
+  {
+    "id": -1814195745,
+    "image_name": "wall.animal.fence",
+    "name": {
+      "en": "Animal Fence",
+      "zh-cn": "动物围栏",
+      "ru": "Animal Fence"
+    },
+    "category": "construction"
+  },
+  {
+    "id": 1143376304,
+    "image_name": "wall.animal.fence.gate",
+    "name": {
+      "en": "Animal Fence Gate",
+      "zh-cn": "动物围栏门",
+      "ru": "Animal Fence Gate"
     },
     "category": "construction"
   },
@@ -4425,7 +4485,7 @@
     "name": {
       "en": "Ceiling Fluorescent Light",
       "zh-cn": "吊顶日光灯",
-      "ru": "Ceiling Fluorescent Light"
+      "ru": "Потолочный люминесцентный светильник"
     },
     "category": "electrical"
   },
@@ -4435,7 +4495,7 @@
     "name": {
       "en": "Bar Games Minifridge",
       "zh-cn": "酒吧游戏迷你冰箱",
-      "ru": "Bar Games Minifridge"
+      "ru": "Барный мини-холодильник"
     },
     "category": "electrical"
   },
@@ -6130,6 +6190,406 @@
     "category": "food"
   },
   {
+    "id": -201824959,
+    "image_name": "beefmeat",
+    "name": {
+      "en": "Raw Beef",
+      "zh-cn": "生牛肉",
+      "ru": "Сырая Говядина"
+    },
+    "category": "food"
+  },
+  {
+    "id": 718346230,
+    "image_name": "beefmeat.cooked",
+    "name": {
+      "en": "Cooked Beef",
+      "zh-cn": "烤熟的牛肉",
+      "ru": "Приготовленная Говядина."
+    },
+    "category": "food"
+  },
+  {
+    "id": 1412100395,
+    "image_name": "beefmeat.spoiled",
+    "name": {
+      "en": "Spoiled Beef",
+      "zh-cn": "变质的牛肉",
+      "ru": "Испорченное Мясо"
+    },
+    "category": "food"
+  },
+  {
+    "id": -909588488,
+    "image_name": "bread.brioche.loaf",
+    "name": {
+      "en": "Brioche Bread",
+      "zh-cn": "布里欧修面包",
+      "ru": "Хлеб Бриошь"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1185218972,
+    "image_name": "cream",
+    "name": {
+      "en": "Cream",
+      "zh-cn": "奶油",
+      "ru": "Сливки"
+    },
+    "category": "food"
+  },
+  {
+    "id": -132349657,
+    "image_name": "healingtea.pure.creamy",
+    "name": {
+      "en": "Creamy Pure Healing Tea",
+      "zh-cn": "Creamy Pure Healing Tea",
+      "ru": "Creamy Pure Healing Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1644292642,
+    "image_name": "healingtea.pure.milky",
+    "name": {
+      "en": "Milky Pure Healing Tea",
+      "zh-cn": "Milky Pure Healing Tea",
+      "ru": "Milky Pure Healing Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1244746477,
+    "image_name": "maxhealthtea.pure.creamy",
+    "name": {
+      "en": "Creamy Pure Max Health Tea",
+      "zh-cn": "Creamy Pure Max Health Tea",
+      "ru": "Creamy Pure Max Health Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1388103748,
+    "image_name": "maxhealthtea.pure.milky",
+    "name": {
+      "en": "Milky Pure Max Health Tea",
+      "zh-cn": "Milky Pure Max Health Tea",
+      "ru": "Milky Pure Max Health Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 325350919,
+    "image_name": "milk",
+    "name": {
+      "en": "Milk",
+      "zh-cn": "牛奶",
+      "ru": "Milk"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1957595450,
+    "image_name": "muttonmeat",
+    "name": {
+      "en": "Raw Mutton",
+      "zh-cn": "生羊肉",
+      "ru": "Raw Mutton"
+    },
+    "category": "food"
+  },
+  {
+    "id": -319133397,
+    "image_name": "muttonmeat.cooked",
+    "name": {
+      "en": "Cooked Mutton",
+      "zh-cn": "烤熟的羊肉",
+      "ru": "Cooked Mutton"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1751463672,
+    "image_name": "muttonmeat.spoiled",
+    "name": {
+      "en": "Spoiled Mutton",
+      "zh-cn": "变质的羊肉",
+      "ru": "Spoiled Mutton"
+    },
+    "category": "food"
+  },
+  {
+    "id": -744942541,
+    "image_name": "oretea.pure.creamy",
+    "name": {
+      "en": "Creamy Pure Ore Tea",
+      "zh-cn": "Creamy Pure Ore Tea",
+      "ru": "Creamy Pure Ore Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1243083208,
+    "image_name": "oretea.pure.milky",
+    "name": {
+      "en": "Milky Pure Ore Tea",
+      "zh-cn": "Milky Pure Ore Tea",
+      "ru": "Milky Pure Ore Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1846744758,
+    "image_name": "pie.apple.rich",
+    "name": {
+      "en": "Rich Apple Pie",
+      "zh-cn": "丰盛苹果派",
+      "ru": "Rich Apple Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1883513936,
+    "image_name": "pie.bear.rich",
+    "name": {
+      "en": "Rich Bear Pie",
+      "zh-cn": "丰盛熊肉派",
+      "ru": "Rich Bear Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 782269436,
+    "image_name": "pie.beef",
+    "name": {
+      "en": "Beef Pie",
+      "zh-cn": "牛肉派",
+      "ru": "Beef Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": -867055736,
+    "image_name": "pie.beef.rich",
+    "name": {
+      "en": "Rich Beef Pie",
+      "zh-cn": "丰盛牛肉派",
+      "ru": "Rich Beef Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1469787676,
+    "image_name": "pie.bigcat.rich",
+    "name": {
+      "en": "Rich Big Cat Pie",
+      "zh-cn": "丰盛猫科动物派",
+      "ru": "Rich Big Cat Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 2006264797,
+    "image_name": "pie.chicken.rich",
+    "name": {
+      "en": "Rich Chicken Pie",
+      "zh-cn": "丰盛鸡肉派",
+      "ru": "Rich Chicken Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1427291780,
+    "image_name": "pie.fish.rich",
+    "name": {
+      "en": "Rich Fish Pie",
+      "zh-cn": "丰盛鱼肉派",
+      "ru": "Rich Fish Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1188678681,
+    "image_name": "pie.hunters.rich",
+    "name": {
+      "en": "Rich Hunters Pie",
+      "zh-cn": "丰盛猎人派",
+      "ru": "Rich Hunters Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 939198535,
+    "image_name": "pie.mutton",
+    "name": {
+      "en": "Shepherds Pie",
+      "zh-cn": "牧羊人派",
+      "ru": "Shepherds Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1468691829,
+    "image_name": "pie.mutton.rich",
+    "name": {
+      "en": "Rich Shepherds Pie",
+      "zh-cn": "丰盛牧羊人派",
+      "ru": "Rich Shepherds Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1988640176,
+    "image_name": "pie.pork.rich",
+    "name": {
+      "en": "Rich Pork Pie",
+      "zh-cn": "丰盛猪肉派",
+      "ru": "Rich Pork Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1364112542,
+    "image_name": "pie.pumpkin.rich",
+    "name": {
+      "en": "Rich Pumpkin Pie",
+      "zh-cn": "丰盛南瓜派",
+      "ru": "Rich Pumpkin Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1527700610,
+    "image_name": "purecoolingtea.creamy",
+    "name": {
+      "en": "Creamy Pure Cooling Tea",
+      "zh-cn": "Creamy Pure Cooling Tea",
+      "ru": "Creamy Pure Cooling Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1738714421,
+    "image_name": "purecoolingtea.milky",
+    "name": {
+      "en": "Milky Pure Cooling Tea",
+      "zh-cn": "Milky Pure Cooling Tea",
+      "ru": "Milky Pure Cooling Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1661676046,
+    "image_name": "pureharvestingtea.creamy",
+    "name": {
+      "en": "Creamy Pure Harvesting Tea",
+      "zh-cn": "Creamy Pure Harvesting Tea",
+      "ru": "Creamy Pure Harvesting Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 789540413,
+    "image_name": "pureharvestingtea.milky",
+    "name": {
+      "en": "Milky Pure Harvesting Tea",
+      "zh-cn": "Milky Pure Harvesting Tea",
+      "ru": "Milky Pure Harvesting Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 556232090,
+    "image_name": "purewarmingtea.creamy",
+    "name": {
+      "en": "Creamy Pure Warming Tea",
+      "zh-cn": "Creamy Pure Warming Tea",
+      "ru": "Creamy Pure Warming Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 91167975,
+    "image_name": "purewarmingtea.milky",
+    "name": {
+      "en": "Milky Pure Warming Tea",
+      "zh-cn": "Milky Pure Warming Tea",
+      "ru": "Milky Pure Warming Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1882497808,
+    "image_name": "radiationresisttea.pure.creamy",
+    "name": {
+      "en": "Creamy Pure Anti-Rad Tea",
+      "zh-cn": "Creamy Pure Anti-Rad Tea",
+      "ru": "Creamy Pure Anti-Rad Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1341272471,
+    "image_name": "radiationresisttea.pure.milky",
+    "name": {
+      "en": "Milky Pure Anti-Rad Tea",
+      "zh-cn": "Milky Pure Anti-Rad Tea",
+      "ru": "Milky Pure Anti-Rad Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 1519395656,
+    "image_name": "scraptea.pure.creamy",
+    "name": {
+      "en": "Creamy Pure Scrap Tea",
+      "zh-cn": "Creamy Pure Scrap Tea",
+      "ru": "Creamy Pure Scrap Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1057052157,
+    "image_name": "scraptea.pure.milky",
+    "name": {
+      "en": "Milky Pure Scrap Tea",
+      "zh-cn": "Milky Pure Scrap Tea",
+      "ru": "Milky Pure Scrap Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1019639625,
+    "image_name": "skimmedmilk",
+    "name": {
+      "en": "Skimmed Milk",
+      "zh-cn": "脱脂牛奶",
+      "ru": "Skimmed Milk"
+    },
+    "category": "food"
+  },
+  {
+    "id": -844428380,
+    "image_name": "woodtea.pure.creamy",
+    "name": {
+      "en": "Creamy Pure Wood Tea",
+      "zh-cn": "Creamy Pure Wood Tea",
+      "ru": "Creamy Pure Wood Tea"
+    },
+    "category": "food"
+  },
+  {
+    "id": 777041831,
+    "image_name": "woodtea.pure.milky",
+    "name": {
+      "en": "Milky Pure Wood Tea",
+      "zh-cn": "Milky Pure Wood Tea",
+      "ru": "Milky Pure Wood Tea"
+    },
+    "category": "food"
+  },
+  {
     "id": 1840570710,
     "image_name": "abovegroundpool",
     "name": {
@@ -6755,7 +7215,7 @@
     "name": {
       "en": "White Boomer",
       "zh-cn": "白色烟花",
-      "ru": "White Boomer"
+      "ru": "Белый фейерверк"
     },
     "category": "fun"
   },
@@ -6795,7 +7255,7 @@
     "name": {
       "en": "Pool Table",
       "zh-cn": "台球桌",
-      "ru": "Pool Table"
+      "ru": "Бильярдный стол"
     },
     "category": "fun"
   },
@@ -9095,7 +9555,7 @@
     "name": {
       "en": "Clump of Mixed Balloons",
       "zh-cn": "混合气球簇",
-      "ru": "Clump of Mixed Balloons"
+      "ru": "Связка воздушных шариков"
     },
     "category": "items"
   },
@@ -9450,6 +9910,16 @@
     "category": "items"
   },
   {
+    "id": -1661343913,
+    "image_name": "generator.biofuel",
+    "name": {
+      "en": "Biofuel Generator",
+      "zh-cn": "生物燃料发电机",
+      "ru": "Генератор Биотоплива"
+    },
+    "category": "items"
+  },
+  {
     "id": -1432674913,
     "image_name": "antiradpills",
     "name": {
@@ -9505,7 +9975,7 @@
     "name": {
       "en": "Medical Honey Bandage",
       "zh-cn": "医用蜂蜜绷带",
-      "ru": "Medical Honey Bandage"
+      "ru": "Лечебная медовая повязка"
     },
     "category": "medical"
   },
@@ -10473,7 +10943,7 @@
     "id": -1579932985,
     "image_name": "horsedung",
     "name": {
-      "en": "Horse Dung",
+      "en": "Dung",
       "zh-cn": "马粪",
       "ru": "Конский навоз"
     },
@@ -10786,6 +11256,16 @@
       "en": "Yellow ID Tag",
       "zh-cn": "Yellow ID Tag",
       "ru": "Yellow ID Tag"
+    },
+    "category": "resources"
+  },
+  {
+    "id": 204391867,
+    "image_name": "wool",
+    "name": {
+      "en": "Wool",
+      "zh-cn": "羊毛",
+      "ru": "Wool"
     },
     "category": "resources"
   },
@@ -11405,7 +11885,7 @@
     "name": {
       "en": "Bar Games Shotgun Trap",
       "zh-cn": "酒吧游戏霰弹枪陷阱",
-      "ru": "Bar Games Shotgun Trap"
+      "ru": "Ловушка с дробовиком «Барные игры»"
     },
     "category": "traps"
   },
@@ -12263,7 +12743,7 @@
     "id": 162882477,
     "image_name": "50cal.mounted",
     "name": {
-      "en": "#50cal",
+      "en": "50 Cal Turret",
       "zh-cn": "#50cal",
       "ru": "#50cal"
     },
@@ -12273,7 +12753,7 @@
     "id": -1467876094,
     "image_name": "50cal.mounted.left",
     "name": {
-      "en": "#50cal",
+      "en": "Dual 50 Cal Turret",
       "zh-cn": "#50cal",
       "ru": "#50cal"
     },
@@ -12283,7 +12763,7 @@
     "id": 1248383659,
     "image_name": "50cal.mounted.right",
     "name": {
-      "en": "#50cal",
+      "en": "Dual 50 Cal Turret",
       "zh-cn": "#50cal",
       "ru": "#50cal"
     },
@@ -12355,7 +12835,7 @@
     "name": {
       "en": "M15 Semi-Automatic Pistol",
       "zh-cn": "M15半自动手枪",
-      "ru": "M15 Semi-Automatic Pistol"
+      "ru": "Полуавтоматический пистолет"
     },
     "category": "weapons"
   },
@@ -12374,7 +12854,7 @@
     "image_name": "rifle.ak.glass",
     "name": {
       "en": "Crystal Assault Rifle Diamond",
-      "zh-cn": "Crystal Assault Rifle Diamond",
+      "zh-cn": "水晶突击步枪 - 钻石",
       "ru": "Crystal Assault Rifle Diamond"
     },
     "category": "weapons"
@@ -12384,7 +12864,7 @@
     "image_name": "rifle.ak.glass.blue",
     "name": {
       "en": "Crystal Assault Rifle Sapphire",
-      "zh-cn": "Crystal Assault Rifle Sapphire",
+      "zh-cn": "水晶突击步枪 - 蓝宝石",
       "ru": "Crystal Assault Rifle Sapphire"
     },
     "category": "weapons"
@@ -12394,7 +12874,7 @@
     "image_name": "rifle.ak.glass.green",
     "name": {
       "en": "Crystal Assault Rifle Emerald",
-      "zh-cn": "Crystal Assault Rifle Emerald",
+      "zh-cn": "水晶突击步枪 - 绿宝石",
       "ru": "Crystal Assault Rifle Emerald"
     },
     "category": "weapons"
@@ -12404,7 +12884,7 @@
     "image_name": "rifle.ak.glass.pink",
     "name": {
       "en": "Crystal Assault Rifle Pink Diamond",
-      "zh-cn": "Crystal Assault Rifle Pink Diamond",
+      "zh-cn": "水晶突击步枪 - 粉钻",
       "ru": "Crystal Assault Rifle Pink Diamond"
     },
     "category": "weapons"
@@ -12414,7 +12894,7 @@
     "image_name": "rifle.ak.glass.red",
     "name": {
       "en": "Crystal Assault Rifle Ruby",
-      "zh-cn": "Crystal Assault Rifle Ruby",
+      "zh-cn": "水晶突击步枪 - 红宝石",
       "ru": "Crystal Assault Rifle Ruby"
     },
     "category": "weapons"
@@ -12444,7 +12924,7 @@
     "image_name": "rifle.ak.med",
     "name": {
       "en": "Medieval Assault Rifle",
-      "zh-cn": "Medieval Assault Rifle",
+      "zh-cn": "AK-47突击步枪 - 中世纪",
       "ru": "Medieval Assault Rifle"
     },
     "category": "weapons"
