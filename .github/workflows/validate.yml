@@ -1,0 +1,44 @@
+name: validate
+
+# The only workflow worth running on every PR: it needs neither game
+# files, nor secrets, nor Kaggle. Finishes in a couple of minutes.
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0   # needed for git show main:items.json to diff translations
+          sparse-checkout: |
+            items.json
+            items.compact.json
+            items.desc.json
+            items.craft.json
+            items.recycle.json
+            small
+            .pipeline/schemas
+            .pipeline/scripts
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet jsonschema pillow
+
+      - name: Validate artifacts
+        run: python .pipeline/scripts/validate_outputs.py --repo-dir . --baseline origin/main
