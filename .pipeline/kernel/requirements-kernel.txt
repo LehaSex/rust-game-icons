@@ -1,0 +1,7 @@
+# Kaggle kernel dependencies.
+# torch and spandrel are only needed for GPU upscaling; numpy/Pillow are always required.
+torch>=2.1
+spandrel>=0.4.2
+spandrel-extra-arches>=0.1
+pillow>=10.0
+numpy>=1.24

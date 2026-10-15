@@ -1,0 +1,255 @@
+name: pipeline
+
+# Full cycle on a GitHub-hosted runner, no local involvement:
+#   gate -> fetch depots -> parse -> stage -> Kaggle -> validate -> PR
+#
+# One job on purpose. The game files are ~4.7 GiB, which no artifact can carry
+# (500 MB cap) and a cache would have to hold across workflows; a single job
+# keeps them on one disk for the whole run and drops them at the end.
+#
+# Rust force-updates on the first Tuesday at 19:00 UTC. Cron cannot express
+# "first Tuesday" -- GitHub ORs day-of-month with day-of-week -- so the schedule
+# fires on days 1-7 and is_patch_day.py narrows it to the single real run.
+#
+# Secrets in this file: KAGGLE_*, GH_PAT, and the Steam account used only for
+# the client depot. The dedicated server is fetched anonymously and the icon
+# step is the only thing that needs credentials.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: ignore the patch-day gate
+        type: boolean
+        default: true
+      skip_kaggle:
+        description: parse and validate only, spend no GPU quota
+        type: boolean
+        default: false
+      publish:
+        description: how to publish the result
+        type: choice
+        options:
+          - merge
+          - pr
+          - push
+        default: merge
+  schedule:
+    # 19:10 UTC, days 1-7; is_patch_day.py keeps only the first Tuesday.
+    - cron: "10 19 1-7 * *"
+
+permissions:
+  contents: read
+
+# A second run on top of the first would burn Kaggle GPU quota.
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+env:
+  KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+  KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+  KAGGLE_KERNEL_SLUG: ${{ vars.KAGGLE_KERNEL_SLUG }}
+  ICONS_DELTA_SLUG: ${{ vars.ICONS_DELTA_SLUG }}
+  DATA_REPO: ${{ vars.DATA_REPO }}
+  GH_PAT: ${{ secrets.GH_PAT }}
+  STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+  STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+  STEAM_MAFILE_B64: ${{ secrets.STEAM_MAFILE_B64 }}
+  DEPOTDOWNLOADER: /opt/depotdownloader/DepotDownloader
+  GAME_DIR: ${{ github.workspace }}/game-assets
+  DD_VERSION: "3.4.0"
+  # Empty means "use the defaults": Tuesday, days 1-7.
+  PATCH_WEEKDAY: ${{ vars.PATCH_WEEKDAY }}
+  PATCH_MAX_DAY: ${{ vars.PATCH_MAX_DAY }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330          # hard ceiling is 360
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0           # open_pr.py needs history to branch from
+          persist-credentials: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+
+      - name: Patch-day gate
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python .pipeline/scripts/is_patch_day.py
+          else
+            python .pipeline/scripts/is_patch_day.py \
+              $([ "${{ inputs.force }}" = "true" ] && echo --force)
+          fi
+
+      - name: Stop if not a patch day
+        if: steps.gate.outputs.should_run != 'true'
+        run: |
+          echo "Not a patch day: ${{ steps.gate.outputs.reason }}"
+          echo "Nothing to do; this is the normal state between Rust updates."
+
+      # ---------------------------------------------------------------- fetch
+
+      - name: Install dependencies
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          python -m pip install --quiet -r .pipeline/requirements-actions.txt
+          pip install --quiet kaggle
+
+      - name: Install DepotDownloader
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          set -euo pipefail
+          url="https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_${DD_VERSION}/DepotDownloader-linux-x64.zip"
+          curl -fsSL "$url" -o /tmp/dd.zip
+          mkdir -p "$(dirname "$DEPOTDOWNLOADER")"
+          unzip -q -o /tmp/dd.zip -d "$(dirname "$DEPOTDOWNLOADER")"
+          chmod +x "$DEPOTDOWNLOADER"
+          "$DEPOTDOWNLOADER" --version
+
+      - name: Fetch the dedicated server (anonymous)
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          # Same destination as the client depot, on purpose: the client download
+          # overwrites the shared bundles with the richer ones, and if it is
+          # skipped the server's localization is still readable in place.
+          python .pipeline/tools/steam_fetch.py --anonymous --app 258550 \
+            --dest "$GAME_DIR" --validate
+
+      - name: File list for the client depot
+        if: steps.gate.outputs.should_run == 'true'
+        run: python .pipeline/tools/make_filelist.py wanted --out wanted.txt
+
+      - name: Fetch the client depot
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          if [ -z "${STEAM_USERNAME:-}" ]; then
+            echo "::warning::STEAM_USERNAME is not set: localization and craft will refresh, icons and items.recycle.json will not."
+            exit 0
+          fi
+          python .pipeline/tools/steam_fetch.py --app 252490 --depot 252494 \
+            --filelist wanted.txt --dest "$GAME_DIR" --validate
+
+      - name: Detect what the depot contains
+        id: content
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          set -euo pipefail
+          steps="localization,translations"
+          if [ -d "$GAME_DIR/Bundles/items" ]; then
+            echo "has_items=true" >> "$GITHUB_OUTPUT"
+            # craft and recycle both read the client depot's content.bundle
+            steps="localization,craft,recycle,translations"
+          else
+            echo "has_items=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Bundles/items absent (no client depot); craft and recycle need it and were skipped."
+          fi
+          if [ -f "$GAME_DIR/Bundles/shared/content.bundle" ]; then
+            echo "has_bundles=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_bundles=false" >> "$GITHUB_OUTPUT"
+            echo "::error::no content.bundle under $GAME_DIR/Bundles/shared; the download failed."
+            exit 1
+          fi
+          echo "steps=$steps" >> "$GITHUB_OUTPUT"
+
+      # ---------------------------------------------------------------- parse
+
+      - name: Refresh the JSON
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          python .pipeline/sync_all.py --only "${{ steps.content.outputs.steps }}" \
+            --repo-dir . --game-dir "$GAME_DIR" --upscale-backend none
+          python .pipeline/scripts/validate_outputs.py --repo-dir .
+
+      - name: Stage the delta
+        id: delta
+        if: steps.gate.outputs.should_run == 'true' && steps.content.outputs.has_items == 'true'
+        run: |
+          python .pipeline/scripts/stage_delta.py --game-dir "$GAME_DIR" \
+            --repo-dir . --out delta-pkg --dataset-slug "$ICONS_DELTA_SLUG"
+
+      # --------------------------------------------------------------- kaggle
+
+      - name: Publish the delta dataset
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: |
+          python .pipeline/scripts/kaggle_dispatch.py dataset --dir delta-pkg \
+            --note "delta ${{ github.sha }}"
+
+      - name: Push the kernel
+        id: push
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: python .pipeline/scripts/kaggle_dispatch.py push
+
+      - name: Wait for the kernel
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: python .pipeline/scripts/kaggle_dispatch.py wait --timeout-min 300
+
+      - name: Fetch the kernel output
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: python .pipeline/scripts/kaggle_dispatch.py fetch --dest out
+
+      # --------------------------------------------------------------- publish
+
+      - name: Validate the delta
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: |
+          # Before anything is merged: proves the kernel produced icons that are
+          # genuinely new and not an overwrite of what the repo already had.
+          python .pipeline/scripts/validate_outputs.py --repo-dir . --out out
+
+      - name: Merge the delta into items.json
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: |
+          python .pipeline/scripts/merge_items.py --repo-dir . \
+            --needed delta-pkg/needed.json --manifest out/manifest.json
+
+      - name: Copy the upscaled icons into the worktree
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: |
+          set -euo pipefail
+          for sub in large small webp; do
+            if [ -d "out/icons/$sub" ]; then
+              mkdir -p "$sub"
+              cp -r "out/icons/$sub/." "$sub/"
+            fi
+          done
+          echo "icons copied: $(find large small webp -newer delta-pkg/needed.json -type f 2>/dev/null | wc -l) touched"
+
+      - name: Validate the result
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: |
+          # After the merge and the copy: this is the state the PR will contain.
+          # No --out here, the delta was already checked in the step above.
+          python .pipeline/scripts/validate_outputs.py --repo-dir .
+
+      - name: Publish
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
+        run: |
+          mode="${{ inputs.publish }}"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            mode="${PUBLISH_MODE:-${{ vars.PUBLISH_MODE }}}"
+            [ -n "$mode" ] || mode="merge"
+          fi
+          echo "publish mode: $mode"
+          python .pipeline/scripts/open_pr.py --repo . --out out --mode "$mode"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### pipeline"
+            echo ""
+            echo "- patch day: ${{ steps.gate.outputs.reason || 'not evaluated' }}"
+            echo "- delta: ${{ steps.delta.outputs.has_delta || 'n/a' }}"
+            echo "- branch: \`${GITHUB_REF_NAME}\`"
+          } >> "$GITHUB_STEP_SUMMARY"

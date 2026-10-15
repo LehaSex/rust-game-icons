@@ -1,1 +1,23 @@
-automation/
+build/
+out/
+delta-pkg/
+game-assets/
+
+__pycache__/
+*.pyc
+
+# Upscale weights are fetched by hand, not distributed with the repository.
+.pipeline/models/*.pth
+*.pth
+
+kaggle.json
+account.config
+*.kaggle
+
+# A maFile is account-equivalent: it generates login and trade-confirmation
+# codes. It must never be inside the work tree.
+*.maFile
+*.mafile
+*.maFile.b64
+mafiles/
+wanted.txt

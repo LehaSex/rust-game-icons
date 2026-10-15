@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "rust-game-icons items.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["category", "id", "image_name", "name"],
+    "additionalProperties": false,
+    "properties": {
+      "category": {
+        "type": "string",
+        "enum": ["ammo", "attire", "components", "construction", "electrical",
+                 "food", "fun", "items", "medical", "misc", "resources",
+                 "tools", "traps", "weapons"]
+      },
+      "id": {"type": "integer"},
+      "image_name": {"type": "string", "minLength": 1},
+      "name": {
+        "type": "object",
+        "required": ["en"],
+        "additionalProperties": {"type": "string"}
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+* text=auto eol=lf
+
+*.png binary
+*.webp binary
+*.bundle binary
+*.pdb binary
+*.pth binary
+
+build/
+out/
+delta-pkg/
+game-assets/
+
+kaggle.json
+account.config
+*.kaggle
+.kaggle/
+*.maFile
+*.mafile
+*.maFile.b64
+mafiles/
