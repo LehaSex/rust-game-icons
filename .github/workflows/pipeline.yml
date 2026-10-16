@@ -7,19 +7,21 @@ name: pipeline
 # (500 MB cap) and a cache would have to hold across workflows; a single job
 # keeps them on one disk for the whole run and drops them at the end.
 #
-# Rust force-updates on the first Tuesday at 19:00 UTC. Cron cannot express
-# "first Tuesday" -- GitHub ORs day-of-month with day-of-week -- so the schedule
-# fires on days 1-7 and is_patch_day.py narrows it to the single real run.
-#
-# Secrets in this file: KAGGLE_*, GH_PAT, and the Steam account used only for
-# the client depot. The dedicated server is fetched anonymously and the icon
-# step is the only thing that needs credentials.
+# The schedule used to encode the update day: Rust force-updates on the first
+# Tuesday at 19:00 UTC, cron cannot express "first Tuesday" (day-of-month and
+# day-of-week are OR-ed), so it woke up on days 1-7 and is_patch_day.py narrowed
+# that to one. The gate now reads the live build number instead, the same field
+# the game polls hourly to decide whether a client is too old:
+#   GET https://api.facepunch.com/api/public/manifest/?public_key=<key>
+#   -> Changesets.Main
+# manifest.json records the build this repository last processed, so the cron is
+# a plain hourly tick and the version alone decides.
 
 on:
   workflow_dispatch:
     inputs:
       force:
-        description: ignore the patch-day gate
+        description: ignore the version gate
         type: boolean
         default: true
       skip_kaggle:
@@ -35,8 +37,7 @@ on:
           - push
         default: merge
   schedule:
-    # 19:10 UTC, days 1-7; is_patch_day.py keeps only the first Tuesday.
-    - cron: "10 19 1-7 * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: read
@@ -53,13 +54,15 @@ env:
   ICONS_DELTA_SLUG: ${{ vars.ICONS_DELTA_SLUG }}
   DATA_REPO: ${{ vars.DATA_REPO }}
   GH_PAT: ${{ secrets.GH_PAT }}
+  FACEPUNCH_PUBLIC_KEY: ${{ vars.FACEPUNCH_PUBLIC_KEY }}
   STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
   STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
   STEAM_MAFILE_B64: ${{ secrets.STEAM_MAFILE_B64 }}
   DEPOTDOWNLOADER: /opt/depotdownloader/DepotDownloader
   GAME_DIR: ${{ github.workspace }}/game-assets
   DD_VERSION: "3.4.0"
-  # Empty means "use the defaults": Tuesday, days 1-7.
+  # Only read by the --on-error patch-day fallback. Empty means "use the
+  # defaults": Tuesday, days 1-7.
   PATCH_WEEKDAY: ${{ vars.PATCH_WEEKDAY }}
   PATCH_MAX_DAY: ${{ vars.PATCH_MAX_DAY }}
 
@@ -77,21 +80,31 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Patch-day gate
+      - name: Version gate
         id: gate
         run: |
+          fallback="skip"
+          [ "${{ vars.VERSION_FALLBACK }}" = "patch-day" ] && fallback="patch-day" || true
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python .pipeline/scripts/is_patch_day.py
+            python .pipeline/scripts/check_version.py --on-error "$fallback"
           else
-            python .pipeline/scripts/is_patch_day.py \
+            python .pipeline/scripts/check_version.py --on-error "$fallback" \
               $([ "${{ inputs.force }}" = "true" ] && echo --force)
           fi
 
-      - name: Stop if not a patch day
+      - name: Stop if the game has not changed
         if: steps.gate.outputs.should_run != 'true'
         run: |
-          echo "Not a patch day: ${{ steps.gate.outputs.reason }}"
+          echo "Not a new build: ${{ steps.gate.outputs.reason }}"
           echo "Nothing to do; this is the normal state between Rust updates."
+
+      - name: Stamp the build number
+        if: steps.gate.outputs.should_run == 'true'
+        run: |
+          args=(--repo .)
+          v="${{ steps.gate.outputs.remote_version }}"
+          if [ -n "$v" ]; then args+=(--version "$v"); fi
+          python .pipeline/scripts/record_version.py "${args[@]}"
 
       # ---------------------------------------------------------------- fetch
 
@@ -243,13 +256,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
 
+      - name: Publish the version bump
+        if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta != 'true'
+        run: |
+          args=(--repo . --push)
+          v="${{ steps.gate.outputs.remote_version }}"
+          if [ -n "$v" ]; then args+=(--version "$v"); fi
+          python .pipeline/scripts/record_version.py "${args[@]}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Summary
         if: always()
         run: |
           {
             echo "### pipeline"
             echo ""
-            echo "- patch day: ${{ steps.gate.outputs.reason || 'not evaluated' }}"
+            echo "- version gate: ${{ steps.gate.outputs.reason || 'not evaluated' }}"
+            echo "- recorded version: ${{ steps.gate.outputs.local_version || 'none' }}"
+            echo "- live Changesets.Main: ${{ steps.gate.outputs.remote_version || 'n/a' }}"
             echo "- delta: ${{ steps.delta.outputs.has_delta || 'n/a' }}"
             echo "- branch: \`${GITHUB_REF_NAME}\`"
           } >> "$GITHUB_STEP_SUMMARY"

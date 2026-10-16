@@ -29,6 +29,7 @@ jobs:
             items.desc.json
             items.craft.json
             items.recycle.json
+            manifest.json
             small
             .pipeline/schemas
             .pipeline/scripts
