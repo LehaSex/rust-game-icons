@@ -12,8 +12,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 PIPELINE = ROOT / ".pipeline"
-DATA_FILES = ["items.json", "items.compact.json", "items.desc.json",
-              "items.craft.json", "items.recycle.json"]
+
+# Copied from out/. manifest.json is deliberately excluded: the kernel writes its
+# own manifest.json there (icon counts) and it would overwrite the version stamp.
+KERNEL_FILES = ["items.json", "items.compact.json", "items.desc.json",
+                "items.craft.json", "items.recycle.json"]
+
+COMMIT_FILES = KERNEL_FILES + ["manifest.json"]
 
 
 def run(args: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess:
@@ -45,7 +50,9 @@ def copy_delta(out: Path, repo: Path) -> list[Path]:
 
 def commit(repo: Path, title: str, body: str) -> str:
     run(["git", "checkout", "-B", branch()], repo)
-    run(["git", "add", "--"] + DATA_FILES, repo, check=False)
+    # git add drops the whole pathspec list if one name matches nothing.
+    existing = [f for f in COMMIT_FILES if (repo / f).exists()]
+    run(["git", "add", "--"] + existing, repo, check=False)
     run(["git", "add", "large", "small", "webp"], repo, check=False)
     staged = run(["git", "diff", "--cached", "--name-only"], repo).stdout.split()
     if not staged:
@@ -95,16 +102,22 @@ def publish(repo: Path, title: str, body: str, mode: str) -> None:
             print("auto-merge armed; the PR merges itself once required checks pass")
 
 
-def summarize(out: Path) -> str:
+def summarize(out: Path, repo: Path) -> str:
     lines = []
     man = out / "manifest.json"
     if man.is_file():
         d = json.loads(man.read_text(encoding="utf-8"))
         lines.append(f"- icons added: {d.get('count', 0)} (upscale {d.get('upscaled', 0)} of {d.get('requested', 0)})")
-    for f in DATA_FILES:
+    for f in KERNEL_FILES:
         p = out / f
         if p.is_file():
             lines.append(f"- updated `{f}`")
+    stamp = repo / "manifest.json"
+    if stamp.is_file():
+        try:
+            lines.append(f"- game version: `{json.loads(stamp.read_text(encoding='utf-8')).get('version')}`")
+        except (OSError, json.JSONDecodeError):
+            pass
     if not lines:
         lines.append("- no changes")
     return "\n".join(lines)
@@ -130,7 +143,7 @@ def main() -> int:
 
                                                                               
                                                                               
-    for f in DATA_FILES:
+    for f in KERNEL_FILES:
         src = out / f
         if src.is_file():
             shutil.copy2(src, repo / f)
@@ -138,7 +151,7 @@ def main() -> int:
     copied = copy_delta(out, repo)
     print(f"copied {len(copied)} icon files")
 
-    body = (summarize(out) + f"\n\nGenerated {datetime.now(timezone.utc).isoformat(timespec='seconds')}"
+    body = (summarize(out, repo) + f"\n\nGenerated {datetime.now(timezone.utc).isoformat(timespec='seconds')}"
             f"\n\nKernel version: {os.environ.get('KERNEL_VERSION', 'local')}")
     b = commit(repo, args.title, body)
     if b:

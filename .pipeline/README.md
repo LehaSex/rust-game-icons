@@ -30,15 +30,44 @@ needs, how the Steam login works — is `SETUP.md` at the repository root.
 
 ## Automation
 
-`pipeline.yml` is one job on `ubuntu-latest`, scheduled for 19:10 UTC on days
-1–7 of the month. `scripts/is_patch_day.py` narrows that to the first Tuesday,
-which is when Rust force-updates. Game files are ~4.7 GiB — too large for a
-500 MB artifact — so everything stays in one job rather than passing them
-between jobs.
+`pipeline.yml` is one job on `ubuntu-latest`, scheduled hourly. `scripts/check_version.py`
+reads the live build number from Facepunch's manifest and compares it with
+`manifest.json` at the repository root, so the version decides and most runs stop
+at the gate having downloaded a few kilobytes.
 
-## Secrets
+```
+GET https://api.facepunch.com/api/public/manifest/?public_key=$FACEPUNCH_PUBLIC_KEY
+  -> { "Changesets": { "Main": 167781, "Staging": 168230 } }
+```
 
-Nothing here reads a credential that is not passed through the environment.
+The game polls the same endpoint hourly to decide whether a connecting client is
+too old (`ConnectionAuth.GetMinClientRequirement()` in `Assembly-CSharp.dll`).
+
+Game files are ~4.7 GiB — too large for a 500 MB artifact — so everything stays
+in one job rather than passing them between jobs.
+
+## The version stamp
+
+`manifest.json` at the repository root holds the last build this repository
+parsed. `record_version.py` writes it twice per run:
+
+- after the gate, **staged only**, so `open_pr.py` commits it with the data and a
+  failed run leaves nothing behind for the gate to retry;
+- at the end, **with `--push`**, only when the publish step was skipped (a build
+  that shipped no icon delta), otherwise the stamp is lost with the runner.
+
+`open_pr.py` stages `manifest.json` but must not copy it from `out/`: the Kaggle
+kernel writes its own `manifest.json` there (icon counts). Hence `KERNEL_FILES`
+vs `COMMIT_FILES`. `is_patch_day.py` is kept only as the `--on-error patch-day`
+fallback for when Facepunch is unreachable.
+
+## Variables
+
+`FACEPUNCH_PUBLIC_KEY` is the manifest endpoint's public key, held as a repository
+**variable**, not a secret: it ships in the clear inside the game's own
+`Facepunch.Integration.PublicKey`, orders nothing and writes nothing.
+
+Nothing else here reads a credential that is not passed through the environment.
 A Steam maFile is held in memory only, a maFile path inside the repository is
 refused, the Steam password is passed on stdin rather than argv, and
 `tools/steam_fetch.py` refuses to authenticate in a pull-request context where
