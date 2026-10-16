@@ -253,7 +253,7 @@ jobs:
           echo "publish mode: $mode"
           python .pipeline/scripts/open_pr.py --repo . --out out --mode "$mode"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
 
       - name: Publish the version bump
