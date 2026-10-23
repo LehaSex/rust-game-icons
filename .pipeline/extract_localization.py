@@ -24,7 +24,7 @@ def main() -> int:
                         help="output directory (default: automation/localization)")
     args = parser.parse_args()
 
-    bundle_path = require_file(content_bundle(args.bundle), "content.bundle")
+    bundle_path = require_file(content_bundle(args.bundle, args.game_dir), "content.bundle")
     out_dir = Path(args.out)
 
     env = UnityPy.load(str(bundle_path))

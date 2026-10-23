@@ -59,8 +59,8 @@ def main() -> int:
     parser.add_argument("--out", default=str(DEFAULT_OUT), help="output json path")
     args = parser.parse_args()
 
-    items_path = require_file(items_bundle(args.items_bundle), "items.preload.bundle")
-    content_path = require_file(content_bundle(args.content_bundle), "content.bundle")
+    items_path = require_file(items_bundle(args.items_bundle, args.game_dir), "items.preload.bundle")
+    content_path = require_file(content_bundle(args.content_bundle, args.game_dir), "content.bundle")
 
                                                            
     env = UnityPy.load(items_path)

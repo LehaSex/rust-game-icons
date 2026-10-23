@@ -30,26 +30,26 @@ def game_dir(explicit: str | None = None) -> Path:
     )
 
 
-def bundles_dir(explicit: str | None = None) -> Path:
-    return game_dir(explicit) / "Bundles" / "shared"
+def bundles_dir(explicit: str | None = None, game: str | None = None) -> Path:
+    return game_dir(explicit or game) / "Bundles" / "shared"
 
 
-def items_bundle(explicit: str | None = None) -> Path:
+def items_bundle(explicit: str | None = None, game: str | None = None) -> Path:
     if explicit:
         return Path(explicit)
     found = _env(ENV_ITEMS_BUNDLE)
     if found:
         return found
-    return bundles_dir() / "items.preload.bundle"
+    return bundles_dir(game=game) / "items.preload.bundle"
 
 
-def content_bundle(explicit: str | None = None) -> Path:
+def content_bundle(explicit: str | None = None, game: str | None = None) -> Path:
     if explicit:
         return Path(explicit)
     found = _env(ENV_CONTENT_BUNDLE)
     if found:
         return found
-    return bundles_dir() / "content.bundle"
+    return bundles_dir(game=game) / "content.bundle"
 
 
 def items_dir(explicit: str | None = None) -> Path:
