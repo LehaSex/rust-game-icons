@@ -107,7 +107,7 @@ def main() -> int:
     content_path = require_file(content_bundle(args.content_bundle, args.game_dir), "content.bundle")
 
                                                            
-    env = UnityPy.load(items_path)
+    env = UnityPy.load(str(items_path))
     defs_by_path = {}
     def_by_go = {}
     short_by_go = {}
@@ -163,7 +163,7 @@ def main() -> int:
         return RESEARCH_SCRAP_BY_RARITY.get(def_rarity_sn(sn), 120)
 
                                                 
-    env2 = UnityPy.load(content_path)
+    env2 = UnityPy.load(str(content_path))
     techtree_tier = {}
     techtree_scrap = {}
     for obj in env2.objects:

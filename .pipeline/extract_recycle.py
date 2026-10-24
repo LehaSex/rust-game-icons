@@ -63,7 +63,7 @@ def main() -> int:
     content_path = require_file(content_bundle(args.content_bundle, args.game_dir), "content.bundle")
 
                                                            
-    env = UnityPy.load(items_path)
+    env = UnityPy.load(str(items_path))
     defs_by_path = {}
     short_by_go = {}
     bp_by_go = {}
@@ -92,7 +92,7 @@ def main() -> int:
     print(f"ItemDefinition: {len(defs_by_path)}, ItemBlueprint: {len(bp_by_go)}")
 
                                             
-    env2 = UnityPy.load(content_path)
+    env2 = UnityPy.load(str(content_path))
     type_configs = {}
     for obj in env2.objects:
         if obj.type.name != "MonoBehaviour":
