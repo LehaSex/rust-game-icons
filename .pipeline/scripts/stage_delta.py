@@ -213,6 +213,7 @@ def main() -> int:
     print(f"in game {len(game)}, in repo {len(have)}, delta {len(payload)} (PNGs copied {copied})")
     print(f"needed.json sha256[:12] = {digest}")
     print(f"has_delta={'true' if payload else 'false'}")
+    set_outputs(payload)
     if not payload:
         print("no delta — no reason to go to Kaggle")
     return 0
@@ -221,6 +222,15 @@ def main() -> int:
 def summary_path() -> Path | None:
     raw = os.environ.get("GITHUB_STEP_SUMMARY", "").strip()
     return Path(raw) if raw else None
+
+
+def set_outputs(payload: list[dict]) -> None:
+    raw = os.environ.get("GITHUB_OUTPUT", "").strip()
+    if not raw:
+        return
+    with Path(raw).open("a", encoding="utf-8") as fh:
+        fh.write(f"has_delta={'true' if payload else 'false'}\n")
+        fh.write(f"delta_count={len(payload)}\n")
 
 
 if __name__ == "__main__":
