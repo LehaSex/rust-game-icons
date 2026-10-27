@@ -107,15 +107,21 @@ def shutil_copy(src: Path, dst: Path) -> None:
     dst.write_bytes(src.read_bytes())
 
 
+MANIFEST = OUT.parent / "manifest.json"
+
+
+def write_manifest(manifest: dict) -> None:
+    MANIFEST.parent.mkdir(parents=True, exist_ok=True)
+    MANIFEST.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
 def main() -> int:
     needed = load_needed()
     if not needed:
         log("empty delta — skipping the run")
-        (OUT / "manifest.json").parent.mkdir(parents=True, exist_ok=True)
-        (OUT / "manifest.json").write_text(
-            json.dumps({"items": [], "count": 0}, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
+        write_manifest({"items": [], "count": 0})
         return 0
 
     log(f"delta: {len(needed)} items")
@@ -141,10 +147,7 @@ def main() -> int:
         "upscaled": len(done_names),
         "items": sorted(written),
     }
-    (OUT / "manifest.json").parent.mkdir(parents=True, exist_ok=True)
-    (OUT / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    write_manifest(manifest)
     log(f"wrote {len(written)} icons to {OUT / 'icons'}")
 
     unknown = {i.get("category") for i in needed} - REQUIRED_CATEGORIES - {None}

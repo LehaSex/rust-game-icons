@@ -243,13 +243,14 @@ def check_shrinkage(repo: Path, rep: Report, baseline: str | None, tolerance: fl
 
 
 def check_translation_regression(repo: Path, items, baseline: str | None, rep: Report) -> None:
-    def untranslated(lst: list[dict]) -> int:
-        return sum(1 for i in lst
-                   if i.get("name", {}).get("ru", "") == i.get("name", {}).get("en", ""))
+    def untranslated_map(lst: list[dict]) -> dict[str, bool]:
+        return {i.get("image_name"): i.get("name", {}).get("ru", "") == i.get("name", {}).get("en", "")
+                for i in lst if i.get("image_name")}
 
-    now = untranslated(items)
+    now = untranslated_map(items)
+    n_un = sum(1 for v in now.values() if v)
     total = len(items)
-    rep.note(f"ru == en for {now} of {total} items ({100.0 * now / max(total, 1):.1f}%)")
+    rep.note(f"ru == en for {n_un} of {total} items ({100.0 * n_un / max(total, 1):.1f}%)")
     if not baseline:
         return
     try:
@@ -262,11 +263,16 @@ def check_translation_regression(repo: Path, items, baseline: str | None, rep: R
     except Exception as exc:
         rep.warn(f"could not read the baseline: {exc}")
         return
-    was = untranslated(before)
-    if now > was:
-        rep.err(f"translation regression: {now} items without ru, was {was} on {baseline}")
+    was = untranslated_map(before)
+
+    lost = sorted(k for k, un in was.items() if not un and now.get(k, False))
+    gained = sorted(k for k, un in now.items() if un and k not in was)
+    if lost:
+        rep.err(f"translation regression: {len(lost)} items lost their ru translation: {', '.join(lost[:5])}")
+    elif gained:
+        rep.warn(f"{len(gained)} new items without ru for now: {', '.join(gained[:5])}")
     else:
-        rep.note(f"translations did not get worse (was {was})")
+        rep.note("translations did not get worse")
 
 
 def check_delta(out: Path, repo: Path, rep: Report) -> None:

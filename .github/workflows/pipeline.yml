@@ -222,6 +222,7 @@ jobs:
         run: |
           python .pipeline/scripts/merge_items.py --repo-dir . \
             --needed delta-pkg/needed.json --manifest out/manifest.json
+          python .pipeline/sync_translations.py --repo-dir .
 
       - name: Copy the upscaled icons into the worktree
         if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta == 'true' && inputs.skip_kaggle != true
