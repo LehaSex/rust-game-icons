@@ -121,16 +121,28 @@ def wait(timeout_min: int = 750) -> str:
     sys.exit(f"timeout after {timeout_min} min")
 
 
-def fetch(dest: Path) -> None:
+def fetch(dest: Path, timeout_min: int = 10) -> None:
     data = json.loads(VERSION_FILE.read_text(encoding="utf-8")) if VERSION_FILE.is_file() else {}
     ref = f"{data.get('slug', slug())}/{data['version']}" if data.get("version") else slug()
-    if dest.exists():
-        shutil.rmtree(dest)
-    dest.mkdir(parents=True, exist_ok=True)
-    proc = sh(["kaggle", "kernels", "output", ref, "-p", str(dest), "--force"], check=False)
-    if proc.returncode != 0:
-        print((proc.stderr or "")[-600:])
-        sys.exit("failed to download the kernel output")
+    deadline = time.time() + timeout_min * 60
+    attempt = 0
+    while True:
+        attempt += 1
+        if dest.exists():
+            shutil.rmtree(dest)
+        dest.mkdir(parents=True, exist_ok=True)
+        proc = sh(["kaggle", "kernels", "output", ref, "-p", str(dest), "--force"], check=False)
+        if proc.returncode != 0:
+            print((proc.stderr or "")[-600:])
+            sys.exit("failed to download the kernel output")
+        if (dest / "manifest.json").is_file():
+            return
+        if (dest / "out" / "manifest.json").is_file():  # nested zips keep the directory
+            return
+        if time.time() >= deadline:
+            sys.exit("kernel output never appeared (no manifest.json in the download)")
+        print(f"  attempt {attempt}: output not published yet, retrying in 30s...", flush=True)
+        time.sleep(30)
 
 
 def dataset(directory: Path, note: str = "", wait_min: int = 60) -> None:

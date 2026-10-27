@@ -70,6 +70,9 @@ def main() -> int:
     wanted = delta.get("items", []) if isinstance(delta, dict) else delta
 
     only: set[str] | None = None
+    if args.manifest and not args.manifest.is_file():
+        # missing manifest
+        raise SystemExit(f"kernel manifest not found: {args.manifest} — the kernel produced no icons, refusing to merge")
     if args.manifest and args.manifest.is_file():
         man = json.loads(args.manifest.read_text(encoding="utf-8"))
         produced = man.get("items")
