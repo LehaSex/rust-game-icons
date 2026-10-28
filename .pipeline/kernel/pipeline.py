@@ -90,16 +90,16 @@ def finalize(small_name: str, large_src: Path | None, item: dict) -> bool:
     with Image.open(small_src) as img:
         src = img.convert("RGBA")
         src.load()
-    src.save(OUT / "icons" / "small" / cat / f"{name}.png", optimize=True)
-    src.save(OUT / "icons" / "webp" / cat / f"{name}.webp",
-             "WEBP", quality=WEBP_QUALITY, method=4)
+    small = src.resize((SMALL_SIZE, SMALL_SIZE), Image.Resampling.LANCZOS)
+    small.save(OUT / "icons" / "small" / cat / f"{name}.png", optimize=True)
+    small.save(OUT / "icons" / "webp" / cat / f"{name}.webp",
+               "WEBP", quality=WEBP_QUALITY, method=4)
 
     if large_src is not None and large_src.is_file():
         shutil_copy(large_src, OUT / "icons" / "large" / cat / f"{name}.png")
     else:
-                                                                                
-                                                                
-        src.save(OUT / "icons" / "large" / cat / f"{name}.png", optimize=True)
+        src.resize((LARGE_SIZE, LARGE_SIZE), Image.Resampling.LANCZOS).save(
+            OUT / "icons" / "large" / cat / f"{name}.png", optimize=True)
     return True
 
 
