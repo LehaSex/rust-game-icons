@@ -12978,5 +12978,55 @@
       "ru": "Затонувший боевой нож"
     },
     "category": "weapons"
+  },
+  {
+    "id": 1930628359,
+    "image_name": "alien.costume",
+    "name": {
+      "en": "Alien Costume",
+      "zh-cn": "Alien Costume",
+      "ru": "Alien Costume"
+    },
+    "category": "attire"
+  },
+  {
+    "id": -570638754,
+    "image_name": "discord.zombie.plushie",
+    "name": {
+      "en": "Zombie Wumpus Plush",
+      "zh-cn": "Zombie Wumpus Plush",
+      "ru": "Zombie Wumpus Plush"
+    },
+    "category": "items"
+  },
+  {
+    "id": 139776459,
+    "image_name": "halloween.string.lights",
+    "name": {
+      "en": "Halloween String Lights",
+      "zh-cn": "Halloween String Lights",
+      "ru": "Halloween String Lights"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1174330346,
+    "image_name": "halloweenwreath",
+    "name": {
+      "en": "Halloween Wreath",
+      "zh-cn": "Halloween Wreath",
+      "ru": "Halloween Wreath"
+    },
+    "category": "items"
+  },
+  {
+    "id": -1716340729,
+    "image_name": "tunalight.skull",
+    "name": {
+      "en": "Skull Wall Lamp",
+      "zh-cn": "Skull Wall Lamp",
+      "ru": "Skull Wall Lamp"
+    },
+    "category": "items"
   }
 ]

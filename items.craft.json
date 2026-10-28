@@ -447,6 +447,36 @@
     "techtree_scrap": null,
     "time": 10.0
   },
+  "alien.costume": {
+    "additional_unlocks": [],
+    "amount": 1,
+    "craft_workbench": null,
+    "craftable": true,
+    "default_blueprint": false,
+    "despawn": 300,
+    "force_time": false,
+    "ingredients": [
+      {
+        "amount": 15,
+        "item": "cloth"
+      },
+      {
+        "amount": 75,
+        "item": "bone.fragments"
+      }
+    ],
+    "needs_steam_item": true,
+    "rarity": "None",
+    "require_unlocked_item": null,
+    "research_scrap": null,
+    "research_workbench": null,
+    "researchable": false,
+    "scrap_from_recycle": 0,
+    "skin_of": null,
+    "stack_size": 1,
+    "techtree_scrap": null,
+    "time": 15
+  },
   "ammo.grenadelauncher.buckshot": {
     "additional_unlocks": [],
     "amount": 2,
@@ -8098,6 +8128,32 @@
     "techtree_scrap": null,
     "time": 1.0
   },
+  "discord.zombie.plushie": {
+    "additional_unlocks": [],
+    "amount": 1,
+    "craft_workbench": null,
+    "craftable": true,
+    "default_blueprint": false,
+    "despawn": 300,
+    "force_time": false,
+    "ingredients": [
+      {
+        "amount": 50,
+        "item": "cloth"
+      }
+    ],
+    "needs_steam_item": true,
+    "rarity": "None",
+    "require_unlocked_item": null,
+    "research_scrap": null,
+    "research_workbench": null,
+    "researchable": false,
+    "scrap_from_recycle": 0,
+    "skin_of": null,
+    "stack_size": 1,
+    "techtree_scrap": null,
+    "time": 1.0
+  },
   "diverhatchet": {
     "additional_unlocks": [],
     "amount": 1,
@@ -12179,8 +12235,8 @@
     "additional_unlocks": [],
     "amount": 1,
     "craft_workbench": "workbench1",
-    "craftable": false,
-    "default_blueprint": false,
+    "craftable": true,
+    "default_blueprint": true,
     "despawn": 1200,
     "force_time": false,
     "ingredients": [
@@ -14320,6 +14376,36 @@
     "techtree_scrap": null,
     "time": 0
   },
+  "halloween.string.lights": {
+    "additional_unlocks": [],
+    "amount": 1,
+    "craft_workbench": null,
+    "craftable": true,
+    "default_blueprint": false,
+    "despawn": 300,
+    "force_time": false,
+    "ingredients": [
+      {
+        "amount": 25,
+        "item": "metal.fragments"
+      },
+      {
+        "amount": 20,
+        "item": "lowgradefuel"
+      }
+    ],
+    "needs_steam_item": true,
+    "rarity": "None",
+    "require_unlocked_item": null,
+    "research_scrap": null,
+    "research_workbench": null,
+    "researchable": false,
+    "scrap_from_recycle": 0,
+    "skin_of": null,
+    "stack_size": 20,
+    "techtree_scrap": null,
+    "time": 15
+  },
   "halloween.surgeonsuit": {
     "additional_unlocks": [],
     "amount": 1,
@@ -14349,6 +14435,32 @@
     "stack_size": 1,
     "techtree_scrap": null,
     "time": 1.0
+  },
+  "halloweenwreath": {
+    "additional_unlocks": [],
+    "amount": 1,
+    "craft_workbench": null,
+    "craftable": true,
+    "default_blueprint": false,
+    "despawn": 300,
+    "force_time": false,
+    "ingredients": [
+      {
+        "amount": 20,
+        "item": "cloth"
+      }
+    ],
+    "needs_steam_item": true,
+    "rarity": "None",
+    "require_unlocked_item": null,
+    "research_scrap": null,
+    "research_workbench": null,
+    "researchable": false,
+    "scrap_from_recycle": 0,
+    "skin_of": null,
+    "stack_size": 1,
+    "techtree_scrap": null,
+    "time": 15
   },
   "hammer": {
     "additional_unlocks": [],
@@ -31367,6 +31479,40 @@
     "skin_of": null,
     "stack_size": 1,
     "techtree_scrap": 75,
+    "time": 15
+  },
+  "tunalight.skull": {
+    "additional_unlocks": [],
+    "amount": 1,
+    "craft_workbench": null,
+    "craftable": false,
+    "default_blueprint": false,
+    "despawn": 300,
+    "force_time": false,
+    "ingredients": [
+      {
+        "amount": 1,
+        "item": "can.tuna.empty"
+      },
+      {
+        "amount": 20,
+        "item": "wood"
+      },
+      {
+        "amount": 10,
+        "item": "lowgradefuel"
+      }
+    ],
+    "needs_steam_item": false,
+    "rarity": "None",
+    "require_unlocked_item": null,
+    "research_scrap": 120,
+    "research_workbench": null,
+    "researchable": true,
+    "scrap_from_recycle": 0,
+    "skin_of": "tunalight",
+    "stack_size": 1,
+    "techtree_scrap": null,
     "time": 15
   },
   "twitch.headset": {

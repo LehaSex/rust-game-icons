@@ -414,6 +414,56 @@
       "recyclable": true,
       "scrap": null
     },
+    "alien.costume": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 7,
+            "chance": 0.5,
+            "item": "cloth"
+          },
+          {
+            "amount": 37,
+            "chance": 0.5,
+            "item": "bone.fragments"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 9,
+            "item": "cloth"
+          },
+          {
+            "amount": 45,
+            "item": "bone.fragments"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 11,
+            "chance": 0.25,
+            "item": "cloth"
+          },
+          {
+            "amount": 56,
+            "chance": 0.25,
+            "item": "bone.fragments"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 6,
+            "item": "cloth"
+          },
+          {
+            "amount": 30,
+            "item": "bone.fragments"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
     "ammo.grenadelauncher.buckshot": {
       "outputs": {
         "monument": [
@@ -9945,6 +9995,37 @@
       "recyclable": true,
       "scrap": null
     },
+    "discord.zombie.plushie": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 25,
+            "item": "cloth"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 30,
+            "item": "cloth"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 37,
+            "chance": 0.5,
+            "item": "cloth"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 20,
+            "item": "cloth"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
     "diverhatchet": {
       "outputs": {
         "monument": [
@@ -18329,6 +18410,54 @@
     "halloween.mummysuit": {
       "recyclable": false
     },
+    "halloween.string.lights": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 12,
+            "chance": 0.5,
+            "item": "metal.fragments"
+          },
+          {
+            "amount": 10,
+            "item": "lowgradefuel"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 15,
+            "item": "metal.fragments"
+          },
+          {
+            "amount": 12,
+            "item": "lowgradefuel"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 18,
+            "chance": 0.75,
+            "item": "metal.fragments"
+          },
+          {
+            "amount": 15,
+            "item": "lowgradefuel"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 10,
+            "item": "metal.fragments"
+          },
+          {
+            "amount": 8,
+            "item": "lowgradefuel"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
     "halloween.surgeonsuit": {
       "outputs": {
         "monument": [
@@ -18372,6 +18501,36 @@
             "amount": 0,
             "chance": 0.8,
             "item": "sewingkit"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
+    "halloweenwreath": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 10,
+            "item": "cloth"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 12,
+            "item": "cloth"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 15,
+            "item": "cloth"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 8,
+            "item": "cloth"
           }
         ]
       },
@@ -41326,6 +41485,73 @@
       "scrap": null
     },
     "tunalight": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 0,
+            "chance": 0.5,
+            "item": "can.tuna.empty"
+          },
+          {
+            "amount": 10,
+            "item": "wood"
+          },
+          {
+            "amount": 5,
+            "item": "lowgradefuel"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 0,
+            "chance": 0.6,
+            "item": "can.tuna.empty"
+          },
+          {
+            "amount": 12,
+            "item": "wood"
+          },
+          {
+            "amount": 6,
+            "item": "lowgradefuel"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 0,
+            "chance": 0.75,
+            "item": "can.tuna.empty"
+          },
+          {
+            "amount": 15,
+            "item": "wood"
+          },
+          {
+            "amount": 7,
+            "chance": 0.5,
+            "item": "lowgradefuel"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 0,
+            "chance": 0.4,
+            "item": "can.tuna.empty"
+          },
+          {
+            "amount": 8,
+            "item": "wood"
+          },
+          {
+            "amount": 4,
+            "item": "lowgradefuel"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
+    "tunalight.skull": {
       "outputs": {
         "monument": [
           {
