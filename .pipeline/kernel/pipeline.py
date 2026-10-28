@@ -11,7 +11,7 @@ from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 INPUT = Path(os.environ.get("DELTA_INPUT", "/kaggle/input/rust-icons-delta"))
-OUT = Path(os.environ.get("DELTA_OUT", "/kaggle/working/out"))
+OUT = Path(os.environ.get("DELTA_OUT", "/kaggle/working"))
 
 # Best fidelity to the original Rust asset on large/, measured as PSNR/SSIM
 # against the true 1080 source, averaged over 128/180/256 px inputs:
@@ -107,7 +107,7 @@ def shutil_copy(src: Path, dst: Path) -> None:
     dst.write_bytes(src.read_bytes())
 
 
-MANIFEST = OUT.parent / "manifest.json"
+MANIFEST = OUT / "manifest.json"
 
 
 def write_manifest(manifest: dict) -> None:
