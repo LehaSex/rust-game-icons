@@ -351,9 +351,6 @@
       "recyclable": true,
       "scrap": null
     },
-    "advancedblueprintfragment": {
-      "recyclable": false
-    },
     "advancedcoolingtea": {
       "recyclable": false
     },
@@ -4082,9 +4079,6 @@
     "base.vertical.barrel": {
       "recyclable": false
     },
-    "basicblueprintfragment": {
-      "recyclable": false
-    },
     "bathtub.planter": {
       "outputs": {
         "monument": [
@@ -4865,6 +4859,15 @@
       "recyclable": false
     },
     "blueprintbase": {
+      "recyclable": false
+    },
+    "blueprintbook": {
+      "recyclable": false
+    },
+    "blueprintfragment": {
+      "recyclable": false
+    },
+    "blueprintpage": {
       "recyclable": false
     },
     "blunderbuss": {
@@ -7651,6 +7654,36 @@
           {
             "amount": 60,
             "item": "wood"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
+    "clothing.mod.armorinsert_wool": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 10,
+            "item": "wool"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 12,
+            "item": "wool"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 15,
+            "item": "wool"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 8,
+            "item": "wool"
           }
         ]
       },
@@ -27064,37 +27097,6 @@
       "recyclable": true,
       "scrap": null
     },
-    "mini.fridge": {
-      "outputs": {
-        "monument": [
-          {
-            "amount": 25,
-            "item": "metal.fragments"
-          }
-        ],
-        "monument_powered": [
-          {
-            "amount": 30,
-            "item": "metal.fragments"
-          }
-        ],
-        "power_plant": [
-          {
-            "amount": 37,
-            "chance": 0.5,
-            "item": "metal.fragments"
-          }
-        ],
-        "safe_zone": [
-          {
-            "amount": 20,
-            "item": "metal.fragments"
-          }
-        ]
-      },
-      "recyclable": true,
-      "scrap": null
-    },
     "minicopter": {
       "outputs": {
         "monument": [
@@ -27206,6 +27208,37 @@
             "amount": 0,
             "chance": 0.4,
             "item": "gears"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
+    "minifridge": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 25,
+            "item": "metal.fragments"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 30,
+            "item": "metal.fragments"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 37,
+            "chance": 0.5,
+            "item": "metal.fragments"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 20,
+            "item": "metal.fragments"
           }
         ]
       },
@@ -28948,6 +28981,9 @@
       "recyclable": false
     },
     "pie.crocodile": {
+      "recyclable": false
+    },
+    "pie.crocodile.rich": {
       "recyclable": false
     },
     "pie.fish": {
@@ -34886,6 +34922,39 @@
       "recyclable": true,
       "scrap": null
     },
+    "shears": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 1,
+            "item": "metalblade"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 1,
+            "chance": 0.2,
+            "item": "metalblade"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 1,
+            "chance": 0.5,
+            "item": "metalblade"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 0,
+            "chance": 0.8,
+            "item": "metalblade"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
     "sheetmetal": {
       "outputs": {
         "monument": [
@@ -38312,6 +38381,56 @@
           {
             "amount": 0,
             "chance": 0.4,
+            "item": "metalspring"
+          }
+        ]
+      },
+      "recyclable": true,
+      "scrap": null
+    },
+    "smg.uzi": {
+      "outputs": {
+        "monument": [
+          {
+            "amount": 15,
+            "item": "metal.refined"
+          },
+          {
+            "amount": 1,
+            "item": "metalspring"
+          }
+        ],
+        "monument_powered": [
+          {
+            "amount": 18,
+            "item": "metal.refined"
+          },
+          {
+            "amount": 1,
+            "chance": 0.2,
+            "item": "metalspring"
+          }
+        ],
+        "power_plant": [
+          {
+            "amount": 22,
+            "chance": 0.5,
+            "item": "metal.refined"
+          },
+          {
+            "amount": 1,
+            "chance": 0.5,
+            "item": "metalspring"
+          }
+        ],
+        "safe_zone": [
+          {
+            "amount": 12,
+            "item": "metal.refined"
+          },
+          {
+            "amount": 0,
+            "chance": 0.8,
             "item": "metalspring"
           }
         ]
@@ -46261,13 +46380,9 @@
             "item": "metal.fragments"
           },
           {
-            "amount": 10,
-            "item": "metal.refined"
-          },
-          {
-            "amount": 2,
+            "amount": 12,
             "chance": 0.5,
-            "item": "basicblueprintfragment"
+            "item": "metal.refined"
           }
         ],
         "monument_powered": [
@@ -46276,12 +46391,8 @@
             "item": "metal.fragments"
           },
           {
-            "amount": 12,
+            "amount": 15,
             "item": "metal.refined"
-          },
-          {
-            "amount": 3,
-            "item": "basicblueprintfragment"
           }
         ],
         "power_plant": [
@@ -46290,13 +46401,9 @@
             "item": "metal.fragments"
           },
           {
-            "amount": 15,
-            "item": "metal.refined"
-          },
-          {
-            "amount": 3,
+            "amount": 18,
             "chance": 0.75,
-            "item": "basicblueprintfragment"
+            "item": "metal.refined"
           }
         ],
         "safe_zone": [
@@ -46305,12 +46412,8 @@
             "item": "metal.fragments"
           },
           {
-            "amount": 8,
+            "amount": 10,
             "item": "metal.refined"
-          },
-          {
-            "amount": 2,
-            "item": "basicblueprintfragment"
           }
         ]
       },
@@ -46327,11 +46430,6 @@
           {
             "amount": 50,
             "item": "metal.refined"
-          },
-          {
-            "amount": 2,
-            "chance": 0.5,
-            "item": "advancedblueprintfragment"
           }
         ],
         "monument_powered": [
@@ -46342,10 +46440,6 @@
           {
             "amount": 60,
             "item": "metal.refined"
-          },
-          {
-            "amount": 3,
-            "item": "advancedblueprintfragment"
           }
         ],
         "power_plant": [
@@ -46356,11 +46450,6 @@
           {
             "amount": 75,
             "item": "metal.refined"
-          },
-          {
-            "amount": 3,
-            "chance": 0.75,
-            "item": "advancedblueprintfragment"
           }
         ],
         "safe_zone": [
@@ -46371,10 +46460,6 @@
           {
             "amount": 40,
             "item": "metal.refined"
-          },
-          {
-            "amount": 2,
-            "item": "advancedblueprintfragment"
           }
         ]
       },
