@@ -13028,5 +13028,85 @@
       "ru": "Skull Wall Lamp"
     },
     "category": "items"
+  },
+  {
+    "id": -1896395719,
+    "image_name": "blueprintbook",
+    "name": {
+      "en": "Blueprint Book",
+      "zh-cn": "Blueprint Book",
+      "ru": "Blueprint Book"
+    },
+    "category": "components"
+  },
+  {
+    "id": -143481979,
+    "image_name": "blueprintfragment",
+    "name": {
+      "en": "Blueprint Fragment",
+      "zh-cn": "Blueprint Fragment",
+      "ru": "Blueprint Fragment"
+    },
+    "category": "components"
+  },
+  {
+    "id": -1716287874,
+    "image_name": "blueprintpage",
+    "name": {
+      "en": "Blueprint Page",
+      "zh-cn": "Blueprint Page",
+      "ru": "Blueprint Page"
+    },
+    "category": "components"
+  },
+  {
+    "id": -593892104,
+    "image_name": "clothing.mod.armorinsert_wool",
+    "name": {
+      "en": "Wool Armor Insert",
+      "zh-cn": "Wool Armor Insert",
+      "ru": "Wool Armor Insert"
+    },
+    "category": "items"
+  },
+  {
+    "id": 1174484438,
+    "image_name": "minifridge",
+    "name": {
+      "en": "Mini Fridge",
+      "zh-cn": "迷你冰箱",
+      "ru": "Мини-холодильник"
+    },
+    "category": "electrical"
+  },
+  {
+    "id": -1540865198,
+    "image_name": "pie.crocodile.rich",
+    "name": {
+      "en": "Rich Crocodile Pie",
+      "zh-cn": "Rich Crocodile Pie",
+      "ru": "Rich Crocodile Pie"
+    },
+    "category": "food"
+  },
+  {
+    "id": -1953695556,
+    "image_name": "shears",
+    "name": {
+      "en": "Shears",
+      "zh-cn": "Shears",
+      "ru": "Shears"
+    },
+    "category": "tools"
+  },
+  {
+    "id": 2125127001,
+    "image_name": "smg.uzi",
+    "name": {
+      "en": "Uzi",
+      "zh-cn": "Uzi",
+      "ru": "Uzi"
+    },
+    "category": "weapons"
   }
 ]
