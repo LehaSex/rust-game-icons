@@ -24,7 +24,8 @@ DEFAULT_OUT = SCRIPT_DIR.parent / "items.craft.json"
 
 RARITY_NAMES = ["None", "Common", "Uncommon", "Rare", "VeryRare"]
                                                                                                            
-RESEARCH_SCRAP_BY_RARITY = {0: 120, 1: 15, 2: 30, 3: 60, 4: 120}
+# ResearchTable.ScrapForResearch(...) – scrap cost of the research table
+RESEARCH_SCRAP_BY_RARITY = {0: 300, 1: 20, 2: 40, 3: 100, 4: 300}
                                                              
 DEFAULT_BLUEPRINT_RESEARCH_SCRAP = 10
 
@@ -41,9 +42,16 @@ QUICK_DESPAWN_SECONDS = 30
                                                          
                                                                       
 NORMAL_TREES = {"TechTreeT0": "workbench1", "TechTreeT2": "workbench2", "TechTreeT3": "workbench3"}
-                                                                                          
-                                                                                                
 ENGINEERING_TREE = "TechTreeIO"
+# TechTreeData.techTreeLevel -> workbench (the io tree is level 0 but a separate tab).
+TECHTREE_LEVEL_TO_TIER = {0: "workbench1", 1: "workbench2", 2: "workbench3"}
+# Workbench.GetTechTreeResearchItem: the blueprint item consumed per tech tree node.
+BLUEPRINT_ITEM_BY_TIER = {
+    "workbench1": "blueprintfragment",
+    "workbench2": "blueprintpage",
+    "workbench3": "blueprintbook",
+    "iotable": "blueprintfragment",
+}
                                                                                        
 WORKBENCH_ORDER = {"workbench1": 1, "workbench2": 2, "workbench3": 3, "iotable": 9}
                                                                           
@@ -64,7 +72,8 @@ FIELD_DEFAULTS = {
     "default_blueprint": False,
     "scrap_from_recycle": 0,
     "research_workbench": None,
-    "techtree_scrap": None,
+    "research_blueprints": [],
+    "research_blueprints_techtree": [],
     "needs_steam_item": False,
     "require_unlocked_item": None,
     "additional_unlocks": [],
@@ -146,26 +155,10 @@ def main() -> int:
 
     af_by_cab = {items_cab: items_af}
 
-    def def_rarity_sn(sn, depth=0):
-        if depth > 5 or sn is None:
-            return 4
-        t = next((t for t in defs_by_path.values() if t["shortname"] == sn), None)
-        if t is None:
-            return 4
-        red = t.get("isRedirectOf")
-        if red and (red["m_PathID"] or red["m_FileID"]):
-            base = pptr_name(af_by_cab, defs_by_path, items_af, red)
-            if base and base != sn:
-                return def_rarity_sn(base, depth + 1)
-        return int(t["rarity"])
-
-    def scrap_for_research(sn):
-        return RESEARCH_SCRAP_BY_RARITY.get(def_rarity_sn(sn), 120)
-
-                                                
     env2 = UnityPy.load(str(content_path))
     techtree_tier = {}
-    techtree_scrap = {}
+    techtree_chain_blueprints = {}
+    default_bp_items = {short_by_go[go] for go, bp in bp_by_go.items() if bp["defaultBlueprint"]}
     for obj in env2.objects:
         if obj.type.name != "MonoBehaviour":
             continue
@@ -176,9 +169,16 @@ def main() -> int:
             continue
         if not isinstance(tree, dict) or "techTreeLevel" not in tree or "nodes" not in tree:
             continue
-        tier = NORMAL_TREES.get(tree["m_Name"])
-        is_engineering = tree["m_Name"] == ENGINEERING_TREE
-        if tier is None and not is_engineering:
+        name = tree["m_Name"]
+        is_engineering = name == ENGINEERING_TREE
+        if is_engineering:
+            tier = "iotable"
+        elif name in NORMAL_TREES:
+            tier = TECHTREE_LEVEL_TO_TIER.get(int(tree["techTreeLevel"]), NORMAL_TREES.get(name))
+        else:
+            # Hardcore / Primitive / misc variants never override the vanilla trees.
+            continue
+        if tier is None:
             continue
         by_id = {}
         for node in tree["nodes"]:
@@ -194,7 +194,7 @@ def main() -> int:
                 print(f"  warn: cycle in tree {tree['m_Name']} at node {nid}")
                 return 0
             n = by_id[nid]
-            own = scrap_for_research(n["sn"]) if n["sn"] else 0
+            own = 0 if (n["sn"] is None or n["sn"] in default_bp_items) else 1
             inputs = [i for i in n["inputs"] if i in by_id]
             if nid == entry_id:
                 v = 0
@@ -214,7 +214,8 @@ def main() -> int:
             if (prev is None or level == "iotable"
                     or (prev != "iotable" and WORKBENCH_ORDER[level] < WORKBENCH_ORDER[prev])):
                 techtree_tier[n["sn"]] = level
-                techtree_scrap[n["sn"]] = full_cost(nid, frozenset())
+                techtree_chain_blueprints[n["sn"]] = (0 if n["sn"] in default_bp_items else 1,
+                                                      full_cost(nid, frozenset()))
 
                            
     result = {}
@@ -266,7 +267,7 @@ def main() -> int:
         if bp["isResearchable"]:
             rec["researchable"] = True
             rec["research_scrap"] = (DEFAULT_BLUEPRINT_RESEARCH_SCRAP if bp["defaultBlueprint"]
-                                     else RESEARCH_SCRAP_BY_RARITY.get(rarity, 120))
+                                     else RESEARCH_SCRAP_BY_RARITY.get(rarity, 300))
         else:
             rec["researchable"] = False
         if bp["defaultBlueprint"]:
@@ -276,7 +277,14 @@ def main() -> int:
         tier = techtree_tier.get(target)
         if tier is not None:
             rec["research_workbench"] = tier
-            rec["techtree_scrap"] = techtree_scrap[target]
+            # blueprint items consumed by tech tree unlocks, one per tree node;
+            # vanilla values without server taxes and upgrade multipliers
+            item = BLUEPRINT_ITEM_BY_TIER[tier]
+            own, chain = techtree_chain_blueprints.get(target) or (0, 0)
+            if own > 0:
+                rec["research_blueprints"] = [{"item": item, "amount": int(own)}]
+            if chain > 0:
+                rec["research_blueprints_techtree"] = [{"item": item, "amount": int(chain)}]
         if bp["NeedsSteamItem"]:
             rec["needs_steam_item"] = True
         ru = bp["RequireUnlockedItem"]

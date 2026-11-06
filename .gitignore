@@ -21,3 +21,6 @@ account.config
 *.maFile.b64
 mafiles/
 wanted.txt
+
+.pipeline/localization/
+.pipeline/missing/

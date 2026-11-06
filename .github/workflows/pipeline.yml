@@ -7,15 +7,8 @@ name: pipeline
 # (500 MB cap) and a cache would have to hold across workflows; a single job
 # keeps them on one disk for the whole run and drops them at the end.
 #
-# The schedule used to encode the update day: Rust force-updates on the first
-# Tuesday at 19:00 UTC, cron cannot express "first Tuesday" (day-of-month and
-# day-of-week are OR-ed), so it woke up on days 1-7 and is_patch_day.py narrowed
-# that to one. The gate now reads the live build number instead, the same field
-# the game polls hourly to decide whether a client is too old:
 #   GET https://api.facepunch.com/api/public/manifest/?public_key=<key>
 #   -> Changesets.Main
-# manifest.json records the build this repository last processed, so the cron is
-# a plain hourly tick and the version alone decides.
 
 on:
   workflow_dispatch:
@@ -36,8 +29,6 @@ on:
           - pr
           - push
         default: merge
-  schedule:
-    - cron: "17 * * * *"
 
 permissions:
   contents: read
@@ -112,7 +103,6 @@ jobs:
         if: steps.gate.outputs.should_run == 'true'
         run: |
           python -m pip install --quiet -r .pipeline/requirements-actions.txt
-          pip install --quiet kaggle
 
       - name: Install DepotDownloader
         if: steps.gate.outputs.should_run == 'true'
