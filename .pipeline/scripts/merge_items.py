@@ -15,6 +15,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / ".pipeline"))
+import reconcile as rec  # noqa: E402
+
 CATEGORY_MAP = {
     "ammunition": "ammo", "attire": "attire", "component": "components",
     "construction": "construction", "electrical": "electrical", "food": "food",
@@ -84,6 +87,7 @@ def main() -> int:
 
     known = {i.get("image_name") for i in items}
     added: list[dict] = []
+    renamed: list[tuple[dict, str, str]] = []
     for entry in wanted:
         key = entry.get("shortname")
         if not key or key in known:
@@ -97,10 +101,22 @@ def main() -> int:
             "name": {"en": en, "ru": en},
             "category": normalize_category(entry.get("category")),
         }
+        itemid = entry.get("itemid")
+        match = [i for i in items if i.get("id") == itemid and i.get("image_name") != key]
+        if entry.get("merge_by_id") and itemid is not None and len(match) == 1:
+            old_rec = match[0]
+            old_key = old_rec.get("image_name") or ""
+            renamed.append((old_rec, old_key, str(record["image_name"])))
+            known.discard(old_key)
+            known.add(key)
+            old_rec["image_name"] = key
+            if en:
+                old_rec.setdefault("name", {})["en"] = en
+            continue
         added.append(record)
         known.add(key)
 
-    if not added:
+    if not added and not renamed:
         print("nothing to add; items.json is unchanged")
         return 0
 
@@ -110,9 +126,16 @@ def main() -> int:
 
     if not args.dry_run:
         items.extend(added)
-        items_path.write_text(
-            json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
+        for old_rec, old_key, new_key in renamed:
+            rec.move_icon_files(
+                args.repo_dir, str(old_rec.get("category")), old_key,
+                str(old_rec.get("category")), new_key)
+        if added or renamed:
+            items_path.write_text(
+                json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    for old_rec, old_key, new_key in renamed:
+        print(f"  ~ renamed by id {old_rec.get('id')}: {old_key} -> {new_key}")
     print(f"+{len(added)} item(s): " + ", ".join(f"{c}={n}" for c, n in sorted(by_category.items())))
     for record in added[:12]:
         print(f"  + [{record['category']}] {record['image_name']} - {record['name']['en']}")

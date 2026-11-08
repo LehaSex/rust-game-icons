@@ -303,6 +303,22 @@ def check_delta(out: Path, repo: Path, rep: Report) -> None:
         rep.err(f"the delta overwrote existing icons: {dupes[:5]}")
 
 
+def check_duplicates(items, rep: Report) -> None:
+    by_id: dict = {}
+    by_name: dict = {}
+    for i in items:
+        key = i.get("image_name") or ""
+        by_id.setdefault(i.get("id"), []).append(key)
+        by_name.setdefault(key.casefold(), []).append(key)
+    dup_ids = {k: v for k, v in by_id.items() if k is not None and len(v) > 1}
+    if dup_ids:
+        sample = ", ".join(f"{k}: {v}" for k, v in sorted(dup_ids.items(), key=str)[:5])
+        rep.warn(f"{len(dup_ids)} itemid(s) cover more than one record: {sample}")
+    dup_names = {k: v for k, v in by_name.items() if k and len(v) > 1}
+    if dup_names:
+        rep.err(f"duplicate image_name in items.json: {sorted(dup_names)[:5]}")
+
+
 def main() -> int:
     for stream in (sys.stdout, sys.stderr):
         try:
@@ -332,6 +348,8 @@ def main() -> int:
     unknown = {i.get("category") for i in items} - CATEGORIES
     if unknown:
         rep.err(f"unknown categories in items.json: {sorted(unknown)}")
+
+    check_duplicates(items, rep)
 
     for name in DATA_FILES:
         if name != "items.json":

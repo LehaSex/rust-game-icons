@@ -7,11 +7,13 @@ import json
 import os
 import shutil
 import sys
+from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / ".pipeline"))
-from paths import resolve_items_dir
+from paths import items_bundle, resolve_items_dir
 from sync_icons import CATEGORY_MAP, DEFAULT_CATEGORY, norm_shortname
+import reconcile as rec
 
 
 PIPELINE = Path(__file__).resolve().parents[2] / ".pipeline"
@@ -24,6 +26,14 @@ def repo_shortnames(repo_dir: Path) -> set[str]:
     data = json.loads(path.read_text(encoding="utf-8"))
     items = data if isinstance(data, list) else data.get("items", [])
     return {i["image_name"] for i in items if i.get("image_name")}
+
+
+def report_reconcile(report: dict[str, list[str]], summary: Path | None) -> None:
+    if summary is None or not any(report.values()):
+        return
+    with summary.open("a", encoding="utf-8") as fh:
+        for line in rec.summary_lines(report):
+            fh.write(line + "\n")
 
 
 def game_items(items_path: Path) -> tuple[dict[str, dict], list[dict]]:
@@ -56,7 +66,6 @@ def game_items(items_path: Path) -> tuple[dict[str, dict], list[dict]]:
         seen = found.get(key)
         if seen is None or (" " in seen["shortname"] and " " not in entry["shortname"]):
             found[key] = entry
-
     notes: list[dict] = []
     for entry in raw:
         key = norm_shortname(entry["shortname"])
@@ -157,7 +166,29 @@ def main() -> int:
 
     have = {norm_shortname(n) for n in repo_shortnames(repo_dir)}
     game, alias_notes = game_items(src_dir)
-    missing = {s: m for s, m in game.items() if s not in have}
+
+    active = None
+    try:
+        active = rec.load_item_defs(items_bundle(game=str(args.game_dir or None)), log=print)
+    except SystemExit:
+        pass
+    if active is not None:
+        print(f"  registry: {len(active)} live item definitions from items.preload.bundle")
+
+    rec_report, dead_keys = rec.reconcile_items(
+        repo_dir / "items.json",
+        {k: m for k, m in game.items()},
+        repo_dir=repo_dir,
+        active=active,
+        log=print,
+    )
+    report_reconcile(rec_report, summary_path())
+    if any(rec_report.values()):
+        have = {norm_shortname(n) for n in repo_shortnames(repo_dir)}
+
+    missing = {s: m for s, m in game.items()
+               if s not in have and s not in dead_keys}
+    game_id_counts = Counter(m.get("itemid") for m in game.values() if m.get("itemid") is not None)
 
     out = args.out
     src_out = out / "src"
@@ -182,6 +213,8 @@ def main() -> int:
             "itemid": meta.get("itemid"),
             "name": meta.get("name"),
             "category": norm_category(meta.get("category")),
+            "merge_by_id": (meta.get("itemid") in active) if active is not None
+            else game_id_counts.get(meta.get("itemid")) == 1,
         })
 
     if args.kernel:

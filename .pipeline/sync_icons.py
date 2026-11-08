@@ -15,6 +15,8 @@ import numpy as np
 from PIL import Image
 
 from paths import ENV_GAME_DIR, ENV_ITEMS_DIR, items_dir, resolve_items_dir, upscayl_bin, upscayl_models
+from reconcile import rename_icon_files
+import reconcile as rec
 
                                                                              
               
@@ -256,19 +258,6 @@ def insert_item(items: list[dict], entry: dict) -> None:
         items.append(entry)
 
 
-def rename_icon_files(repo_dir: Path, category: str, old: str, new: str) -> None:
-    candidates = [old, old.replace("%20", " ")]
-    for sub, ext in (("large", "png"), ("small", "png"), ("webp", "webp")):
-        dst = repo_dir / sub / category / f"{new}.{ext}"
-        if dst.exists():
-            continue
-        for cand in candidates:
-            src = repo_dir / sub / category / f"{cand}.{ext}"
-            if src.exists():
-                src.rename(dst)
-                break
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="Sync Rust icons with the repository")
     parser.add_argument("--dry-run", action="store_true", help="only show what would be done")
@@ -314,11 +303,34 @@ def main() -> int:
     game_items = load_game_items(game_dir)
     prog(f"    unique items: {len(game_items)}; records in repo: {len(items)}")
 
+    prog("\n[1.5/4] Resolving renames by itemid...")
+    active = rec.load_item_defs(game_dir.parent / "shared" / "items.preload.bundle", log=prog)
+    if active is not None:
+        prog(f"    registry: {len(active)} live item definitions")
+    rec_report, dead_keys = rec.reconcile_items(
+        json_path,
+        {k: e for k, e in game_items.items()},
+        repo_dir=repo_dir,
+        active=active,
+        dry_run=args.dry_run,
+        log=prog,
+    )
+    for section, lines in rec_report.items():
+        for line in lines:
+            log(section, line)
+    if any(rec_report.values()) and not args.dry_run:
+        items = json.loads(json_path.read_text(encoding="utf-8"))
+    by_key = {norm_shortname(it["image_name"]): it for it in items}
+
                                                                               
     prog("\n[2/4] Reconciling with items.json...")
     icon_queue: list[tuple[str, Path]] = []
 
     for key in sorted(game_items):
+        if key in dead_keys:
+            log("legacy_alias", f"{key}: legacy name of `{dead_keys[key]}` (same itemid, identical content) — skipped")
+            prog(f"    alias: {key} -> {dead_keys[key]} (skipped)")
+            continue
         game = game_items[key]
         category = CATEGORY_MAP.get(game["category"], DEFAULT_CATEGORY)
         if game["category"] not in CATEGORY_MAP:
@@ -463,7 +475,8 @@ def main() -> int:
     prog("\n" + "=" * 60)
     prog("REPORT" + ("  (dry-run — nothing written)" if args.dry_run else ""))
     prog("=" * 60)
-    for section in ("added", "id_fixed", "renamed", "name_updated", "skipped_no_icon", "regen_no_source",
+    for section in ("added", "id_fixed", "renamed", "renamed_by_id", "removed_stale", "legacy_alias",
+                    "name_updated", "skipped_no_icon", "regen_no_source",
                     "category_fallback", "itemid_conflicts", "game_json_errors"):
         rows = report.get(section, [])
         if not rows:
