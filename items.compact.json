@@ -2210,16 +2210,6 @@
     "category": "components"
   },
   {
-    "id": -1896395719,
-    "image_name": "advancedblueprintfragment",
-    "name": {
-      "en": "Advanced Blueprint Fragment",
-      "zh-cn": "高级蓝图碎片",
-      "ru": "Продвинутый Фрагмент Чертежа"
-    },
-    "category": "components"
-  },
-  {
     "id": 1874610722,
     "image_name": "vehicle.1mod.cockpit.armored",
     "name": {
@@ -2236,16 +2226,6 @@
       "en": "Armored Passenger Vehicle Module",
       "zh-cn": "装甲乘客模块",
       "ru": "Бронированный пассажирский модуль"
-    },
-    "category": "components"
-  },
-  {
-    "id": -143481979,
-    "image_name": "basicblueprintfragment",
-    "name": {
-      "en": "Basic Blueprint Fragment",
-      "zh-cn": "基础蓝图碎片",
-      "ru": "Базовый фрагмент чертежа"
     },
     "category": "components"
   },
@@ -4106,16 +4086,6 @@
       "en": "Memory Cell",
       "zh-cn": "Memory Cell",
       "ru": "Ячейка памяти"
-    },
-    "category": "electrical"
-  },
-  {
-    "id": 1174484438,
-    "image_name": "mini.fridge",
-    "name": {
-      "en": "Mini Fridge",
-      "zh-cn": "迷你冰箱",
-      "ru": "Мини-холодильник"
     },
     "category": "electrical"
   },
@@ -9146,16 +9116,6 @@
       "en": "Ice Throne",
       "zh-cn": "冰封王座",
       "ru": "Ледяной трон"
-    },
-    "category": "items"
-  },
-  {
-    "id": 374496151,
-    "image_name": "charity.plushie.05",
-    "name": {
-      "en": "Humane World Charity 2026 Plushie",
-      "zh-cn": "Humane World Charity 2026 Plushie",
-      "ru": "Humane World Charity 2026 Plushie"
     },
     "category": "items"
   },
