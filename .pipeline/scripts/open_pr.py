@@ -136,16 +136,16 @@ def main() -> int:
 
     repo = args.repo.resolve()
     out = args.out.resolve()
-    if not out.is_dir():
-        sys.exit(f"no output directory {out}")
     if not (repo / ".git").is_dir():
         sys.exit(f"{repo} is not a git repository")
 
-                                                                              
+    if not out.is_dir():
+        print(f"no output directory {out} — publishing the worktree as is")
+        out = repo                                                                          
                                                                               
     for f in KERNEL_FILES:
         src = out / f
-        if src.is_file():
+        if src.is_file() and src.resolve() != (repo / f).resolve():
             shutil.copy2(src, repo / f)
 
     copied = copy_delta(out, repo)

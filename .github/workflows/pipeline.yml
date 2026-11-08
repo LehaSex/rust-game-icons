@@ -247,6 +247,32 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
 
+      - name: Publish the reconciled data
+        if: >-
+          steps.gate.outputs.should_run == 'true' &&
+          steps.delta.outputs.has_delta != 'true' &&
+          steps.delta.outputs.reconciled == 'true'
+        run: |
+          set -euo pipefail
+          # items.json changed under the dead keys: refresh the derived tables
+          python .pipeline/sync_translations.py --repo-dir .
+          echo "::group::validate"
+          python .pipeline/scripts/validate_outputs.py --repo-dir .
+          echo "::endgroup::"
+          mode="${{ inputs.publish }}"
+          if [ "${{ github.event_name }}" = "schedule" ] || [ -z "$mode" ]; then
+            mode="${PUBLISH_MODE:-${{ vars.PUBLISH_MODE }}}"
+            [ -n "$mode" ] || mode="merge"
+          fi
+          echo "publish mode: $mode"
+          python .pipeline/scripts/open_pr.py --repo . \
+            --title "chore: drop legacy item names (reconciliation)" \
+            --mode "$mode"
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
+          KERNEL_VERSION: ${{ steps.gate.outputs.remote_version || steps.gate.outputs.local_version || 'reconcile' }}
+
       - name: Publish the version bump
         if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta != 'true'
         run: |
