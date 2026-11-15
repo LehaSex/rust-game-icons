@@ -43,7 +43,7 @@ Example path: `small/weapons/rifle.ak.png`.
 Special folders, not included in `items.json`:
 
 - `npc/` – 256×256 PNG portraits and avatars of in-game NPCs.
-- `gui/` – 256×256 PNG, UI icons (gestures, etc.).
+- `gui/` – UI icons extracted straight from the game, mirroring Rust's own asset hierarchy. Made for plugin development: icons can be referenced with the original in-game paths, e.g. `/assets/icons/health.png` or `/assets/content/ui/…`. See [gui/README.md](gui/README.md) for details.
 
 The category list is not exhaustive – explore the repository to discover every category.
 
