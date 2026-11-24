@@ -58,7 +58,7 @@ The category list is not exhaustive – explore the repository to discover every
 | `items.desc.json` | flat lookup | shortname → localized item description (all languages). Items without a description are not listed. |
 | `items.craft.json` | flat lookup | shortname → crafting data from in-game recipes. **Every** item is listed, each record has the same field set (non-applicable → `null`/`false`/`0`/`[]`), see details below. |
 | `items.recycle.json` | `items` lookup + `recyclers` block | shortname → recycling yields (inside `items`), plus the four recycler rates (see details below). |
-| `manifest.json` | – | `{"version": N}` – the Rust build the repo was last parsed against. |
+| `manifest.json` | – | `{"buildid": N}` – the Rust build the repo was last parsed against. |
 
 **`items.craft.json` fields** (per record): `craftable`, `craft_workbench` (`workbench1..4`, `null` = none), `amount`, `time`, `ingredients` (`[{item, amount}]`), `rarity`, `researchable`, `research_scrap` (Common 20 / Uncommon 40 / Rare 100 / VeryRare 300, default blueprints 10; `null` = unresearchable), `research_workbench` (`workbench1..3` or `iotable`; `null` = not in any tech tree), `research_blueprints` (own-node cost), `research_blueprints_techtree` (total cost from scratch incl. prerequisites), `default_blueprint`, `scrap_from_recycle`, `needs_steam_item`, `require_unlocked_item`, `additional_unlocks`, `force_time`, `stack_size`, `skin_of`, `despawn`.
 
@@ -68,13 +68,13 @@ The category list is not exhaustive – explore the repository to discover every
 
 ## ⚙️ How It Works
 
-The repo is kept up to date by an automated pipeline. An external scheduler (a Go function on a serverless platform, running every minute) polls Facepunch's public manifest endpoint and compares the live Rust build number (`Changesets.Main`) with the one recorded in `manifest.json`. When the build is newer, it dispatches the GitHub Actions `pipeline` workflow, which does the heavy lifting on a GitHub-hosted runner:
+The repo is kept up to date by an automated pipeline. An external scheduler (a Go function on a serverless platform, running every minute) polls SteamCMD's public app-info endpoint and compares the live Rust build (`data.252490.depots.branches.public.buildid`) with the one recorded in `manifest.json`. When the build is newer, it dispatches the GitHub Actions `pipeline` workflow, which does the heavy lifting on a GitHub-hosted runner:
 
 ```mermaid
 flowchart LR
     T[Serverless timer<br/>every minute] --> F[Go scheduler<br/>external]
-    F -- polled every minute --> FP[Facepunch manifest API<br/>Changesets.Main]
-    FP --> C{remote &gt; local?}
+    F -- polled every minute --> SC[SteamCMD API<br/>public buildid]
+    SC --> C{remote &gt; local?}
     MR[(manifest.json)] --> C
     C -- yes --> G[GitHub Actions<br/>pipeline.yml]
     C -- no --> STOP[stop]
@@ -87,7 +87,7 @@ flowchart LR
 
 Steps in the pipeline:
 
-1. **Version gate** – re-checks the build number against `manifest.json` before spending anything.
+1. **Build gate** – re-checks the Steam buildid against `manifest.json` before spending anything.
 2. **Fetch** – downloads the dedicated server and client depots (~4.7 GiB) via DepotDownloader.
 3. **Parse** – `.pipeline/sync_all.py` refreshes localization, names, descriptions, craft and recycle data.
 4. **Upscale** – new/changed icons are sent to a Kaggle kernel; RealESRGAN x4plus renders the 1080×1080 versions.

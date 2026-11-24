@@ -7,14 +7,14 @@ name: pipeline
 # (500 MB cap) and a cache would have to hold across workflows; a single job
 # keeps them on one disk for the whole run and drops them at the end.
 #
-#   GET https://api.facepunch.com/api/public/manifest/?public_key=<key>
-#   -> Changesets.Main
+#   GET https://api.steamcmd.net/v1/info/252490
+#   -> data.252490.depots.branches.public.buildid
 
 on:
   workflow_dispatch:
     inputs:
       force:
-        description: ignore the version gate
+        description: ignore the build gate
         type: boolean
         default: true
       skip_kaggle:
@@ -45,7 +45,6 @@ env:
   ICONS_DELTA_SLUG: ${{ vars.ICONS_DELTA_SLUG }}
   DATA_REPO: ${{ vars.DATA_REPO }}
   GH_PAT: ${{ secrets.GH_PAT }}
-  FACEPUNCH_PUBLIC_KEY: ${{ vars.FACEPUNCH_PUBLIC_KEY }}
   STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
   STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
   STEAM_MAFILE_B64: ${{ secrets.STEAM_MAFILE_B64 }}
@@ -71,7 +70,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Version gate
+      - name: Build gate
         id: gate
         run: |
           fallback="skip"
@@ -93,8 +92,8 @@ jobs:
         if: steps.gate.outputs.should_run == 'true'
         run: |
           args=(--repo .)
-          v="${{ steps.gate.outputs.remote_version }}"
-          if [ -n "$v" ]; then args+=(--version "$v"); fi
+          v="${{ steps.gate.outputs.remote_buildid }}"
+          if [ -n "$v" ]; then args+=(--buildid "$v"); fi
           python .pipeline/scripts/record_version.py "${args[@]}"
 
       # ---------------------------------------------------------------- fetch
@@ -271,14 +270,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
-          KERNEL_VERSION: ${{ steps.gate.outputs.remote_version || steps.gate.outputs.local_version || 'reconcile' }}
+          KERNEL_VERSION: ${{ steps.gate.outputs.remote_buildid || steps.gate.outputs.local_buildid || 'reconcile' }}
 
-      - name: Publish the version bump
+      - name: Publish the build bump
         if: steps.gate.outputs.should_run == 'true' && steps.delta.outputs.has_delta != 'true'
         run: |
           args=(--repo . --push)
-          v="${{ steps.gate.outputs.remote_version }}"
-          if [ -n "$v" ]; then args+=(--version "$v"); fi
+          v="${{ steps.gate.outputs.remote_buildid }}"
+          if [ -n "$v" ]; then args+=(--buildid "$v"); fi
           python .pipeline/scripts/record_version.py "${args[@]}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -289,9 +288,9 @@ jobs:
           {
             echo "### pipeline"
             echo ""
-            echo "- version gate: ${{ steps.gate.outputs.reason || 'not evaluated' }}"
-            echo "- recorded version: ${{ steps.gate.outputs.local_version || 'none' }}"
-            echo "- live Changesets.Main: ${{ steps.gate.outputs.remote_version || 'n/a' }}"
+            echo "- build gate: ${{ steps.gate.outputs.reason || 'not evaluated' }}"
+            echo "- recorded buildid: ${{ steps.gate.outputs.local_buildid || 'none' }}"
+            echo "- live Steam buildid: ${{ steps.gate.outputs.remote_buildid || 'n/a' }}"
             echo "- delta: ${{ steps.delta.outputs.has_delta || 'n/a' }}"
             echo "- branch: \`${GITHUB_REF_NAME}\`"
           } >> "$GITHUB_STEP_SUMMARY"

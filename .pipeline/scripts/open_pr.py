@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PIPELINE = ROOT / ".pipeline"
 
 # Copied from out/. manifest.json is deliberately excluded: the kernel writes its
-# own manifest.json there (icon counts) and it would overwrite the version stamp.
+# own manifest.json there (icon counts) and it would overwrite the build stamp.
 KERNEL_FILES = ["items.json", "items.compact.json", "items.desc.json",
                 "items.craft.json", "items.recycle.json"]
 
@@ -115,7 +115,7 @@ def summarize(out: Path, repo: Path) -> str:
     stamp = repo / "manifest.json"
     if stamp.is_file():
         try:
-            lines.append(f"- game version: `{json.loads(stamp.read_text(encoding='utf-8')).get('version')}`")
+            lines.append(f"- game buildid: `{json.loads(stamp.read_text(encoding='utf-8')).get('buildid')}`")
         except (OSError, json.JSONDecodeError):
             pass
     if not lines:

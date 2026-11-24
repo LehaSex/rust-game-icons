@@ -31,22 +31,22 @@ needs, how the Steam login works — is `SETUP.md` at the repository root.
 ## Automation
 
 `pipeline.yml` is one job on `ubuntu-latest`, scheduled hourly. `scripts/check_version.py`
-reads the live build number from Facepunch's manifest and compares it with
-`manifest.json` at the repository root, so the version decides and most runs stop
-at the gate having downloaded a few kilobytes.
+reads the live build number from SteamCMD's public app-info endpoint and compares
+it with `manifest.json` at the repository root, so the build decides and most runs
+stop at the gate having downloaded a few kilobytes.
 
 ```
-GET https://api.facepunch.com/api/public/manifest/?public_key=$FACEPUNCH_PUBLIC_KEY
-  -> { "Changesets": { "Main": 167781, "Staging": 168230 } }
+GET https://api.steamcmd.net/v1/info/252490
+  -> data["252490"]["depots"]["branches"]["public"]["buildid"]
 ```
 
-The game polls the same endpoint hourly to decide whether a connecting client is
-too old (`ConnectionAuth.GetMinClientRequirement()` in `Assembly-CSharp.dll`).
+The `public` branch is what Steam installs by default; `STEAM_BRANCH` overrides it
+for both the gate and `record_version.py`.
 
 Game files are ~4.7 GiB — too large for a 500 MB artifact — so everything stays
 in one job rather than passing them between jobs.
 
-## The version stamp
+## The build stamp
 
 `manifest.json` at the repository root holds the last build this repository
 parsed. `record_version.py` writes it twice per run:
@@ -59,13 +59,11 @@ parsed. `record_version.py` writes it twice per run:
 `open_pr.py` stages `manifest.json` but must not copy it from `out/`: the Kaggle
 kernel writes its own `manifest.json` there (icon counts). Hence `KERNEL_FILES`
 vs `COMMIT_FILES`. `is_patch_day.py` is kept only as the `--on-error patch-day`
-fallback for when Facepunch is unreachable.
+fallback for when SteamCMD is unreachable.
 
 ## Variables
 
-`FACEPUNCH_PUBLIC_KEY` is the manifest endpoint's public key, held as a repository
-**variable**, not a secret: it ships in the clear inside the game's own
-`Facepunch.Integration.PublicKey`, orders nothing and writes nothing.
+The build gate needs no API key: SteamCMD's app-info endpoint is public.
 
 Nothing else here reads a credential that is not passed through the environment.
 A Steam maFile is held in memory only, a maFile path inside the repository is

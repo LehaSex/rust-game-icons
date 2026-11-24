@@ -1,4 +1,4 @@
-"""Stamp the processed build into manifest.json.
+"""Stamp the processed Steam build into manifest.json.
 
 Called twice per run: right after the gate (staged only, so open_pr.py commits it
 with the data) and again with --push when nothing else was published.
@@ -37,7 +37,7 @@ def git(args: list[str], repo: Path, check: bool = True) -> subprocess.Completed
     return proc
 
 
-def write_version(path: Path, version: int, when: str) -> bool:
+def write_buildid(path: Path, buildid: int, when: str) -> bool:
     data: dict = {}
     if path.is_file():
         try:
@@ -47,30 +47,31 @@ def write_version(path: Path, version: int, when: str) -> bool:
         if isinstance(loaded, dict):
             data = loaded
 
-    previous = data.get("version")
-    if previous == version:
-        print(f"{path.name} already records version {version}")
+    previous = data.get("buildid")
+    if previous == buildid:
+        print(f"{path.name} already records buildid {buildid}")
         return False
 
-    data["version"] = version
+    data["buildid"] = buildid
     data["updated_at"] = when
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
-    print(f"{path.name}: {previous if previous is not None else 'none'} -> {version} ({when})")
+    print(f"{path.name}: {previous if previous is not None else 'none'} -> {buildid} ({when})")
     return True
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Stamp the processed build into manifest.json")
-    ap.add_argument("--version", type=optional_int, default=None,
-                    help="build number to record; fetched from the manifest when omitted or empty")
+    ap.add_argument("--buildid", type=optional_int, default=None,
+                    help="Steam buildid to record; fetched from SteamCMD when omitted or empty")
     ap.add_argument("--url", default=check_version.DEFAULT_URL,
-                    help="manifest endpoint, used only when --version is omitted")
-    ap.add_argument("--key", default=os.environ.get(check_version.ENV_KEY, ""),
-                    help=f"manifest public_key (${check_version.ENV_KEY})")
+                    help="SteamCMD app-info endpoint, used only when --buildid is omitted")
+    ap.add_argument("--branch", default=os.environ.get(check_version.ENV_BRANCH,
+                                                       check_version.DEFAULT_BRANCH),
+                    help=f"Steam branch (default {check_version.DEFAULT_BRANCH})")
     ap.add_argument("--timeout", type=int, default=check_version.DEFAULT_TIMEOUT)
     ap.add_argument("--local", type=Path, default=None,
-                    help="version file inside the repository (default <repo>/manifest.json)")
+                    help="build file inside the repository (default <repo>/manifest.json)")
     ap.add_argument("--repo", type=Path, default=REPO, help="git repository root")
     ap.add_argument("--date", default=None, help="timestamp to store, ISO 8601 (default: now, UTC)")
     ap.add_argument("--push", action="store_true",
@@ -83,14 +84,14 @@ def main() -> int:
         except Exception:
             pass
 
-    version = args.version
-    if version is None:
+    buildid = args.buildid
+    if buildid is None:
         try:
-            version = check_version.fetch_changesets(args.url, args.key, args.timeout)["Main"]
+            buildid = check_version.fetch_buildid(args.url, args.branch, args.timeout)
         except check_version.VersionError as exc:
             sys.exit(f"cannot determine the live build: {exc}")
-    if version <= 0:
-        sys.exit(f"refusing to record version {version}")
+    if buildid <= 0:
+        sys.exit(f"refusing to record buildid {buildid}")
 
     when = args.date or datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     repo = args.repo.resolve()
@@ -102,7 +103,7 @@ def main() -> int:
     except ValueError:
         sys.exit(f"{local} is outside {repo}; git cannot stage it from this repo")
 
-    write_version(local, version, when)
+    write_buildid(local, buildid, when)
 
     git(["git", "add", "--", rel], repo)
     if rel not in git(["git", "diff", "--cached", "--name-only"], repo).stdout.split():
@@ -113,8 +114,8 @@ def main() -> int:
         return 0
 
     git(["git", "-c", f"user.name={BOT_NAME}", "-c", f"user.email={BOT_EMAIL}",
-         "commit", "-m", f"chore: game version {version}",
-         "-m", f"Changesets.Main is now {version}, recorded so the next hourly poll "
+         "commit", "-m", f"chore: game build {buildid}",
+         "-m", f"Steam buildid is now {buildid}, recorded so the next hourly poll "
                f"has a baseline."], repo)
 
     token = os.environ.get("GH_PAT") or os.environ.get("GITHUB_TOKEN", "")
@@ -127,7 +128,7 @@ def main() -> int:
     git(["git", "remote", "set-url", "origin",
          f"https://x-access-token:{token}@github.com/{data_repo}.git"], repo, check=False)
     git(["git", "push", "origin", f"HEAD:{branch}"], repo)
-    print(f"pushed {version} to {data_repo}:{branch}")
+    print(f"pushed {buildid} to {data_repo}:{branch}")
     return 0
 
 
